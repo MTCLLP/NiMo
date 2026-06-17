@@ -54,7 +54,7 @@
           </div>
           <div>
             <h4 class="text-sm font-semibold mb-1">Contact</h4>
-            <p class="text-xs text-white/80">Call: +919088976022</p>
+            <p class="text-xs text-white/80">Call: +91 98330 66702</p>
           </div>
           <div>
             <h4 class="text-sm font-semibold mb-1">Email</h4>
@@ -67,13 +67,13 @@
         </div>
 
         <!-- Map Placeholder -->
-        <div class="bg-white/10 rounded-lg p-2 h-40 relative overflow-hidden">
-          <div class="absolute inset-0 flex items-center justify-center">
+        <a href="https://share.google/wDt78U5vGNSPQgzbA" target="_blank" rel="noopener noreferrer" class="block bg-white/10 rounded-lg p-2 h-40 relative overflow-hidden hover:bg-white/20 transition-colors">
+          <div class="absolute inset-0 flex items-center justify-center z-10">
             <svg class="w-8 h-8 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
           </div>
           <!-- In real app, put iframe or actual map image here -->
           <div class="w-full h-full bg-gray-200/20 rounded border border-white/20" style="background-image: radial-gradient(circle, #ffffff22 2px, transparent 2px); background-size: 10px 10px;"></div>
-        </div>
+        </a>
 
       </div>
 

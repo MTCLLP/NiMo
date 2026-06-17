@@ -46,11 +46,11 @@
 
     </div>
 
-    <!-- WhatsApp Chat -->
-    <a href="https://wa.me/1234567890" class="fixed bottom-8 right-8 z-50 flex items-center gap-3 group">
-      <span class="bg-white px-3 py-1.5 rounded-full text-xs font-medium text-gray-700 shadow-md opacity-0 group-hover:opacity-100 transition-opacity translate-x-4 group-hover:translate-x-0 duration-300">
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/919833066702" class="fixed bottom-8 right-8 z-50 flex items-center gap-3 group">
+      <div class="bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
         Chat with us
-      </span>
+      </div>
       <div class="bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform">
         <img src="/icon-whatsapp-dr-nihar-modi.svg" alt="WhatsApp" class="w-6 h-6 invert" />
       </div>
