@@ -54,7 +54,7 @@ const linkClass = computed(() => {
       ]"
     >
       <!-- Calendar -->
-      <a href="#" class="group flex items-center gap-3" :class="linkClass">
+      <!-- <a href="#" class="group flex items-center gap-3" :class="linkClass">
         <div
           class="bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
           :class="tooltipClass"
@@ -68,7 +68,8 @@ const linkClass = computed(() => {
             class="w-8 h-8"
           />
         </div>
-      </a>
+      </a> -->
+
 
       <!-- Phone -->
       <a href="tel:+919833066702" class="group flex items-center gap-3" :class="linkClass">

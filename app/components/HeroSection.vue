@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <section
@@ -16,7 +15,7 @@
       class="container mx-auto relative z-10 flex flex-col lg:flex-row items-center"
     >
       <!-- Left Content -->
-      <div class="flex-1 lg:pr-12 text-center lg:text-left">
+      <div class="flex-1 text-center flex flex-col items-center justify-center w-full">
         <h1
           class="text-5xl lg:text-5xl font-mirage text-secondary leading-tight mb-8"
         >
@@ -24,7 +23,7 @@
           <span class="text-secondary/80">Recover Faster, Live Stronger</span>
         </h1>
 
-        <div class="hidden lg:block relative mt-16 w-80">
+        <!-- <div class="hidden lg:block relative mt-16 w-80">
           <div
             class="bg-white p-4 rounded-lg shadow-xl shadow-blue-900/10 flex gap-4 items-center"
           >
@@ -51,11 +50,11 @@
               arthritis, and minimally invasive orthopaedic procedures.
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- Right Doctor Image -->
-      <div class="flex-1 relative mt-12 lg:mt-0 flex justify-center">
+      <div class="flex-1 relative mt-12 lg:mt-0 flex justify-center hidden">
         <!-- Main Image -->
         <img
           src="/dr-nihar-modi.webp"
@@ -64,12 +63,12 @@
         />
 
         <!-- Book Appointment Button over image -->
-        <UiButton
+        <!-- <UiButton
           variant="secondary"
           class="absolute bottom-16 left-1/2 -translate-x-1/2 shadow-lg transition-transform hover:scale-105 z-20 whitespace-nowrap"
         >
           Book Appointment
-        </UiButton>
+        </UiButton> -->
       </div>
     </div>
 

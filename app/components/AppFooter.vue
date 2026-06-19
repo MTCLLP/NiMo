@@ -43,39 +43,40 @@
           </div>
           <h4 class="text-sm font-semibold mb-2">About</h4>
           <p class="text-xs text-white/60 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            finibus ac lacus ut sodales. Etiam nisi mauris, pellentesque sed dui
-            vel, placerat imperdiet nunc. Fusce nec urna dolor. Curabitur congue
-            dui ut neque eleifend.
+            Dedicated Orthopaedic surgeon specializing in restoring mobility and
+            improving quality of life. Expertise in treating sports injuries,
+            degenerative joint diseases, fractures, and trauma. Committed to
+            individualized care, integrating advanced techniques to achieve
+            optimal results. Enthusiastic about continuous learning.
           </p>
         </div>
 
         <!-- Links Column -->
         <div class="flex flex-col gap-3">
-          <a
-            href="#"
+          <NuxtLink
+            to="/"
             class="text-sm text-white/80 hover:text-white transition-colors"
-            >Home</a
+            >Home</NuxtLink
           >
-          <a
-            href="#"
+          <NuxtLink
+            to="/conditions"
             class="text-sm text-white/80 hover:text-white transition-colors"
-            >Conditions Treated</a
+            >Conditions Treated</NuxtLink
           >
-          <a
-            href="#"
+          <NuxtLink
+            to="/procedures"
             class="text-sm text-white/80 hover:text-white transition-colors"
-            >Procedures</a
+            >Procedures</NuxtLink
           >
-          <a
-            href="#"
+          <NuxtLink
+            to="/blogs"
             class="text-sm text-white/80 hover:text-white transition-colors"
-            >Blogs</a
+            >Blogs</NuxtLink
           >
-          <a
-            href="#"
+          <NuxtLink
+            to="/patient-stories"
             class="text-sm text-white/80 hover:text-white transition-colors"
-            >Testimonials</a
+            >Testimonials</NuxtLink
           >
         </div>
 
@@ -83,7 +84,10 @@
         <div class="flex flex-col gap-6">
           <div>
             <h4 class="text-sm font-semibold mb-1">WhatsApp Consultation</h4>
-            <a href="#" class="text-xs text-secondary hover:underline"
+            <a
+              href="https://wa.me/919833066702"
+              target="_blank"
+              class="text-xs text-secondary hover:underline"
               >Click here</a
             >
           </div>
@@ -93,7 +97,7 @@
           </div>
           <div>
             <h4 class="text-sm font-semibold mb-1">Email</h4>
-            <p class="text-xs text-white/80">niharmodi@gmail.com</p>
+            <p class="text-xs text-white/80">modi.nihar95@gmail.com</p>
           </div>
           <div>
             <h4 class="text-sm font-semibold mb-1">FAQs</h4>
@@ -105,7 +109,7 @@
 
         <!-- Map Placeholder -->
         <a
-          href="https://share.google/wDt78U5vGNSPQgzbA"
+          href="https://www.google.com/maps/place/Dr.+Nihar+Modi/@19.0556717,72.8321864,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c90040600f91:0x16abcd80ff8ae9f8!8m2!3d19.0556717!4d72.8321864!16s%2Fg%2F11whdlthql?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
           class="block bg-white/10 rounded-lg p-2 h-40 relative overflow-hidden hover:bg-white/20 transition-colors"
@@ -148,17 +152,21 @@
 
         <!-- Socials -->
         <div class="flex items-center gap-4 mb-4 md:mb-0">
-          <a
-            href="#"
-            class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
-          >
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-              />
-            </svg>
-          </a>
-          <!-- ... Add other icons as needed ... -->
+          <UiSocialLink
+            platform="linkedin"
+            href="https://www.linkedin.com/in/dr-nihar-modi-8702672a4/"
+            target="_blank"
+          />
+          <UiSocialLink
+            platform="instagram"
+            href="https://www.instagram.com/dr_sportho/"
+            target="_blank"
+          />
+          <UiSocialLink
+            platform="whatsapp"
+            href="https://wa.me/919833066702"
+            target="_blank"
+          />
         </div>
 
         <div class="flex gap-6 text-xs text-white/50">
