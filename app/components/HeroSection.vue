@@ -2,7 +2,8 @@
 
 <template>
   <section
-    class="relative pt-40 pb-20 px-8 min-h-[800px] flex items-center overflow-hidden bg-gradient-to-br from-white to-[#e6eff6]"
+    class="relative pt-40 pb-20 px-8 min-h-[800px] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
+    style="background-image: url('/Main_banner.webp');"
   >
     <!-- Background Watermark -->
     <div
@@ -12,10 +13,10 @@
     </div>
 
     <div
-      class="container mx-auto relative z-10 flex flex-col lg:flex-row items-center"
+      class="container mx-auto relative z-10 flex flex-col items-center justify-center"
     >
       <!-- Left Content -->
-      <div class="flex-1 text-center flex flex-col items-center justify-center w-full">
+      <div class="text-center w-full max-w-4xl">
         <h1
           class="text-5xl lg:text-5xl font-mirage text-secondary leading-tight mb-8"
         >
@@ -53,23 +54,6 @@
         </div> -->
       </div>
 
-      <!-- Right Doctor Image -->
-      <div class="flex-1 relative mt-12 lg:mt-0 flex justify-center hidden">
-        <!-- Main Image -->
-        <img
-          src="/dr-nihar-modi.webp"
-          alt="Dr. Nihar Modi"
-          class="max-w-[500px] w-full h-auto drop-shadow-2xl z-10 relative"
-        />
-
-        <!-- Book Appointment Button over image -->
-        <!-- <UiButton
-          variant="secondary"
-          class="absolute bottom-16 left-1/2 -translate-x-1/2 shadow-lg transition-transform hover:scale-105 z-20 whitespace-nowrap"
-        >
-          Book Appointment
-        </UiButton> -->
-      </div>
     </div>
 
     <!-- Floating Actions Container -->
