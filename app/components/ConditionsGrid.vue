@@ -15,20 +15,18 @@ const conditions = [
 <template>
   <section class="py-24 bg-accent/30">
     <div class="container mx-auto px-8">
-      <h2 class="text-4xl lg:text-5xl font-mirage text-gray-800 text-center mb-16">
-        Conditions We Treat
-      </h2>
+      <UiSectionTitle class="mb-16">
+        Conditions Treated
+      </UiSectionTitle>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-        <div v-for="(item, idx) in conditions" :key="idx" class="flex gap-6 items-start group">
-          <div class="w-16 h-16 flex-shrink-0 relative">
-             <img :src="item.icon" :alt="item.name" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" />
-          </div>
-          <div>
-            <h3 class="text-xl text-gray-800 font-medium mb-2">{{ item.name }}</h3>
-            <p class="text-sm text-gray-500 leading-relaxed">{{ item.desc }}</p>
-          </div>
-        </div>
+        <UiFeatureBlock
+          v-for="(item, idx) in conditions"
+          :key="idx"
+          :title="item.name"
+          :desc="item.desc"
+          :icon="item.icon"
+        />
       </div>
     </div>
   </section>

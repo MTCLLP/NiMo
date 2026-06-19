@@ -8,6 +8,13 @@ export default defineNuxtConfig({
   site: {
     name: 'Dr. Nihar Modi',
   },
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' }
+      ]
+    }
+  },
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [

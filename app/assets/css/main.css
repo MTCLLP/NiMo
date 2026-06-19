@@ -40,8 +40,26 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Asectica';
+  src: url('/fonts/Asectica Simple Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Smith Signature';
+  src: url('/fonts/smith-signature.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-mirage: 'Made Mirage', serif;
+  --font-asectica: 'Asectica', sans-serif;
+  --font-signature: 'Smith Signature', cursive;
   --color-primary: #1b324c;
   --color-secondary: #7eb8da;
   --color-accent: #f4f7f9;
