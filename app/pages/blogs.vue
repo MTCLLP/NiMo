@@ -3,5 +3,11 @@
 </script>
 
 <template>
-  <ComingSoon title="Blogs" />
+  <main>
+    <PageHeader 
+      title="Blogs" 
+      :breadcrumbs="[{ name: 'Home', path: '/' }, { name: 'Blogs', path: '/blogs' }]"
+    />
+    <ComingSoon />
+  </main>
 </template>

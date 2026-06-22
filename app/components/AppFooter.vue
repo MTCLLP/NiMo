@@ -41,7 +41,7 @@
               </div>
             </div>
           </div>
-          <h4 class="text-sm font-semibold mb-2">About</h4>
+          <!-- <h4 class="text-sm font-semibold mb-2">About</h4> -->
           <p class="text-xs text-white/60 leading-relaxed">
             Dedicated Orthopaedic surgeon specializing in restoring mobility and
             improving quality of life. Expertise in treating sports injuries,
@@ -156,16 +156,19 @@
             platform="linkedin"
             href="https://www.linkedin.com/in/dr-nihar-modi-8702672a4/"
             target="_blank"
+            theme="dark"
           />
           <UiSocialLink
             platform="instagram"
             href="https://www.instagram.com/dr_sportho/"
             target="_blank"
+            theme="dark"
           />
           <UiSocialLink
             platform="whatsapp"
             href="https://wa.me/919833066702"
             target="_blank"
+            theme="dark"
           />
         </div>
 

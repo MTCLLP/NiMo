@@ -6,9 +6,11 @@ const props = withDefaults(defineProps<{
   href: string
   size?: 'sm' | 'md' | 'lg'
   variant?: 'solid' | 'outline' | 'ghost'
+  theme?: 'light' | 'dark'
 }>(), {
   size: 'md',
-  variant: 'solid'
+  variant: 'solid',
+  theme: 'light'
 })
 
 const iconSrc = computed(() => {
@@ -45,10 +47,10 @@ const iconSizeClasses = computed(() => {
 
 const variantClasses = computed(() => {
   switch (props.variant) {
-    case 'outline': return 'border border-gray-300 hover:border-primary hover:bg-primary'
-    case 'ghost': return 'hover:bg-accent/20'
+    case 'outline': return props.theme === 'dark' ? 'border border-white/30 hover:border-white hover:bg-white/10' : 'border border-gray-300 hover:border-primary hover:bg-primary'
+    case 'ghost': return props.theme === 'dark' ? 'hover:bg-white/10' : 'hover:bg-accent/20'
     case 'solid':
-    default: return 'bg-accent/20 hover:bg-primary'
+    default: return props.theme === 'dark' ? 'bg-white/10 hover:bg-white/20' : 'bg-accent/20 hover:bg-primary'
   }
 })
 </script>
@@ -63,7 +65,7 @@ const variantClasses = computed(() => {
       :src="iconSrc" 
       :alt="altText" 
       class="transition-all" 
-      :class="[iconSizeClasses, props.variant !== 'ghost' ? 'group-hover:brightness-0 group-hover:invert' : '']"
+      :class="[iconSizeClasses, props.variant !== 'ghost' ? 'group-hover:brightness-0 group-hover:invert' : '', props.theme === 'dark' ? 'brightness-0 invert' : '']"
     />
   </a>
 </template>

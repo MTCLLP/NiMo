@@ -10,11 +10,15 @@ useHead({
 </script>
 
 <template>
-  <div class="pt-40 pb-24 bg-accent/10 min-h-[80vh]">
-    <div class="container mx-auto px-8 max-w-6xl">
-      <UiSectionTitle class="mb-16">Get in Touch</UiSectionTitle>
+  <main>
+    <PageHeader 
+      title="Contact Us" 
+      :breadcrumbs="[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact' }]"
+    />
+    <div class="pt-16 pb-24 bg-accent/10 min-h-[80vh]">
+      <div class="container mx-auto px-8 max-w-6xl">
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
         
         <!-- Contact Information -->
         <div class="p-10 md:p-14 flex flex-col justify-center">
@@ -86,4 +90,5 @@ useHead({
       </div>
     </div>
   </div>
+  </main>
 </template>

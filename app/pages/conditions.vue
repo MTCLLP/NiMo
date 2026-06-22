@@ -3,5 +3,11 @@
 </script>
 
 <template>
-  <ComingSoon title="Conditions Treated" />
+  <main>
+    <PageHeader 
+      title="Conditions Treated" 
+      :breadcrumbs="[{ name: 'Home', path: '/' }, { name: 'Conditions Treated', path: '/conditions' }]"
+    />
+    <ComingSoon />
+  </main>
 </template>

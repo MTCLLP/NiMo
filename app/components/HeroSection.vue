@@ -1,4 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted } from 'vue';
+import { gsap } from 'gsap';
+
+onMounted(() => {
+  const tl = gsap.timeline();
+  tl.fromTo('.watermark-n',
+    { scale: 0.8, opacity: 0 },
+    { scale: 1, opacity: 0.05, duration: 1.5, ease: 'power2.out' }
+  )
+  .fromTo('.hero-text-line',
+    { y: 30, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out' },
+    '-=1'
+  );
+});
+</script>
 
 <template>
   <section
@@ -7,7 +23,7 @@
   >
     <!-- Background Watermark -->
     <div
-      class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none"
+      class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none watermark-n"
     >
       <div class="text-[400px] font-mirage text-primary leading-none">N</div>
     </div>
@@ -20,8 +36,8 @@
         <h1
           class="text-5xl lg:text-5xl font-mirage text-secondary leading-tight mb-8"
         >
-          Helping You Move Better,<br />
-          <span class="text-secondary/80">Recover Faster, Live Stronger</span>
+          <div class="hero-text-line">Helping You Move Better,</div>
+          <div class="hero-text-line text-secondary/80 mt-2">Recover Faster, Live Stronger</div>
         </h1>
 
         <!-- <div class="hidden lg:block relative mt-16 w-80">

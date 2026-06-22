@@ -195,20 +195,15 @@ const accordionItems = [
 </script>
 
 <template>
-  <div class="bg-white min-h-screen pt-32 pb-24">
-    <div class="container mx-auto px-6 max-w-3xl">
-      <!-- Header -->
-      <div class="mb-16">
-        <!-- <h1 class="text-[4rem] md:text-[5rem] font-asectica text-gray-800 leading-none mb-6">Nihar Modi</h1> -->
-        <UiSectionTitle as="h2" align="left" size="lg" class="mb-2"
-          >Dr. Nihar Modi,</UiSectionTitle
-        >
-        <p class="text-xl text-gray-600 font-medium tracking-wide">
-          MS (Orth) DNB (Orth), MNAMS
-        </p>
-      </div>
-
-      <!-- Quote -->
+  <main>
+    <PageHeader 
+      title="Dr. Nihar Modi" 
+      subtitle="MS (Orth) DNB (Orth), MNAMS"
+      :breadcrumbs="[{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]"
+    />
+    <div class="bg-white min-h-screen pt-16 pb-24">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <!-- Quote -->
       <div class="mb-16 flex gap-6 items-start">
         <div
           class="text-[60px] md:text-[80px] text-[#e0eaf3] font-asectica leading-none select-none -mt-4"
@@ -367,4 +362,5 @@ const accordionItems = [
       </UiAccordion>
     </div>
   </div>
+  </main>
 </template>
