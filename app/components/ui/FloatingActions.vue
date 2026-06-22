@@ -1,35 +1,36 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed } from "vue";
 
-const props = withDefaults(defineProps<{
-  position?: 'bottom-right' | 'bottom-left'
-}>(), {
-  position: 'bottom-right'
-})
+const props = withDefaults(
+  defineProps<{
+    position?: "bottom-right" | "bottom-left";
+  }>(),
+  {
+    position: "bottom-right",
+  },
+);
 
-const isFabOpen = ref(false)
+const isFabOpen = ref(false);
 
 const containerClass = computed(() => {
-  return props.position === 'bottom-left'
-    ? 'left-8 items-start'
-    : 'right-8 items-end'
-})
+  return props.position === "bottom-left"
+    ? "left-8 items-start"
+    : "right-8 items-end";
+});
 
 const tooltipClass = computed(() => {
-  return props.position === 'bottom-left'
-    ? '-translate-x-4 group-hover:translate-x-0'
-    : 'translate-x-4 group-hover:translate-x-0'
-})
+  return props.position === "bottom-left"
+    ? "-translate-x-4 group-hover:translate-x-0"
+    : "translate-x-4 group-hover:translate-x-0";
+});
 
 const linkClass = computed(() => {
-  return props.position === 'bottom-left'
-    ? 'flex-row-reverse'
-    : ''
-})
+  return props.position === "bottom-left" ? "flex-row-reverse" : "";
+});
 </script>
 
 <template>
-  <div class="fixed bottom-8 z-50 flex flex-col gap-0" :class="containerClass">
+  <div class="fixed bottom-16 z-50 flex flex-col gap-0" :class="containerClass">
     <!-- FAB Hamburger Toggle -->
     <button
       @click="isFabOpen = !isFabOpen"
@@ -50,7 +51,7 @@ const linkClass = computed(() => {
         isFabOpen
           ? 'max-h-40 opacity-100'
           : 'max-h-0 opacity-0 pointer-events-none',
-        props.position === 'bottom-left' ? 'items-start' : 'items-end'
+        props.position === 'bottom-left' ? 'items-start' : 'items-end',
       ]"
     >
       <!-- Calendar -->
@@ -70,9 +71,12 @@ const linkClass = computed(() => {
         </div>
       </a> -->
 
-
       <!-- Phone -->
-      <a href="tel:+919833066702" class="group flex items-center gap-3" :class="linkClass">
+      <a
+        href="tel:+919833066702"
+        class="group flex items-center gap-3"
+        :class="linkClass"
+      >
         <div
           class="bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
           :class="tooltipClass"

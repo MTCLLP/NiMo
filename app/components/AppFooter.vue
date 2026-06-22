@@ -173,8 +173,8 @@
         </div>
 
         <div class="flex gap-6 text-xs text-white/50">
-          <a href="#" class="hover:text-white">Privacy policy</a>
-          <a href="#" class="hover:text-white">Terms and Conditions</a>
+          <NuxtLink to="/privacy-policy" class="hover:text-white transition-colors">Privacy policy</NuxtLink>
+          <NuxtLink to="/terms-conditions" class="hover:text-white transition-colors">Terms and Conditions</NuxtLink>
         </div>
       </div>
     </div>

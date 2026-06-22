@@ -9,5 +9,6 @@
       <slot />
     </main>
     <AppFooter />
+    <UiFloatingActions />
   </div>
 </template>

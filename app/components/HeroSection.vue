@@ -72,7 +72,5 @@ onMounted(() => {
 
     </div>
 
-    <!-- Floating Actions Container -->
-    <UiFloatingActions />
   </section>
 </template>
