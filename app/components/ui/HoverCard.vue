@@ -48,6 +48,9 @@ const aspectClass = computed(() => {
       <p class="text-sm text-gray-500 group-hover/card:text-white/80 leading-relaxed transition-colors duration-300">
         {{ desc }}
       </p>
+      <div class="text-right mt-3 block lg:hidden">
+        <NuxtLink to="#" class="text-[#1DAAFF] font-medium text-sm hover:underline">Know more</NuxtLink>
+      </div>
     </div>
   </div>
 </template>
