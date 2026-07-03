@@ -3,37 +3,37 @@ const conditions = [
   {
     name: "Sports Injuries",
     icon: "/conditions/icon-sports-injuries-dr-nihar-modi.svg",
-    desc: "Comprehensive evaluation and treatment for chronic and acute back pain to restore mobility.",
+    desc: "Diagnosis and treatment of ligament, tendon, muscle, and cartilage injuries including advanced regenerative medicine treatment options like PRP, stem cells and peptides.",
   },
   {
     name: "Shoulder Conditions",
     icon: "/conditions/icon-frozen-shoulder-dr-nihar-modi.svg",
-    desc: "Expert care for knee discomfort, from conservative treatments to advanced joint preservation techniques.",
+    desc: "Comprehensive management of rotator cuff tears, shoulder instability, frozen shoulder, dislocations, impingement, and arthritis.",
   },
   {
     name: "Elbow Conditions",
     icon: "/conditions/icon-shoulder-pain-dr-nihar-modi.svg",
-    desc: "Diagnosis and management of shoulder pain, including rotator cuff issues and joint instability.",
+    desc: "Treatment for tennis elbow, golfer's elbow, ligament injuries, stiffness, fractures, and other causes of elbow pain.",
   },
   {
     name: "Knee Conditions",
     icon: "/conditions/icon-knee-pain-dr-nihar-modi.svg",
-    desc: "Effective interventions to alleviate stiffness and pain, helping you regain full range of motion.",
+    desc: "Expert care for knee pain, ACL and meniscus injuries, multiligament injuries, arthritis, cartilage damage, patellofemoral instability, and sports-related knee injuries.",
   },
   {
     name: "Joint Replacement Surgery",
-    icon: "/conditions/icon-sports-injuries-dr-nihar-modi.svg",
-    desc: "Specialized care for athletes of all levels to safely return to their sport after injury.",
+    icon: "/conditions/icon-ligament-injuries-dr-nihar-modi.svg",
+    desc: "Advanced shoulder replacement procedures for patients with severe arthritis, helping restore mobility and improve quality of life.",
   },
   {
     name: "Arthroscopy (Keyhole Surgery)",
     icon: "/conditions/icon-arthritis-dr-nihar-modi.svg",
-    desc: "Personalized management plans for joint inflammation to reduce pain and improve daily function.",
+    desc: "Minimally invasive surgery for the shoulder, elbow, knee, and other joints using small incisions for faster recovery and less postoperative discomfort.",
   },
   {
     name: "Fracture & Trauma Care",
     icon: "/conditions/icon-fractures-dr-nihar-modi.svg",
-    desc: "Advanced treatment for ACL, MCL, and other ligament tears to restore joint stability.",
+    desc: "Management of simple and complex fractures using modern surgical and non-surgical techniques for optimal healing and function.",
   },
   // {
   //   name: "Fractures",

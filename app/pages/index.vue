@@ -5,6 +5,7 @@
 <template>
   <div>
     <HeroSection />
+    <IntroductionSection />
     <!-- <HospitalLogos /> -->
     <StatsBanner />
     <SpecialisedAreas />

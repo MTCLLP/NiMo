@@ -21,21 +21,6 @@ const faqs = ref([
     title: 'ACL tear recovery timeline', 
     content: 'Recovery from ACL reconstruction surgery usually takes 6 to 9 months. The first few weeks focus on reducing swelling and restoring range of motion. Sport-specific training typically starts around the 6-month mark under professional guidance.', 
     open: false 
-  },
-  { 
-    title: 'How to prevent sports injuries', 
-    content: 'Preventing sports injuries involves proper conditioning, warming up before activities, maintaining flexibility, and wearing appropriate protective gear. It is also crucial to avoid overtraining and listen to your body.', 
-    open: false 
-  },
-  { 
-    title: 'Myths about arthritis', 
-    content: 'A common myth is that arthritis only affects the elderly, but it can occur at any age. Another misconception is that exercise worsens arthritis; in reality, low-impact exercise strengthens surrounding muscles and helps preserve joint function.', 
-    open: false 
-  },
-  { 
-    title: 'When should fractures be operated?', 
-    content: 'Fractures usually require surgery if the bone fragments are significantly displaced, unstable, or involve a joint. Surgery involves using pins, plates, or screws to align and stabilize the bone for proper healing.', 
-    open: false 
   }
 ])
 </script>
@@ -48,6 +33,12 @@ const faqs = ref([
       </UiSectionTitle>
       
       <UiAccordion :items="faqs" />
+
+      <div class="text-center mt-12">
+        <UiButton to="/faqs" variant="outline">
+          View All FAQs
+        </UiButton>
+      </div>
     </div>
   </section>
 </template>

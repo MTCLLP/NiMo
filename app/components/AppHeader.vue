@@ -146,6 +146,7 @@ const isSidebarOpen = ref(false);
         <NuxtLink to="/about" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">About</NuxtLink>
         <NuxtLink to="/services" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">Services</NuxtLink>
         <NuxtLink to="/patient-stories" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">Patient Stories</NuxtLink>
+        <NuxtLink to="/faqs" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">FAQs</NuxtLink>
         <NuxtLink to="/contact" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">Contact</NuxtLink>
       </div>
 

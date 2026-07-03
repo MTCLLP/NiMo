@@ -74,6 +74,11 @@
             >Blogs</NuxtLink
           >
           <NuxtLink
+            to="/faqs"
+            class="text-sm text-white/80 hover:text-white transition-colors"
+            >FAQs</NuxtLink
+          >
+          <NuxtLink
             to="/patient-stories"
             class="text-sm text-white/80 hover:text-white transition-colors"
             >Testimonials</NuxtLink
@@ -88,7 +93,7 @@
               href="https://wa.me/919833066702"
               target="_blank"
               class="text-xs text-secondary hover:underline"
-              >Click here</a
+              >Connect on WhatsApp</a
             >
           </div>
           <div>
@@ -99,12 +104,12 @@
             <h4 class="text-sm font-semibold mb-1">Email</h4>
             <p class="text-xs text-white/80">modi.nihar95@gmail.com</p>
           </div>
-          <div>
+          <!-- <div>
             <h4 class="text-sm font-semibold mb-1">FAQs</h4>
-            <a href="#" class="text-xs text-white/80 hover:text-white"
-              >View FAQs</a
+            <NuxtLink to="/faqs" class="text-xs text-white/80 hover:text-white"
+              >View FAQs</NuxtLink
             >
-          </div>
+          </div> -->
         </div>
 
         <!-- Map Placeholder -->
@@ -173,8 +178,16 @@
         </div>
 
         <div class="flex gap-6 text-xs text-white/50">
-          <NuxtLink to="/privacy-policy" class="hover:text-white transition-colors">Privacy policy</NuxtLink>
-          <NuxtLink to="/terms-conditions" class="hover:text-white transition-colors">Terms and Conditions</NuxtLink>
+          <NuxtLink
+            to="/privacy-policy"
+            class="hover:text-white transition-colors"
+            >Privacy policy</NuxtLink
+          >
+          <NuxtLink
+            to="/terms-conditions"
+            class="hover:text-white transition-colors"
+            >Terms and Conditions</NuxtLink
+          >
         </div>
       </div>
     </div>
