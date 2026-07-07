@@ -10,6 +10,8 @@
     <SpecialisedAreas />
     <QuoteBanner />
     <ConditionsGrid />
+    <TreatmentTechniques />
+    <GallerySection />
     <TestimonialsSection />
     <PatientEducation />
   </div>

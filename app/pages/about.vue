@@ -224,15 +224,18 @@ const accordionItems = [
         <UiAccordion :items="accordionItems" :multiple="true" variant="minimal">
           <template #item-content="{ item }">
             <template v-if="item.id === 'education'">
-              <div class="space-y-6 pt-2">
-                <div v-for="(edu, idx) in education" :key="idx">
-                  <h4 class="text-base font-bold text-gray-800 mb-1">
-                    {{ edu.title }}
-                    <span class="text-gray-500 font-normal ml-1"
-                      >({{ edu.date }})</span
-                    >
-                  </h4>
-                  <p class="text-gray-600 leading-relaxed">{{ edu.desc }}</p>
+              <div class="pt-2">
+                <img src="/about/graduation.png" alt="Education and Qualifications" class="w-full h-auto rounded-xl shadow-sm mb-8 object-cover object-center max-h-[400px]" />
+                <div class="space-y-6">
+                  <div v-for="(edu, idx) in education" :key="idx">
+                    <h4 class="text-base font-bold text-gray-800 mb-1">
+                      {{ edu.title }}
+                      <span class="text-gray-500 font-normal ml-1"
+                        >({{ edu.date }})</span
+                      >
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed">{{ edu.desc }}</p>
+                  </div>
                 </div>
               </div>
             </template>
@@ -287,12 +290,15 @@ const accordionItems = [
             </template>
 
             <template v-else-if="item.id === 'awards'">
-              <div class="space-y-6 pt-2">
-                <div v-for="(award, idx) in awards" :key="idx">
-                  <h4 class="text-base font-bold text-gray-800 mb-1">
-                    {{ award.title }}
-                  </h4>
-                  <p class="text-gray-600 leading-relaxed">{{ award.desc }}</p>
+              <div class="pt-2">
+                <img src="/about/awards.png" alt="Awards" class="w-full h-auto rounded-xl shadow-sm mb-8 object-cover object-center max-h-[400px]" />
+                <div class="space-y-6">
+                  <div v-for="(award, idx) in awards" :key="idx">
+                    <h4 class="text-base font-bold text-gray-800 mb-1">
+                      {{ award.title }}
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed">{{ award.desc }}</p>
+                  </div>
                 </div>
               </div>
             </template>

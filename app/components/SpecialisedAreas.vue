@@ -1,19 +1,19 @@
 <script setup lang="ts">
 const areas = [
   {
-    title: "Trauma Surgery",
+    title: "Knee Surgery",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
     img: "/specialities/trauma-surgery-dr-nihar-modi.webp",
     hoverImg: "/specialities/trauma-surgery-alt-dr-nihar-modi.png",
   },
   {
-    title: "Arthroscopy",
+    title: "Shoulder Surgery",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
     img: "/specialities/arthroscopy-dr-nihar-modi.webp",
     hoverImg: "/specialities/arthroscopy-alt-dr-nihar-modi.png",
   },
   {
-    title: "Joint Replacement",
+    title: "Elbow Surgery",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
     img: "/specialities/joint-replacement-dr-nihar-modi.webp",
     hoverImg: "/specialities/joint-replacement-alt-dr-nihar-modi.png",
