@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 
 const props = withDefaults(
   defineProps<{
@@ -11,6 +11,9 @@ const props = withDefaults(
 );
 
 const isFabOpen = ref(false);
+const isOverDarkBg = ref(false);
+const fabContainer = ref<HTMLElement | null>(null);
+let scrollTimeout = 0;
 
 const containerClass = computed(() => {
   return props.position === "bottom-left"
@@ -27,10 +30,63 @@ const tooltipClass = computed(() => {
 const linkClass = computed(() => {
   return props.position === "bottom-left" ? "flex-row-reverse" : "";
 });
+
+const checkBackground = () => {
+  if (!fabContainer.value) return;
+  const fabRect = fabContainer.value.getBoundingClientRect();
+
+  let overDark = false;
+
+  // 1. Check footer
+  const footer = document.querySelector("footer");
+  if (footer) {
+    const footerRect = footer.getBoundingClientRect();
+    // Overlaps if FAB bottom is below footer top and FAB top is above footer bottom
+    if (fabRect.bottom > footerRect.top && fabRect.top < footerRect.bottom) {
+      overDark = true;
+    }
+  }
+
+  // 2. Check other known dark sections if any (by class or specific selectors)
+  if (!overDark) {
+    const darkSections = document.querySelectorAll(
+      '.bg-primary, .bg-secondary, .bg-gray-900, .bg-black, [style*="#1b324c"]',
+    );
+    for (const section of Array.from(darkSections)) {
+      const rect = section.getBoundingClientRect();
+      if (fabRect.bottom > rect.top && fabRect.top < rect.bottom) {
+        overDark = true;
+        break;
+      }
+    }
+  }
+
+  isOverDarkBg.value = overDark;
+};
+
+const onScroll = () => {
+  if (scrollTimeout) cancelAnimationFrame(scrollTimeout);
+  scrollTimeout = requestAnimationFrame(checkBackground);
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", onScroll, { passive: true });
+  // Initial check
+  setTimeout(checkBackground, 100);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", onScroll);
+  if (scrollTimeout) cancelAnimationFrame(scrollTimeout);
+});
 </script>
 
 <template>
-  <div class="fixed bottom-16 z-50 flex flex-col gap-0" :class="containerClass">
+  <div
+    ref="fabContainer"
+    class="fixed bottom-16 z-50 flex flex-col gap-0"
+    :class="containerClass"
+  >
     <!-- FAB Hamburger Toggle -->
     <button
       @click="isFabOpen = !isFabOpen"
@@ -39,8 +95,11 @@ const linkClass = computed(() => {
       <img
         src="/icon-floating-hamburger-dr-nihar-modi.svg"
         alt="Menu"
-        class="w-8 h-8 transition-transform duration-300"
-        :class="isFabOpen ? 'rotate-180' : 'rotate-0'"
+        class="w-8 h-8 transition-all duration-300"
+        :class="[
+          isFabOpen ? 'rotate-180' : 'rotate-0',
+          isOverDarkBg ? 'brightness-0 invert' : '',
+        ]"
       />
     </button>
 
@@ -87,7 +146,8 @@ const linkClass = computed(() => {
           <img
             src="/icon-phone-dr-nihar-modi.svg"
             alt="Phone"
-            class="w-8 h-8"
+            class="w-8 h-8 transition-all duration-300"
+            :class="isOverDarkBg ? 'brightness-0 invert' : ''"
           />
         </div>
       </a>
@@ -109,7 +169,8 @@ const linkClass = computed(() => {
         <img
           src="/icon-whatsapp-dr-nihar-modi.svg"
           alt="WhatsApp"
-          class="w-8 h-8"
+          class="w-8 h-8 transition-all duration-300"
+          :class="isOverDarkBg ? 'brightness-0 invert' : ''"
         />
       </div>
     </a>

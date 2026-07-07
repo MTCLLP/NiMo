@@ -196,171 +196,141 @@ const accordionItems = [
 
 <template>
   <main>
-    <PageHeader 
-      title="Dr. Nihar Modi" 
+    <PageHeader
+      title="Dr. Nihar Modi"
       subtitle="MS (Orth) DNB (Orth), MNAMS"
-      :breadcrumbs="[{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]"
+      :breadcrumbs="[
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+      ]"
     />
-    <div class="bg-white min-h-screen pt-16 pb-24">
+    <IntroductionSection />
+    <div class="bg-white min-h-screen pb-24">
       <div class="container mx-auto px-6 max-w-3xl">
         <!-- Quote -->
-      <div class="mb-16 flex gap-6 items-start">
-        <div
-          class="text-[60px] md:text-[80px] text-[#e0eaf3] font-asectica leading-none select-none -mt-4"
-        >
-          “
-        </div>
-        <p class="text-xl lg:text-2xl text-gray-600 italic leading-relaxed">
-          I believe orthopaedic treatment should not only focus on healing bones
-          and joints, but also restoring confidence, mobility, and quality of
-          life.
-        </p>
-      </div>
-
-      <!-- About -->
-      <div class="mb-16">
-        <div class="flex items-center gap-4 mb-6">
+        <!-- <div class="mb-16 flex gap-6 items-start">
           <div
-            class="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-accent/20"
+            class="text-[60px] md:text-[80px] text-[#e0eaf3] font-asectica leading-none select-none -mt-4"
           >
-            <svg
-              class="w-6 h-6 text-primary"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-              ></path>
-            </svg>
+            “
           </div>
-          <h3 class="text-3xl font-mirage text-gray-800">About</h3>
-        </div>
-        <p class="text-gray-600 leading-relaxed mb-8">
-          Dedicated Orthopaedic surgeon specializing in restoring mobility and
-          improving quality of life. Expertise in treating sports injuries,
-          degenerative joint diseases, fractures, and trauma. Committed to
-          individualized care, integrating advanced techniques to achieve
-          optimal results. Enthusiastic about continuous learning.
-        </p>
-        <!-- <UiButton variant="primary" size="md" to="#">
-          Book Appointment
-        </UiButton> -->
-      </div>
+          <p class="text-xl lg:text-2xl text-gray-600 italic leading-relaxed">
+            I believe orthopaedic treatment should not only focus on healing
+            bones and joints, but also restoring confidence, mobility, and
+            quality of life.
+          </p>
+        </div> -->
 
-      <UiAccordion :items="accordionItems" :multiple="true" variant="minimal">
-        <template #item-content="{ item }">
-          <template v-if="item.id === 'education'">
-            <div class="space-y-6 pt-2">
-              <div v-for="(edu, idx) in education" :key="idx">
-                <h4 class="text-base font-bold text-gray-800 mb-1">
-                  {{ edu.title }}
-                  <span class="text-gray-500 font-normal ml-1"
-                    >({{ edu.date }})</span
-                  >
-                </h4>
-                <p class="text-gray-600 leading-relaxed">{{ edu.desc }}</p>
+        <UiAccordion :items="accordionItems" :multiple="true" variant="minimal">
+          <template #item-content="{ item }">
+            <template v-if="item.id === 'education'">
+              <div class="space-y-6 pt-2">
+                <div v-for="(edu, idx) in education" :key="idx">
+                  <h4 class="text-base font-bold text-gray-800 mb-1">
+                    {{ edu.title }}
+                    <span class="text-gray-500 font-normal ml-1"
+                      >({{ edu.date }})</span
+                    >
+                  </h4>
+                  <p class="text-gray-600 leading-relaxed">{{ edu.desc }}</p>
+                </div>
               </div>
-            </div>
-          </template>
+            </template>
 
-          <template v-else-if="item.id === 'fellowships'">
-            <div class="space-y-6 pt-2">
-              <div v-for="(fel, idx) in fellowships" :key="idx">
-                <h4 class="text-base font-bold text-gray-800 mb-1">
-                  {{ fel.title }}
-                  <span class="text-gray-500 font-normal ml-1"
-                    >({{ fel.date }})</span
-                  >
-                </h4>
-                <p class="text-gray-600 leading-relaxed">{{ fel.desc }}</p>
+            <template v-else-if="item.id === 'fellowships'">
+              <div class="space-y-6 pt-2">
+                <div v-for="(fel, idx) in fellowships" :key="idx">
+                  <h4 class="text-base font-bold text-gray-800 mb-1">
+                    {{ fel.title }}
+                    <span class="text-gray-500 font-normal ml-1"
+                      >({{ fel.date }})</span
+                    >
+                  </h4>
+                  <p class="text-gray-600 leading-relaxed">{{ fel.desc }}</p>
+                </div>
               </div>
-            </div>
-          </template>
+            </template>
 
-          <template v-else-if="item.id === 'speciality'">
-            <ul
-              class="list-disc space-y-3 pt-2 text-gray-600 leading-relaxed ml-4"
-            >
-              <li v-for="(course, idx) in specialityCourses" :key="idx">
-                {{ course }}
-              </li>
-            </ul>
-          </template>
+            <template v-else-if="item.id === 'speciality'">
+              <ul
+                class="list-disc space-y-3 pt-2 text-gray-600 leading-relaxed ml-4"
+              >
+                <li v-for="(course, idx) in specialityCourses" :key="idx">
+                  {{ course }}
+                </li>
+              </ul>
+            </template>
 
-          <template v-else-if="item.id === 'research'">
-            <div class="space-y-6 pt-2">
-              <div>
-                <h4 class="text-base font-bold text-gray-800 mb-2">
-                  Post Graduate Thesis
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  {{ researchThesis }}
+            <template v-else-if="item.id === 'research'">
+              <div class="space-y-6 pt-2">
+                <div>
+                  <h4 class="text-base font-bold text-gray-800 mb-2">
+                    Post Graduate Thesis
+                  </h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    {{ researchThesis }}
+                  </p>
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-gray-800 mb-3">
+                    Published Articles (Highlights)
+                  </h4>
+                  <ul
+                    class="list-disc space-y-3 text-gray-600 leading-relaxed ml-4"
+                  >
+                    <li v-for="(article, idx) in publishedArticles" :key="idx">
+                      {{ article }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </template>
+
+            <template v-else-if="item.id === 'awards'">
+              <div class="space-y-6 pt-2">
+                <div v-for="(award, idx) in awards" :key="idx">
+                  <h4 class="text-base font-bold text-gray-800 mb-1">
+                    {{ award.title }}
+                  </h4>
+                  <p class="text-gray-600 leading-relaxed">{{ award.desc }}</p>
+                </div>
+              </div>
+            </template>
+
+            <template v-else-if="item.id === 'presentations'">
+              <ul
+                class="list-disc space-y-3 pt-2 text-gray-600 leading-relaxed ml-4"
+              >
+                <li v-for="(pres, idx) in presentations" :key="idx">
+                  {{ pres }}
+                </li>
+              </ul>
+            </template>
+
+            <template v-else-if="item.id === 'memberships'">
+              <ul
+                class="list-disc space-y-3 pt-2 text-gray-600 leading-relaxed ml-4"
+              >
+                <li v-for="(mem, idx) in memberships" :key="idx">
+                  {{ mem }}
+                </li>
+              </ul>
+            </template>
+
+            <template v-else-if="item.id === 'hobbies'">
+              <div class="space-y-3 pt-2">
+                <p
+                  v-for="(para, idx) in hobbies"
+                  :key="idx"
+                  class="text-gray-600 leading-relaxed"
+                >
+                  {{ para }}
                 </p>
               </div>
-              <div>
-                <h4 class="text-base font-bold text-gray-800 mb-3">
-                  Published Articles (Highlights)
-                </h4>
-                <ul
-                  class="list-disc space-y-3 text-gray-600 leading-relaxed ml-4"
-                >
-                  <li v-for="(article, idx) in publishedArticles" :key="idx">
-                    {{ article }}
-                  </li>
-                </ul>
-              </div>
-            </div>
+            </template>
           </template>
-
-          <template v-else-if="item.id === 'awards'">
-            <div class="space-y-6 pt-2">
-              <div v-for="(award, idx) in awards" :key="idx">
-                <h4 class="text-base font-bold text-gray-800 mb-1">
-                  {{ award.title }}
-                </h4>
-                <p class="text-gray-600 leading-relaxed">{{ award.desc }}</p>
-              </div>
-            </div>
-          </template>
-
-          <template v-else-if="item.id === 'presentations'">
-            <ul
-              class="list-disc space-y-3 pt-2 text-gray-600 leading-relaxed ml-4"
-            >
-              <li v-for="(pres, idx) in presentations" :key="idx">
-                {{ pres }}
-              </li>
-            </ul>
-          </template>
-
-          <template v-else-if="item.id === 'memberships'">
-            <ul
-              class="list-disc space-y-3 pt-2 text-gray-600 leading-relaxed ml-4"
-            >
-              <li v-for="(mem, idx) in memberships" :key="idx">
-                {{ mem }}
-              </li>
-            </ul>
-          </template>
-
-          <template v-else-if="item.id === 'hobbies'">
-            <div class="space-y-3 pt-2">
-              <p
-                v-for="(para, idx) in hobbies"
-                :key="idx"
-                class="text-gray-600 leading-relaxed"
-              >
-                {{ para }}
-              </p>
-            </div>
-          </template>
-        </template>
-      </UiAccordion>
+        </UiAccordion>
+      </div>
     </div>
-  </div>
   </main>
 </template>
