@@ -6,19 +6,19 @@ const enableScrolling = ref(false);
 const areas = [
   {
     title: "Knee Surgery",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+    desc: "Advanced surgical treatments for knee pain, ligament injuries, and joint replacements to restore your mobility.",
     img: "/specialities/knee-surgery-dr-nihar-modi.png",
     hoverImg: "/specialities/knee-surgery-dr-nihar-modi.png",
   },
   {
     title: "Shoulder Surgery",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+    desc: "Expert care for rotator cuff tears, dislocations, and shoulder arthritis to help you regain full range of motion.",
     img: "/specialities/shoulder-surgery-dr-nihar-modi.png",
     hoverImg: "/specialities/shoulder-surgery-dr-nihar-modi.png",
   },
   {
     title: "Elbow Surgery",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+    desc: "Specialised treatments for tennis elbow, fractures, and ligament injuries to ensure optimal recovery and function.",
     img: "/specialities/elbow-surgery-dr-nihar-modi.png",
     hoverImg: "/specialities/elbow-surgery-dr-nihar-modi.png",
   },

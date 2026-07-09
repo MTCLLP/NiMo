@@ -29,7 +29,7 @@ const isSidebarOpen = ref(false);
     <!-- Right side navigation -->
     <div class="flex flex-col items-end gap-3">
       <!-- Top Social Icons -->
-      <div class="flex gap-3 items-center">
+      <div class="hidden md:flex gap-3 items-center">
         <UiSocialLink
           platform="linkedin"
           href="https://www.linkedin.com/in/dr-nihar-modi-8702672a4/"

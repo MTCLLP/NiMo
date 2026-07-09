@@ -1,25 +1,26 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
-import { gsap } from 'gsap';
+import { onMounted } from "vue";
+import { gsap } from "gsap";
 
 onMounted(() => {
   const tl = gsap.timeline();
-  tl.fromTo('.watermark-n',
+  tl.fromTo(
+    ".watermark-n",
     { scale: 0.8, opacity: 0 },
-    { scale: 1, opacity: 0.05, duration: 1.5, ease: 'power2.out' }
-  )
-  .fromTo('.hero-text-line',
+    { scale: 1, opacity: 0.05, duration: 1.5, ease: "power2.out" },
+  ).fromTo(
+    ".hero-text-line",
     { y: 30, opacity: 0 },
-    { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out' },
-    '-=1'
+    { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: "power3.out" },
+    "-=1",
   );
 });
 </script>
 
 <template>
   <section
-    class="relative pt-40 pb-20 px-8 min-h-[800px] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
-    style="background-image: url('/Main_banner.webp');"
+    class="relative pt-32 md:pt-40 pb-16 md:pb-20 px-8 min-h-[300px] md:min-h-[800px] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
+    style="background-image: url(&quot;/Main_banner.webp&quot;)"
   >
     <!-- Background Watermark -->
     <div
@@ -34,10 +35,12 @@ onMounted(() => {
       <!-- Left Content -->
       <div class="text-center w-full max-w-4xl">
         <h1
-          class="text-5xl lg:text-5xl font-mirage text-secondary leading-tight mb-8"
+          class="text-2xl lg:text-5xl font-mirage text-secondary leading-tight mb-8"
         >
           <div class="hero-text-line">Helping You Move Better,</div>
-          <div class="hero-text-line text-secondary/80 mt-2">Recover Faster, Live Stronger</div>
+          <div class="hero-text-line text-secondary/80 mt-2">
+            Recover Faster, Live Stronger
+          </div>
         </h1>
 
         <!-- <div class="hidden lg:block relative mt-16 w-80">
@@ -69,8 +72,6 @@ onMounted(() => {
           </div>
         </div> -->
       </div>
-
     </div>
-
   </section>
 </template>
