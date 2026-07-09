@@ -7,12 +7,12 @@ const conditions = [
   },
   {
     name: "Shoulder Conditions",
-    icon: "/conditions/icon-frozen-shoulder-dr-nihar-modi.svg",
+    icon: "/conditions/icon-shoulder-pain-dr-nihar-modi.svg",
     desc: "Comprehensive management of rotator cuff tears, shoulder instability, frozen shoulder, dislocations, impingement, and arthritis.",
   },
   {
     name: "Elbow Conditions",
-    icon: "/conditions/icon-shoulder-pain-dr-nihar-modi.svg",
+    icon: "/conditions/icon-elbow-conditions-dr-nihar-modi.svg",
     desc: "Treatment for tennis elbow, golfer's elbow, ligament injuries, stiffness, fractures, and other causes of elbow pain.",
   },
   {

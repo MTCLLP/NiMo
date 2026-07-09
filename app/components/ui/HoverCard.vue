@@ -1,33 +1,55 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed } from "vue";
 
-const props = withDefaults(defineProps<{
-  title: string
-  desc: string
-  img: string
-  hoverImg: string
-  aspectRatio?: 'square' | 'portrait' | 'landscape' | 'auto'
-  overlayColor?: string
-}>(), {
-  aspectRatio: 'auto'
-})
+const props = withDefaults(
+  defineProps<{
+    title: string;
+    desc: string;
+    img: string;
+    hoverImg: string;
+    aspectRatio?: "square" | "portrait" | "landscape" | "auto";
+    overlayColor?: string;
+    fluid?: boolean;
+  }>(),
+  {
+    aspectRatio: "auto",
+    fluid: false,
+  },
+);
 
 const aspectClass = computed(() => {
   switch (props.aspectRatio) {
-    case 'square': return 'aspect-square'
-    case 'portrait': return 'aspect-[3/4]'
-    case 'landscape': return 'aspect-video'
-    default: return 'h-auto'
+    case "square":
+      return "aspect-square";
+    case "portrait":
+      return "aspect-[3/4]";
+    case "landscape":
+      return "aspect-video";
+    default:
+      return "h-auto";
   }
-})
+});
 </script>
 
 <template>
-  <div class="w-[300px] md:w-[400px] flex-shrink-0 group/card border border-gray-100 rounded-xl overflow-hidden transition-all duration-300 bg-white cursor-pointer relative" :class="!overlayColor ? 'hover-gradient-bg' : ''">
+  <div
+    class="group/card border border-gray-100 rounded-xl overflow-hidden transition-all duration-300 bg-white cursor-pointer relative"
+    :class="[
+      !overlayColor ? 'hover-gradient-bg' : '',
+      fluid ? 'w-full h-full' : 'w-[300px] md:w-[400px] flex-shrink-0',
+    ]"
+  >
     <!-- Optional Overlay -->
-    <div v-if="overlayColor" class="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-0 pointer-events-none" :class="overlayColor"></div>
-    
-    <div class="relative overflow-hidden flex items-center justify-center p-8 z-10" :class="aspectClass">
+    <div
+      v-if="overlayColor"
+      class="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-0 pointer-events-none"
+      :class="overlayColor"
+    ></div>
+
+    <div
+      class="relative overflow-hidden flex items-center justify-center p-8 z-10"
+      :class="aspectClass"
+    >
       <div class="relative w-full h-full flex items-center justify-center">
         <img
           :src="img"
@@ -41,22 +63,32 @@ const aspectClass = computed(() => {
         />
       </div>
     </div>
-    <div class="p-8 text-center whitespace-normal -mt-32 transition-colors duration-300">
-      <h3 class="text-xl font-mirage text-gray-800 group-hover/card:text-white mb-3 transition-colors duration-300">
+    <div
+      class="relative z-20 p-8 text-center whitespace-normal -mt-32 transition-colors duration-300"
+    >
+      <h3
+        class="text-xl font-mirage text-gray-800 mb-3 transition-colors duration-300"
+      >
         {{ title }}
       </h3>
-      <p class="text-sm text-gray-500 group-hover/card:text-white/80 leading-relaxed transition-colors duration-300">
+      <p
+        class="text-sm text-gray-500 leading-relaxed transition-colors duration-300"
+      >
         {{ desc }}
       </p>
       <div class="text-right mt-3 block lg:hidden">
-        <NuxtLink to="#" class="text-[#1DAAFF] font-medium text-sm hover:underline">Know more</NuxtLink>
+        <NuxtLink
+          to="#"
+          class="text-[#1DAAFF] font-medium text-sm hover:underline"
+          >Know more</NuxtLink
+        >
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.hover-gradient-bg:hover {
+/* .hover-gradient-bg:hover {
   background: repeating-linear-gradient(
     135deg,
     #1b324c 0px,
@@ -64,5 +96,5 @@ const aspectClass = computed(() => {
     #15273b 15px,
     #15273b 30px
   );
-}
+} */
 </style>
