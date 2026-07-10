@@ -15,12 +15,12 @@
   >
     <div class="container mx-auto px-8 relative z-10 text-center">
       <h2
-        class="text-3xl md:text-4xl lg:text-4xl font-mirage text-white font-light leading-tight max-w-5xl mx-auto"
+        class="text-2xl md:text-3xl lg:text-3xl font-mirage text-white font-light leading-tight max-w-5xl mx-auto"
       >
-        "Committed to excellence in orthopaedic care,<br
-          class="hidden md:block"
-        />
-        restoring mobility and improving your quality of life."
+        "Every patient is different. My approach is to recommend the appropriate
+        treatment that offers the best long-term outcome, whether that's
+        rehabilitation, minimally invasive surgery, or joint replacement when
+        truly needed."
       </h2>
     </div>
   </section>

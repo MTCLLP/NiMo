@@ -62,7 +62,10 @@ onUnmounted(() => {
     <div class="container mx-auto px-8">
       <div class="flex justify-between items-end mb-16">
         <UiSectionTitle align="left" class="mb-0">Gallery</UiSectionTitle>
-        <UiButton to="/gallery" variant="outline" class="hidden sm:inline-flex">View All</UiButton>
+        <UiButton to="/gallery" variant="outline" class="hidden sm:inline-flex group items-center">
+          View All
+          <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </UiButton>
       </div>
 
       <UiMarquee speed="40s">
@@ -82,7 +85,10 @@ onUnmounted(() => {
       </UiMarquee>
       
       <div class="mt-8 text-center sm:hidden">
-        <UiButton to="/gallery" variant="outline" class="w-full">View All</UiButton>
+        <UiButton to="/gallery" variant="outline" class="w-full flex justify-center items-center group">
+          View All
+          <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </UiButton>
       </div>
     </div>
 

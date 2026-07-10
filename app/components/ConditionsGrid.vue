@@ -49,7 +49,7 @@ const conditions = [
 </script>
 
 <template>
-  <section class="py-24 bg-accent/30">
+  <section class="py-12 md:py-24 bg-accent/30">
     <div class="container mx-auto px-8">
       <UiSectionTitle class="mb-16"> Conditions Treated </UiSectionTitle>
 
@@ -65,14 +65,17 @@ const conditions = [
             :title="item.name"
             :desc="item.desc"
             :icon="item.icon"
-          />
-          <div class="text-right mt-3 block lg:hidden">
-            <NuxtLink
-              to="#"
-              class="text-[#1DAAFF] font-medium text-sm hover:underline"
-              >Know more</NuxtLink
-            >
-          </div>
+          >
+            <template #footer>
+              <div class="mt-3 block lg:hidden">
+                <NuxtLink
+                  to="#"
+                  class="text-[#1DAAFF] font-medium text-sm hover:underline"
+                  >Know more</NuxtLink
+                >
+              </div>
+            </template>
+          </UiFeatureBlock>
           <div
             v-if="idx !== conditions.length - 1"
             class="absolute -bottom-6 left-0 w-full h-px bg-gray-200 md:hidden"

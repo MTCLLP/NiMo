@@ -1,7 +1,9 @@
 <script setup lang="ts">
 // Home page
+useHead({
+  title: 'Best Orthopedic Surgeon in Mumbai'
+});
 </script>
-
 <template>
   <div>
     <HeroSection />

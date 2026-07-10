@@ -30,9 +30,10 @@ const layoutClass = computed(() => {
         class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
       />
     </div>
-    <div>
+    <div class="flex-1">
       <h3 class="text-xl text-gray-800 font-medium mb-2">{{ title }}</h3>
       <p class="text-sm text-gray-500 leading-relaxed">{{ desc }}</p>
+      <slot name="footer"></slot>
     </div>
   </component>
 </template>
