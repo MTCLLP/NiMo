@@ -60,12 +60,14 @@ onUnmounted(() => {
 <template>
   <section class="py-24 bg-accent/30">
     <div class="container mx-auto px-8">
-      <div class="flex justify-between items-end mb-16">
-        <UiSectionTitle align="left" class="mb-0">Gallery</UiSectionTitle>
-        <UiButton to="/gallery" variant="outline" class="hidden sm:inline-flex group items-center">
-          View All
-          <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-        </UiButton>
+      <div class="flex justify-center sm:justify-between items-center sm:items-end mb-12 sm:mb-16 w-full">
+        <UiSectionTitle class="mb-0 sm:text-left w-full sm:w-auto text-center">Gallery</UiSectionTitle>
+        <div class="hidden sm:block">
+          <UiButton to="/gallery" variant="outline" class="group flex items-center">
+            View All
+            <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </UiButton>
+        </div>
       </div>
 
       <UiMarquee speed="40s">

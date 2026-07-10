@@ -98,11 +98,11 @@ const faqGroups = ref([
         { name: 'FAQs', path: '/faqs' },
       ]"
     />
-    <section class="py-24 bg-accent/20 min-h-screen">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <div class="text-center mb-16">
+    <section class="py-12 md:py-24 bg-accent/20 min-h-screen">
+      <div class="container mx-auto px-4 md:px-6 max-w-4xl">
+        <div class="text-center mb-8 md:mb-16">
           <UiSectionTitle>Have Questions?</UiSectionTitle>
-          <p class="text-gray-500 mt-4">
+          <p class="text-gray-500 mt-4 text-sm md:text-base">
             Find answers to some of the most common questions our patients ask.
           </p>
         </div>
@@ -110,16 +110,16 @@ const faqGroups = ref([
         <div
           v-for="group in faqGroups"
           :key="group.category"
-          class="mb-12 last:mb-0"
+          class="mb-8 md:mb-12 last:mb-0"
         >
-          <div class="mb-8 flex items-center gap-4">
+          <div class="mb-4 md:mb-8 flex items-center gap-4">
             <span class="w-8 h-1 bg-primary rounded-full"></span>
-            <h2 class="text-2xl font-semibold text-gray-800">
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800">
               {{ group.category }}
             </h2>
           </div>
           <div
-            class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
+            class="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-gray-100"
           >
             <UiAccordion :items="group.items" variant="bordered">
               <template #item-content="{ item }">

@@ -33,7 +33,7 @@ onMounted(() => {
 
 <template>
   <section class="relative pt-40 pb-20 px-8 min-h-[400px] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[#f8f9fa]"
-    style="background-image: url('/Main_banner.webp');">
+    
     
     <!-- Background Watermark -->
     <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none watermark-n">
@@ -41,7 +41,7 @@ onMounted(() => {
     </div>
     
     <div class="container mx-auto relative z-10 flex flex-col items-center justify-center text-center">
-      <h1 class="text-5xl md:text-6xl font-mirage text-secondary leading-tight mb-4 page-header-title">
+      <h1 class="text-4xl md:text-6xl font-mirage text-secondary leading-tight mb-0 page-header-title">
         {{ title }}
       </h1>
       <p v-if="subtitle" class="text-xl md:text-2xl text-gray-600 font-medium tracking-wide page-header-subtitle mb-2">

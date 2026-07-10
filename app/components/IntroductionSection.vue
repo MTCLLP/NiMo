@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="py-24 relative overflow-hidden bg-white">
+  <section class="py-12 md:py-24 relative overflow-hidden bg-white">
     <!-- Decorative background elements -->
     <div
       class="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-accent/30 blur-3xl opacity-60"

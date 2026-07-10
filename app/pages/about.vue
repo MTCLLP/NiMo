@@ -205,7 +205,7 @@ const accordionItems = [
       ]"
     />
     <IntroductionSection />
-    <div class="bg-white min-h-screen pb-24">
+    <div class="bg-white min-h-screen pb-12 md:pb-24">
       <div class="container mx-auto px-6 max-w-3xl">
         <!-- Quote -->
         <!-- <div class="mb-16 flex gap-6 items-start">
@@ -225,7 +225,11 @@ const accordionItems = [
           <template #item-content="{ item }">
             <template v-if="item.id === 'education'">
               <div class="pt-2">
-                <img src="/about/graduation.png" alt="Education and Qualifications" class="w-full h-auto rounded-xl shadow-sm mb-8 object-cover object-center max-h-[400px]" />
+                <img
+                  src="/about/graduation.png"
+                  alt="Education and Qualifications"
+                  class="w-full h-auto rounded-xl shadow-sm mb-8 object-cover object-center max-h-[400px]"
+                />
                 <div class="space-y-6">
                   <div v-for="(edu, idx) in education" :key="idx">
                     <h4 class="text-base font-bold text-gray-800 mb-1">
@@ -291,13 +295,19 @@ const accordionItems = [
 
             <template v-else-if="item.id === 'awards'">
               <div class="pt-2">
-                <img src="/about/awards.png" alt="Awards" class="w-full h-auto rounded-xl shadow-sm mb-8 object-cover object-center max-h-[400px]" />
+                <img
+                  src="/about/awards.png"
+                  alt="Awards"
+                  class="w-full h-auto rounded-xl shadow-sm mb-8 object-cover object-center max-h-[400px]"
+                />
                 <div class="space-y-6">
                   <div v-for="(award, idx) in awards" :key="idx">
                     <h4 class="text-base font-bold text-gray-800 mb-1">
                       {{ award.title }}
                     </h4>
-                    <p class="text-gray-600 leading-relaxed">{{ award.desc }}</p>
+                    <p class="text-gray-600 leading-relaxed">
+                      {{ award.desc }}
+                    </p>
                   </div>
                 </div>
               </div>

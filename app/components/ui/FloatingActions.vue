@@ -93,7 +93,7 @@ onUnmounted(() => {
       :class="linkClass"
     >
       <div
-        class="bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
+        class="hidden md:block bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
         :class="tooltipClass"
       >
         Get in touch
@@ -115,7 +115,7 @@ onUnmounted(() => {
       :class="linkClass"
     >
       <div
-        class="bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
+        class="hidden md:block bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
         :class="tooltipClass"
       >
         Chat with us
