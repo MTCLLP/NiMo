@@ -159,9 +159,9 @@ const hobbies = [
       <!-- Section 1: Education -->
       <section class="container mx-auto px-6 mb-24 md:mb-32">
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start"
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start"
         >
-          <div class="order-2 lg:order-1">
+          <div class="order-2 lg:order-1 lg:col-span-7">
             <h2 class="text-3xl font-mirage text-primary pb-4">
               Education & Qualifications
             </h2>
@@ -177,7 +177,7 @@ const hobbies = [
               </div>
             </div>
           </div>
-          <div class="order-1 lg:order-2 lg:sticky lg:top-32">
+          <div class="order-1 lg:order-2 lg:col-span-5 lg:sticky lg:top-32">
             <img
               src="/about/graduation.png"
               alt="Education"
@@ -190,16 +190,16 @@ const hobbies = [
       <!-- Section 2: Appointments & Training -->
       <section class="container mx-auto px-6 mb-24 md:mb-32">
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start"
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start"
         >
-          <div class="order-1 lg:order-1 lg:sticky lg:top-32">
+          <div class="order-1 lg:order-1 lg:col-span-5 lg:sticky lg:top-32">
             <img
               src="/about/academic.png"
               alt="Appointments and Training"
               class="w-full h-auto object-cover"
             />
           </div>
-          <div class="order-2 lg:order-2 space-y-16">
+          <div class="order-2 lg:order-2 lg:col-span-7 space-y-16">
             <div>
               <h2 class="text-3xl font-mirage text-primary pb-4">
                 Appointments & Fellowships
@@ -236,9 +236,9 @@ const hobbies = [
       <!-- Section 3: Research & Publications -->
       <section class="container mx-auto px-6 mb-24 md:mb-32">
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start"
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start"
         >
-          <div class="order-2 lg:order-1 space-y-16">
+          <div class="order-2 lg:order-1 lg:col-span-7 space-y-16">
             <div>
               <h2 class="text-3xl font-mirage text-primary pb-4">
                 Research Experience
@@ -275,7 +275,7 @@ const hobbies = [
               </ul>
             </div>
           </div>
-          <div class="order-1 lg:order-2 lg:sticky lg:top-32">
+          <div class="order-1 lg:order-2 lg:col-span-5 lg:sticky lg:top-32">
             <img
               src="/about/publications.png"
               alt="Research and Publications"
@@ -288,16 +288,16 @@ const hobbies = [
       <!-- Section 4: Awards, Memberships & Hobbies -->
       <section class="container mx-auto px-6">
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start"
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start"
         >
-          <div class="order-1 lg:order-1 lg:sticky lg:top-32">
+          <div class="order-1 lg:order-1 lg:col-span-5 lg:sticky lg:top-32">
             <img
               src="/about/awards.png"
               alt="Awards and More"
               class="w-full h-auto object-cover"
             />
           </div>
-          <div class="order-2 lg:order-2 space-y-16">
+          <div class="order-2 lg:order-2 lg:col-span-7 space-y-16">
             <div>
               <h2 class="text-3xl font-mirage text-primary pb-4">Awards</h2>
               <div class="space-y-6">

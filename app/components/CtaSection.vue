@@ -1,11 +1,18 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
 const route = useRoute();
+
+defineProps({
+  forceShow: {
+    type: Boolean,
+    default: false,
+  },
+});
 </script>
 
 <template>
   <section
-    v-if="route.path !== '/contact'"
+    v-if="forceShow || (route.path !== '/contact' && !route.path.startsWith('/conditions'))"
     class="py-12 md:py-24 relative overflow-hidden bg-white border-t border-gray-100"
   >
     <!-- Subtle Animated Background -->
@@ -23,14 +30,18 @@ const route = useRoute();
       <h2
         class="text-3xl md:text-5xl font-mirage text-gray-900 mb-6 leading-tight"
       >
-        Ready to take the next step towards <br class="hidden md:block" /><span
-          class="text-primary italic"
-          >pain-free movement?</span
-        >
+        <slot name="title">
+          Ready to take the next step towards <br class="hidden md:block" /><span
+            class="text-primary italic"
+            >pain-free movement?</span
+          >
+        </slot>
       </h2>
       <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-        Schedule a consultation with Dr. Nihar Modi today and get back to the
-        life you love.
+        <slot name="desc">
+          Schedule a consultation with Dr. Nihar Modi today and get back to the
+          life you love.
+        </slot>
       </p>
 
       <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
