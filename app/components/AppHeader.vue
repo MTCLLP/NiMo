@@ -53,7 +53,9 @@ const isSidebarOpen = ref(false);
         <nav
           class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700"
         >
-          <NuxtLink to="/about" class="hover:text-primary transition-colors">About</NuxtLink>
+          <NuxtLink to="/about" class="hover:text-primary transition-colors"
+            >About</NuxtLink
+          >
           <a
             href="tel:+919833066702"
             class="flex items-center gap-2 hover:text-primary transition-colors"
@@ -142,12 +144,93 @@ const isSidebarOpen = ref(false);
       </div>
 
       <!-- Menu Items -->
-      <div class="flex-grow flex flex-col px-8 py-4 gap-6 text-lg font-medium text-gray-800">
-        <NuxtLink to="/about" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">About</NuxtLink>
-        <NuxtLink to="/services" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">Services</NuxtLink>
-        <NuxtLink to="/patient-stories" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">Patient Stories</NuxtLink>
-        <NuxtLink to="/faqs" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">FAQs</NuxtLink>
-        <NuxtLink to="/contact" @click="isSidebarOpen = false" class="hover:text-primary transition-colors border-b border-gray-100 pb-4">Contact</NuxtLink>
+      <div
+        class="flex-grow flex flex-col px-8 py-4 gap-6 text-lg font-medium text-gray-800"
+      >
+        <NuxtLink
+          to="/"
+          @click="isSidebarOpen = false"
+          class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
+        >
+          <img
+            src="/sidebar/icon-home-dr-nihar-modi.svg"
+            class="w-6 h-6"
+            alt=""
+          />
+          Home
+        </NuxtLink>
+        <NuxtLink
+          to="/about"
+          @click="isSidebarOpen = false"
+          class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
+        >
+          <img
+            src="/sidebar/icon-about-dr-nihar-modi.svg"
+            class="w-6 h-6"
+            alt=""
+          />
+          About
+        </NuxtLink>
+        <NuxtLink
+          to="/conditions"
+          @click="isSidebarOpen = false"
+          class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
+        >
+          <img
+            src="/sidebar/icon-conditions-treated-dr-nihar-modi.svg"
+            class="w-6 h-6"
+            alt=""
+          />
+          Conditions Treated
+        </NuxtLink>
+        <NuxtLink
+          to="/procedures"
+          @click="isSidebarOpen = false"
+          class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
+        >
+          <img
+            src="/sidebar/icon-specialised-area-dr-nihar-modi.svg"
+            class="w-6 h-6"
+            alt=""
+          />
+          Specialised Areas
+        </NuxtLink>
+        <NuxtLink
+          to="/patient-stories"
+          @click="isSidebarOpen = false"
+          class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
+        >
+          <img
+            src="/sidebar/icon-treatment-techniques-dr-nihar-modi.svg"
+            class="w-6 h-6"
+            alt=""
+          />
+          Patient Stories
+        </NuxtLink>
+        <NuxtLink
+          to="/faqs"
+          @click="isSidebarOpen = false"
+          class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
+        >
+          <img
+            src="/sidebar/icon-terms-and-conditions-dr-nihar-modi.svg"
+            class="w-6 h-6"
+            alt=""
+          />
+          FAQs
+        </NuxtLink>
+        <NuxtLink
+          to="/contact"
+          @click="isSidebarOpen = false"
+          class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
+        >
+          <img
+            src="/sidebar/icon-contact-dr-nihar-modi.svg"
+            class="w-6 h-6"
+            alt=""
+          />
+          Contact
+        </NuxtLink>
       </div>
 
       <!-- Social Media Icons in a row -->
