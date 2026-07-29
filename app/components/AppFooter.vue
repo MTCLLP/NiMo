@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <footer class="text-white pt-24 pb-16 bg-primary">
+  <footer class="text-white py-16 bg-primary">
     <!-- style="
       background: repeating-linear-gradient(
         135deg,
