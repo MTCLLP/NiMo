@@ -79,7 +79,7 @@
             >FAQs</NuxtLink
           >
           <NuxtLink
-            to="/patient-stories"
+            to="/testimonials"
             class="text-sm text-white/80 hover:text-white transition-colors"
             >Testimonials</NuxtLink
           >

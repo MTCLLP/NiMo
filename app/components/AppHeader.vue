@@ -183,7 +183,7 @@ const isSidebarOpen = ref(false);
           />
           Conditions Treated
         </NuxtLink>
-        <NuxtLink
+        <!-- <NuxtLink
           to="/procedures"
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
@@ -194,9 +194,9 @@ const isSidebarOpen = ref(false);
             alt=""
           />
           Specialised Areas
-        </NuxtLink>
+        </NuxtLink> -->
         <NuxtLink
-          to="/patient-stories"
+          to="/testimonials"
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >
@@ -205,7 +205,7 @@ const isSidebarOpen = ref(false);
             class="w-6 h-6"
             alt=""
           />
-          Patient Stories
+          Testimonials
         </NuxtLink>
         <NuxtLink
           to="/faqs"

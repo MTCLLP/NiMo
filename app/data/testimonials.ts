@@ -1,0 +1,51 @@
+export const testimonials = [
+  {
+    title: "Ganesh Kanse",
+    subtitle: "",
+    text: "I had been suffering from a frozen shoulder for months, experiencing terrible stiffness and constant aching. Dr Nihar Modi provided a comprehensive management plan that targeted the root cause of my pain. His expertise in advanced shoulder conditions and non-surgical interventions truly worked wonders for me. I felt deeply cared for as a patient, with all my questions answered thoroughly at every visit. Thanks to his dedication, the stiffness is completely gone, and I can move my arm freely again.",
+    rating: 5,
+    date: "07 July 2026",
+  },
+  {
+    title: "Sushma Agarwal",
+    subtitle: "",
+    text: "Dr. Nihar treated me for a wrist injury, and I couldn't be happier with the care I received. He was knowledgeable, approachable and his advice was accurate. I appreciated his regular follow-ups and genuine concern for my recovery. I highly recommend him.",
+    rating: 5,
+    date: "03 July 2026",
+  },
+  {
+    title: "Nipun Shah",
+    subtitle: "",
+    text: "Dr. Nihar performed a shoulder dislocation surgery for my mom and the results have been excellent. Even though I stay in Pune and my mom is in Mumbai, the entire experience was seamless and stress-free. From the first consultation to post-op care, Dr. Nihar and his team were extremely cooperative, responsive, and organized. By the time I reached Mumbai, everything was already perfectly handled — admission, tests, surgery, and recovery plan. He explained the procedure clearly, addressed all our concerns with patience, and his surgical skill is evident in my mom’s smooth recovery and restored mobility. We felt genuinely cared for throughout. Highly recommend Dr. Nihar to anyone looking for a skilled, empathetic orthopedic surgeon who ensures top-notch care even when family is managing things remotely. Thank you, doctor!",
+    rating: 5,
+    date: "29 June 2026",
+  },
+  {
+    title: "Mridula Poddar",
+    subtitle: "",
+    text: "At the age of 70, I was naturally anxious after suffering a hairline fracture in my elbow. I am deeply grateful to Dr.Nihar Modi for the exceptional care and expertise shown during my treatment. The plaster was applied with remarkable precision, patience, and gentleness, making the entire experience comfortable and reassuring. I highly recommend Dr.Nihar to anyone looking for a skilled, compassionate, calm and dedicated orthopaedic specialist. Thank you for your excellent treatment and care during follow ups as well.",
+    rating: 5,
+    date: "28 June 2026",
+  },
+  {
+    title: "Reshma Chitale",
+    subtitle: "",
+    text: "Excellent experience with one of the top sports orthopaedic surgeons Dr Nihar Modi, for chronic elbow pain. His conservative treatment approach, combined with precise diagnoses, saved me from unnecessary injections and surgery. Very professional, listens carefully, and gives practical advice.",
+    rating: 5,
+    date: "26 June 2026",
+  },
+  {
+    title: "Jugantaraj Dan Roy",
+    subtitle: "",
+    text: "I had been suffering from a knee problem for nearly 2.5 years. It all started with what seemed like a minor ligament sprain. The ligament eventually healed, but the pain, swelling, and mechanical block in my knee never truly went away. After trying multiple treatments, I finally met Dr. Nihar Modi. Dr. Modi performed my synovectomy and successfully cleared the mechanical block in my knee. But what impressed me even more than the surgery was the way he treated me throughout the entire journey. I traveled from another state for the procedure, and from the very beginning he guided me on everything, when to come, what to do, what to avoid, and how to prepare. Even after the surgery, he continued to check on me and made sure I was comfortable until the very last moment. He was still helping me right up until I boarded my flight back home. It’s rare to find a doctor who combines skill, professionalism, and genuine care the way he does. He never made me feel like just another patient. If you’re looking for someone you can truly trust with your treatment, I wholeheartedly recommend Dr. Nihar Modi. He is genuinely one of the rare ones.",
+    rating: 5,
+    date: "06 July 2026",
+  },
+  {
+    title: "Sudipta Dhruva",
+    subtitle: "",
+    text: "Dr.Nihar Modi is a very professional Doctor and knowledgeable in his field and the best part is he takes the time to explain the situations clearly to his patients and is genuinely caring. That has been my experience and I would recommend him without any reservation.",
+    rating: 5,
+    date: "05 Nov 2024",
+  },
+];

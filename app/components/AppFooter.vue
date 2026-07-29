@@ -4,9 +4,8 @@
 </script>
 
 <template>
-  <footer
-    class="text-white pt-24 pb-16 bg-primary"
-    style="
+  <footer class="text-white pt-24 pb-16 bg-primary">
+    <!-- style="
       background: repeating-linear-gradient(
         135deg,
         #1b324c 0px,
@@ -14,8 +13,7 @@
         #15273b 15px,
         #15273b 30px
       );
-    "
-  >
+    "-->
     <div class="container mx-auto px-8 flex flex-col items-center text-center">
       <!-- Logo / Doctor Info -->
       <div class="flex items-center justify-center gap-4 mb-8">
@@ -70,23 +68,23 @@
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Conditions Treated</NuxtLink
         >
-        <NuxtLink
+        <!-- <NuxtLink
           to="/procedures"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Procedures</NuxtLink
-        >
-        <NuxtLink
+        > -->
+        <!-- <NuxtLink
           to="/blogs"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Blogs</NuxtLink
-        >
+        > -->
         <NuxtLink
           to="/faqs"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >FAQs</NuxtLink
         >
         <NuxtLink
-          to="/patient-stories"
+          to="/testimonials"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Testimonials</NuxtLink
         >
