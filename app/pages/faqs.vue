@@ -121,7 +121,7 @@ const faqGroups = ref([
           <div
             class="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-gray-100"
           >
-            <UiAccordion :items="group.items" variant="bordered">
+            <UiAccordion :items="group.items">
               <template #item-content="{ item }">
                 <div
                   v-html="item.content"

@@ -11,16 +11,17 @@ const isSidebarOpen = ref(false);
     <!-- Logo -->
     <NuxtLink
       to="/"
-      class="flex items-center hover:opacity-80 transition-opacity"
+      class="flex items-center gap-3 hover:opacity-80 transition-opacity"
     >
-      <div class="text-2xl font-mirage text-primary leading-tight">
+      <img src="/logo.svg" alt="Logo" class="h-12 md:h-14 w-auto" />
+      <div class="text-xl md:text-2xl font-mirage text-primary leading-tight">
         <span
-          class="text-sm font-sans uppercase tracking-widest text-gray-500 block mb-[-4px]"
+          class="text-xs md:text-sm font-sans uppercase tracking-widest text-gray-500 block mb-[-4px]"
           >Doctor</span
         >
         Nihar Modi
         <span
-          class="text-xs font-sans text-gray-500 block mt-1 tracking-wider uppercase"
+          class="text-[10px] md:text-xs font-sans text-gray-500 block mt-1 tracking-wider uppercase"
           >MS (Orth) DNB (Orth), MNAMS</span
         >
       </div>
@@ -183,7 +184,7 @@ const isSidebarOpen = ref(false);
           />
           Conditions Treated
         </NuxtLink>
-        <!-- <NuxtLink
+        <NuxtLink
           to="/procedures"
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
@@ -194,7 +195,7 @@ const isSidebarOpen = ref(false);
             alt=""
           />
           Specialised Areas
-        </NuxtLink> -->
+        </NuxtLink>
         <NuxtLink
           to="/testimonials"
           @click="isSidebarOpen = false"

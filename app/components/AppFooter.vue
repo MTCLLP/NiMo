@@ -4,16 +4,8 @@
 </script>
 
 <template>
-  <footer class="text-white py-16 bg-primary">
-    <!-- style="
-      background: repeating-linear-gradient(
-        135deg,
-        #1b324c 0px,
-        #1b324c 15px,
-        #15273b 15px,
-        #15273b 30px
-      );
-    "-->
+  <footer class="text-white py-16 bg-gradient-to-br from-primary to-[#0a1626]">
+
     <div class="container mx-auto px-8 flex flex-col items-center text-center">
       <!-- Logo / Doctor Info -->
       <div class="flex items-center justify-center gap-4 mb-8">
@@ -68,11 +60,11 @@
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Conditions Treated</NuxtLink
         >
-        <!-- <NuxtLink
+        <NuxtLink
           to="/procedures"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Procedures</NuxtLink
-        > -->
+        >
         <!-- <NuxtLink
           to="/blogs"
           class="text-[15px] text-white hover:text-white/80 transition-colors"

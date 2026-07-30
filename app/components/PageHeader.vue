@@ -2,11 +2,29 @@
 import { onMounted } from 'vue';
 import { gsap } from 'gsap';
 
-defineProps<{
+const props = defineProps<{
   title: string;
   subtitle?: string;
   breadcrumbs: { name: string, path: string }[];
 }>();
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": props.breadcrumbs.map((crumb, idx) => ({
+          "@type": "ListItem",
+          "position": idx + 1,
+          "name": crumb.name,
+          "item": crumb.path === '/' ? 'https://drniharmodi.com/' : `https://drniharmodi.com${crumb.path}`
+        }))
+      })
+    }
+  ]
+});
 
 onMounted(() => {
   const tl = gsap.timeline();
@@ -32,8 +50,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="relative pt-40 pb-20 px-8 min-h-[400px] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[#f8f9fa]"
-    
+  <section class="relative pt-40 pb-20 px-8 min-h-[400px] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[#f8f9fa]">
     
     <!-- Background Watermark -->
     <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none watermark-n">
@@ -60,24 +77,6 @@ onMounted(() => {
           <span v-if="index < breadcrumbs.length - 1" class="text-gray-400 mx-1">/</span>
         </template>
       </nav>
-
-      <!-- Schema.org BreadcrumbList for SEO -->
-      <Head>
-        <Script type="application/ld+json">
-          {{
-            JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": breadcrumbs.map((crumb, idx) => ({
-                "@type": "ListItem",
-                "position": idx + 1,
-                "name": crumb.name,
-                "item": crumb.path === '/' ? 'https://drniharmodi.com/' : `https://drniharmodi.com${crumb.path}`
-              }))
-            })
-          }}
-        </Script>
-      </Head>
     </div>
   </section>
 </template>

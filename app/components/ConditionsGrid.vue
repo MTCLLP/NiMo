@@ -65,7 +65,7 @@ const conditions = [
             :icon="item.icon"
           >
             <template #footer>
-              <div class="mt-3 block lg:hidden">
+              <div class="mt-3 block">
                 <span
                   class="text-[#1DAAFF] font-medium text-sm group-hover:underline"
                   >Know more</span

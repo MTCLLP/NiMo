@@ -63,9 +63,16 @@ const checkBackground = () => {
   isOverDarkBg.value = overDark;
 };
 
+const showScrollTop = ref(false);
+
 const onScroll = () => {
+  showScrollTop.value = window.scrollY > 300;
   if (scrollTimeout) cancelAnimationFrame(scrollTimeout);
   scrollTimeout = requestAnimationFrame(checkBackground);
+};
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
 onMounted(() => {
@@ -93,7 +100,7 @@ onUnmounted(() => {
       :class="linkClass"
     >
       <div
-        class="hidden md:block bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
+        class="hidden bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
         :class="tooltipClass"
       >
         Get in touch
@@ -115,7 +122,7 @@ onUnmounted(() => {
       :class="linkClass"
     >
       <div
-        class="hidden md:block bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
+        class="hidden bg-white px-4 py-2 rounded-full shadow-lg text-sm font-medium text-gray-800 opacity-0 transition-all duration-300"
         :class="tooltipClass"
       >
         Chat with us
@@ -129,5 +136,21 @@ onUnmounted(() => {
         />
       </div>
     </a>
+
+    <!-- Scroll to Top -->
+    <button
+      @click="scrollToTop"
+      class="group flex items-center gap-3 transition-opacity duration-300"
+      :class="[linkClass, showScrollTop ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none']"
+    >
+      <div
+        class="hover:scale-105 transition-transform shadow-lg rounded-full w-10 h-10 flex items-center justify-center bg-[#1b324c] text-white"
+        :class="isOverDarkBg ? '!bg-white !text-[#1b324c] border border-white/20' : ''"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+      </div>
+    </button>
   </div>
 </template>

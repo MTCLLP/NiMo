@@ -7,18 +7,21 @@ const areas = [
     desc: "Advanced surgical treatments for knee pain, ligament injuries, and joint replacements to restore your mobility.",
     img: "/specialities/knee-surgery-dr-nihar-modi.png",
     hoverImg: "/specialities/knee-surgery-dr-nihar-modi.png",
+    slug: "knee-surgery",
   },
   {
     title: "Shoulder Surgery",
     desc: "Expert care for rotator cuff tears, dislocations, and shoulder arthritis to help you regain full range of motion.",
     img: "/specialities/shoulder-surgery-dr-nihar-modi.png",
     hoverImg: "/specialities/shoulder-surgery-dr-nihar-modi.png",
+    slug: "shoulder-surgery",
   },
   {
     title: "Elbow Surgery",
     desc: "Specialised treatments for tennis elbow, fractures, and ligament injuries to ensure optimal recovery and function.",
     img: "/specialities/elbow-surgery-dr-nihar-modi.png",
     hoverImg: "/specialities/elbow-surgery-dr-nihar-modi.png",
+    slug: "elbow-surgery",
   },
 ];
 
@@ -147,10 +150,11 @@ onUnmounted(() => {
         @mouseenter="stopAutoPlay"
         @mouseleave="startAutoPlay"
       >
-        <div
+        <NuxtLink
           v-for="(area, idx) in areas"
           :key="'t2-' + idx"
-          class="snap-center shrink-0 w-[85vw] sm:w-[60vw] md:w-auto"
+          :to="`/procedures/${area.slug}`"
+          class="snap-center shrink-0 w-[85vw] sm:w-[60vw] md:w-auto block"
         >
           <UiHoverCard
             :title="area.title"
@@ -159,7 +163,7 @@ onUnmounted(() => {
             :hoverImg="area.hoverImg"
             fluid
           />
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </section>
