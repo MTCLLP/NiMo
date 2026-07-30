@@ -55,8 +55,8 @@ onMounted(() => {
           </div>
 
           <div class="py-4 md:py-0 stat-item">
-            <div class="text-6xl font-mirage text-white mb-4">35</div>
-            <div class="text-xl font-light text-white/80">Surgical Assists</div>
+            <div class="text-6xl font-mirage text-white mb-4">500+</div>
+            <div class="text-xl font-light text-white/80">Surgeries</div>
           </div>
         </div>
       </div>
