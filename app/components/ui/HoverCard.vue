@@ -77,10 +77,9 @@ const aspectClass = computed(() => {
         {{ desc }}
       </p>
       <div class="text-center mt-3 block">
-        <NuxtLink
-          to="#"
+        <span
           class="text-[#1DAAFF] font-medium text-sm hover:underline"
-          >Know more</NuxtLink
+          >Know more</span
         >
       </div>
     </div>

@@ -118,14 +118,12 @@ const faqGroups = ref([
               {{ group.category }}
             </h2>
           </div>
-          <div
-            class="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-gray-100"
-          >
+          <div class="">
             <UiAccordion :items="group.items">
               <template #item-content="{ item }">
                 <div
                   v-html="item.content"
-                  class="text-gray-500 text-sm leading-relaxed"
+                  class="text-gray-500 text-md leading-relaxed"
                 ></div>
               </template>
             </UiAccordion>

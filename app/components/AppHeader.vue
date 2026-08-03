@@ -11,17 +11,17 @@ const isSidebarOpen = ref(false);
     <!-- Logo -->
     <NuxtLink
       to="/"
-      class="flex items-center gap-3 hover:opacity-80 transition-opacity"
+      class="flex items-center gap-3 hover:opacity-80 transition-opacity flex-1 min-w-0 pr-4"
     >
-      <img src="/logo.svg" alt="Logo" class="h-12 md:h-14 w-auto" />
-      <div class="text-xl md:text-2xl font-mirage text-primary leading-tight">
+      <img src="/logo.svg" alt="Logo" class="h-12 md:h-14 w-auto shrink-0" />
+      <div class="text-xl md:text-2xl font-mirage text-primary leading-tight min-w-0">
         <!-- <span
           class="text-xs md:text-sm font-sans uppercase tracking-widest text-gray-500 block mb-[-4px]"
           >Doctor</span
         > -->
         Dr. Nihar Modi
         <span
-          class="text-[10px] md:text-xs font-sans text-gray-500 block mt-1 tracking-wider max-w-[400px]"
+          class="text-[10px] md:text-xs font-sans text-gray-500 block mt-1 tracking-wider whitespace-normal leading-tight opacity-80 md:max-w-[400px]"
           >M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football
           Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports
           injuries, Arthroscopy and Arthroplasty (Australia, USA)</span
@@ -30,7 +30,7 @@ const isSidebarOpen = ref(false);
     </NuxtLink>
 
     <!-- Right side navigation -->
-    <div class="flex flex-col items-end gap-3">
+    <div class="flex flex-col items-end gap-3 shrink-0">
       <!-- Top Social Icons -->
       <div class="hidden md:flex gap-3 items-center">
         <UiSocialLink

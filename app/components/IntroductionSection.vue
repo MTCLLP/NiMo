@@ -10,10 +10,10 @@
       class="absolute bottom-0 left-0 -ml-32 -mb-32 w-96 h-96 rounded-full bg-primary/5 blur-3xl opacity-60"
     ></div>
 
-    <div class="container mx-auto px-6 max-w-3xl relative z-10">
-      <div class="flex flex-col items-start">
+    <div class="container mx-auto px-6 max-w-6xl relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         <!-- Text Column -->
-        <div class="w-full flex flex-col">
+        <div class="w-full flex flex-col order-2 lg:order-1">
           <!-- <div class="mb-4 flex items-center gap-4">
             <span class="w-12 h-px bg-primary/30"></span>
             <span
@@ -54,6 +54,15 @@
               active, fulfilling life.
             </p>
           </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="w-full order-1 lg:order-2">
+          <img
+            src="/about-dr-nihar-modi.webp"
+            alt="Dr. Nihar Modi"
+            class="w-full h-auto rounded-2xl object-cover"
+          />
         </div>
       </div>
     </div>

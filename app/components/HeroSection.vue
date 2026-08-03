@@ -19,7 +19,7 @@ onMounted(() => {
 
 <template>
   <section
-    class="relative pt-32 md:pt-40 pb-16 md:pb-20 px-8 min-h-[300px] md:min-h-[800px] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
+    class="relative pt-48 pb-16 md:pb-20 px-8 min-h-[300px] md:min-h-[800px] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
   >
     <!-- Background Watermark -->
     <div

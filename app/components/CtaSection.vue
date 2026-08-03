@@ -12,12 +12,17 @@ defineProps({
 
 <template>
   <section
-    v-if="forceShow || (route.path !== '/contact' && !route.path.startsWith('/conditions'))"
+    v-if="
+      forceShow ||
+      (route.path !== '/contact' &&
+        !route.path.startsWith('/conditions') &&
+        !route.path.startsWith('/procedures/'))
+    "
     class="py-12 md:py-24 relative overflow-hidden bg-white border-t border-gray-100"
   >
     <!-- Subtle Animated Background -->
     <div
-      class="absolute inset-0 bg-gradient-to-br from-white via-accent/10 to-primary/5"
+      class="absolute inset-0 bg-gradient-to-br from-white via-accent/80 to-primary/25"
     ></div>
     <div
       class="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_0%_0%,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent opacity-60 animate-[pulse_6s_ease-in-out_infinite]"
@@ -26,13 +31,13 @@ defineProps({
       class="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_100%_100%,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent opacity-60 animate-[pulse_8s_ease-in-out_infinite_alternate]"
     ></div>
 
-    <div class="container mx-auto px-6 relative z-10 text-center max-w-4xl">
+    <div class="container mx-auto px-6 relative z-10 text-center max-w-2xl">
       <h2
         class="text-3xl md:text-5xl font-mirage text-gray-900 mb-6 leading-tight"
       >
         <slot name="title">
-          Ready to take the next step towards <br class="hidden md:block" /><span
-            class="text-primary italic"
+          Ready to take the next step towards
+          <br class="hidden md:block" /><span class="text-primary italic"
             >pain-free movement?</span
           >
         </slot>
