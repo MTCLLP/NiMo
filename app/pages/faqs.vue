@@ -19,7 +19,7 @@ const faqGroups = ref([
       {
         title: "Can I get a second opinion on my condition?",
         content:
-          "Absolutely. Seeking a second opinion is a very common and respected practice in India, especially when considering major procedures like a knee or hip replacement. We encourage you to bring your existing reports; we will provide an honest, objective assessment of your condition and treatment options.",
+          "Absolutely. Seeking a second opinion is a very common and respected practice in India, especially when considering surgical procedures.",
       },
     ],
   },

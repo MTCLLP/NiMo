@@ -198,7 +198,7 @@ const accordionItems = [
   <main>
     <PageHeader
       title="Dr. Nihar Modi"
-      subtitle="MS (Orth) DNB (Orth), MNAMS"
+      subtitle="M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports injuries, Arthroscopy and Arthroplasty (Australia, USA)"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },

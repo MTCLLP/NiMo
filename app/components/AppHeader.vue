@@ -15,14 +15,16 @@ const isSidebarOpen = ref(false);
     >
       <img src="/logo.svg" alt="Logo" class="h-12 md:h-14 w-auto" />
       <div class="text-xl md:text-2xl font-mirage text-primary leading-tight">
-        <span
+        <!-- <span
           class="text-xs md:text-sm font-sans uppercase tracking-widest text-gray-500 block mb-[-4px]"
           >Doctor</span
-        >
-        Nihar Modi
+        > -->
+        Dr. Nihar Modi
         <span
-          class="text-[10px] md:text-xs font-sans text-gray-500 block mt-1 tracking-wider uppercase"
-          >MS (Orth) DNB (Orth), MNAMS</span
+          class="text-[10px] md:text-xs font-sans text-gray-500 block mt-1 tracking-wider max-w-[400px]"
+          >M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football
+          Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports
+          injuries, Arthroscopy and Arthroplasty (Australia, USA)</span
         >
       </div>
     </NuxtLink>

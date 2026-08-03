@@ -21,7 +21,7 @@
           <div
             class="text-[10px] font-sans text-white/50 tracking-wider uppercase mt-1"
           >
-            MS (Orth) DNB (Orth), MNAMS
+            M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports injuries, Arthroscopy and Arthroplasty (Australia, USA)
           </div>
         </div>
       </div>
