@@ -5,23 +5,24 @@
 
 <template>
   <footer class="text-white py-16 bg-gradient-to-br from-primary to-[#0a1626]">
-
     <div class="container mx-auto px-8 flex flex-col items-center text-center">
       <!-- Logo / Doctor Info -->
       <div class="flex items-center justify-center gap-4 mb-8">
         <img src="/logo.svg" alt="Logo" class="h-16 w-auto" />
         <div class="text-left">
           <div class="text-3xl font-mirage text-white leading-tight">
-            <span
+            <!-- <span
               class="text-xs font-sans uppercase tracking-widest text-white/50 block mb-[-2px]"
               >Doctor</span
-            >
-            Nihar Modi
+            > -->
+            Dr. Nihar Modi
           </div>
           <div
-            class="text-[10px] font-sans text-white/50 tracking-wider uppercase mt-1"
+            class="text-[10px] font-sans text-white/50 tracking-wider uppercase mt-1 max-w-[400px]"
           >
-            M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports injuries, Arthroscopy and Arthroplasty (Australia, USA)
+            M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football
+            Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports
+            injuries, Arthroscopy and Arthroplasty (Australia, USA)
           </div>
         </div>
       </div>
@@ -97,7 +98,17 @@
         class="flex flex-col gap-2 text-[13px] text-white/60 mb-12 max-w-4xl leading-relaxed"
       >
         <!-- <div>Call: +91 98330 66702 &bull; Email: modi.nihar95@gmail.com</div> -->
-        <div>&copy; 2026, Mool Tatvam Consulting LLP. All rights reserved.</div>
+        <div>
+          &copy; {{ new Date().getFullYear() }} Dr. Nihar Modi. All rights
+          reserved. | Site by
+          <a
+            href="https://mooltatvam.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-white hover:underline transition-colors"
+            >Mool Tatvam Consulting LLP</a
+          >
+        </div>
       </div>
     </div>
   </footer>

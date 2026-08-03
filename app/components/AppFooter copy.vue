@@ -152,7 +152,8 @@
         class="flex flex-col md:flex-row justify-between items-center border-t border-white/10 pt-6"
       >
         <p class="text-xs text-white/50 mb-4 md:mb-0">
-          &copy; 2026, Mool Tatvam Consulting LLP. All rights reserved.
+          &copy; {{ new Date().getFullYear() }} Dr. Nihar Modi. All rights reserved. | Site by
+          <a href="https://mooltatvam.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline transition-colors">Mool Tatvam Consulting LLP</a>
         </p>
 
         <!-- Socials -->
