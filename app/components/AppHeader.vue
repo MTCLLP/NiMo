@@ -43,7 +43,11 @@ const isSidebarOpen = ref(false);
           href="https://www.instagram.com/dr_sportho/"
           target="_blank"
         />
-        <!-- <UiSocialLink platform="youtube" href="#" /> -->
+        <UiSocialLink
+          platform="youtube"
+          href="https://www.youtube.com/@dr_sportho"
+          target="_blank"
+        />
         <UiSocialLink
           platform="whatsapp"
           href="https://wa.me/919833066702"
@@ -249,7 +253,11 @@ const isSidebarOpen = ref(false);
             href="https://www.instagram.com/dr_sportho/"
             target="_blank"
           />
-          <!-- <UiSocialLink platform="youtube" href="#" /> -->
+          <UiSocialLink
+            platform="youtube"
+            href="https://www.youtube.com/@dr_sportho"
+            target="_blank"
+          />
           <UiSocialLink
             platform="whatsapp"
             href="https://wa.me/919833066702"

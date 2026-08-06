@@ -65,6 +65,7 @@ useHead({
             <div class="flex gap-4">
               <UiSocialLink platform="linkedin" href="https://www.linkedin.com/in/dr-nihar-modi-8702672a4/" target="_blank" />
               <UiSocialLink platform="instagram" href="https://www.instagram.com/dr_sportho/" target="_blank" />
+              <UiSocialLink platform="youtube" href="https://www.youtube.com/@dr_sportho" target="_blank" />
               <UiSocialLink platform="whatsapp" href="https://wa.me/919833066702" target="_blank" />
             </div>
           </div>

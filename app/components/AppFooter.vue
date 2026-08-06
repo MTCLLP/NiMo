@@ -42,6 +42,12 @@
           theme="dark"
         />
         <UiSocialLink
+          platform="youtube"
+          href="https://www.youtube.com/@dr_sportho"
+          target="_blank"
+          theme="dark"
+        />
+        <UiSocialLink
           platform="whatsapp"
           href="https://wa.me/919833066702"
           target="_blank"
