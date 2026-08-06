@@ -31,7 +31,7 @@ defineProps({
       class="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_100%_100%,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent opacity-60 animate-[pulse_8s_ease-in-out_infinite_alternate]"
     ></div>
 
-    <div class="container mx-auto px-6 relative z-10 text-center max-w-2xl">
+    <div class="container mx-auto px-6 relative z-10 text-center max-w-3xl">
       <h2
         class="text-3xl md:text-5xl font-mirage text-gray-900 mb-6 leading-tight"
       >
