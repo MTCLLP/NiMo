@@ -1,5 +1,19 @@
 export const testimonials = [
   {
+    title: "Priyanshu Vishwakarma",
+    subtitle: "",
+    text: "Dr. Nihar Modi is an excellent orthopedic surgeon and, more importantly, a genuinely good human being. I underwent ACL reconstruction along with meniscus surgery under his care, and I am truly grateful for the way he handled such a major and important surgery with great expertise, patience, and care. The entire treatment was done very professionally, and his way of communicating with me as a doctor was extremely good. He explained things properly, made me feel comfortable, and gave me confidence throughout the process. I am very grateful for everything he has done for me and for the care and dedication he showed throughout my ACL and meniscus surgery. I will always be thankful to Dr. Nihar Modi for his excellent treatment, support, and guidance. Thank you Sir for Everything Everything very grateful to you Always ❤️❤️",
+    rating: 5,
+    date: "18 August 2026",
+  },
+  {
+    title: "Yash Sanghavi",
+    subtitle: "",
+    text: "I consulted Dr. Nihar Modi for a ligament tear in my wrist. He was extremely patient, helpful, and thorough throughout the consultation. He listened carefully, explained the condition clearly, and diagnosed the problem accurately. I would highly recommend him to anyone looking for an experienced sports surgeon or orthopaedic surgeon.",
+    rating: 5,
+    date: "19 July 2026",
+  },
+  {
     title: "Ganesh Kanse",
     subtitle: "",
     text: "I had been suffering from a frozen shoulder for months, experiencing terrible stiffness and constant aching. Dr Nihar Modi provided a comprehensive management plan that targeted the root cause of my pain. His expertise in advanced shoulder conditions and non-surgical interventions truly worked wonders for me. I felt deeply cared for as a patient, with all my questions answered thoroughly at every visit. Thanks to his dedication, the stiffness is completely gone, and I can move my arm freely again.",
