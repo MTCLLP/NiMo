@@ -8,26 +8,19 @@ export default defineNuxtConfig({
   site: {
     name: 'Dr. Nihar Modi',
   },
+  features: {
+    inlineStyles: true
+  },
   app: {
     head: {
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' },
+        // Preload critical fonts to avoid chaining requests
+        { rel: 'preload', as: 'font', type: 'font/otf', href: '/fonts/made-mirage/MADE%20Mirage%20Regular%20PERSONAL%20USE.otf', crossorigin: 'anonymous' },
+        { rel: 'preload', as: 'font', type: 'font/otf', href: '/fonts/made-mirage/MADE%20Mirage%20Thin%20PERSONAL%20USE.otf', crossorigin: 'anonymous' },
+        { rel: 'preload', as: 'font', type: 'font/otf', href: '/fonts/Asectica%20Simple%20Demo.otf', crossorigin: 'anonymous' }
       ],
-      script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-W0H7PG4YQF',
-          async: true
-        },
-        {
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-W0H7PG4YQF');
-          `,
-          type: 'text/javascript'
-        }
-      ]
+      script: []
     }
   },
   css: ['~/assets/css/main.css'],

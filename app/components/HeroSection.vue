@@ -34,7 +34,7 @@ onMounted(() => {
       <!-- Left Content -->
       <div class="text-center w-full max-w-4xl">
         <h1
-          class="text-2xl lg:text-5xl font-mirage text-secondary leading-tight mb-8"
+          class="text-2xl lg:text-5xl font-mirage text-primary leading-tight mb-8"
         >
           <div class="hero-text-line">Helping You Move Better,</div>
           <div class="hero-text-line">Recover Faster, Live Stronger</div>
