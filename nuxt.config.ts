@@ -28,6 +28,9 @@ export default defineNuxtConfig({
     transpile: ['gsap'],
   },
   vite: {
+    build: {
+      cssCodeSplit: false
+    },
     plugins: [
       tailwindcss(),
     ],

@@ -51,18 +51,20 @@ const aspectClass = computed(() => {
       :class="aspectClass"
     >
       <div class="relative w-full h-full flex items-center justify-center">
-        <img
+        <NuxtImg
           :src="img"
           :alt="title"
           width="400"
           height="400"
+          format="webp"
           class="max-w-full max-h-full object-contain group-hover/card:opacity-0 group-hover/card:scale-105 transition-all duration-500"
         />
-        <img
+        <NuxtImg
           :src="hoverImg"
           :alt="title"
           width="400"
           height="400"
+          format="webp"
           class="absolute inset-0 m-auto max-w-full max-h-full object-contain opacity-0 group-hover/card:opacity-100 group-hover/card:scale-105 transition-all duration-500"
         />
       </div>
