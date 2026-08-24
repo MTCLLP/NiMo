@@ -54,11 +54,15 @@ const aspectClass = computed(() => {
         <img
           :src="img"
           :alt="title"
+          width="400"
+          height="400"
           class="max-w-full max-h-full object-contain group-hover/card:opacity-0 group-hover/card:scale-105 transition-all duration-500"
         />
         <img
           :src="hoverImg"
           :alt="title"
+          width="400"
+          height="400"
           class="absolute inset-0 m-auto max-w-full max-h-full object-contain opacity-0 group-hover/card:opacity-100 group-hover/card:scale-105 transition-all duration-500"
         />
       </div>
