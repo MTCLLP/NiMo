@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
+useHead({
+  title: 'About Dr. Nihar Modi - Orthopaedic Surgeon in Mumbai',
+  meta: [
+    {
+      name: 'description',
+      content: 'Learn about Dr. Nihar Modi, a highly qualified orthopedic surgeon in Mumbai specializing in joint replacement, sports medicine, and arthroscopic surgeries.'
+    }
+  ]
+});
+
 const education = [
   {
     title: "Australian Orthopaedic Association (AOA) Fellowship",

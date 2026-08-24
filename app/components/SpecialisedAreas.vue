@@ -105,6 +105,7 @@ onUnmounted(() => {
         class="md:hidden absolute top-1/2 -translate-y-1/2 left-2 right-2 flex justify-between z-20 pointer-events-none -mt-4"
       >
         <button
+          aria-label="Previous specialised area"
           @click="scrollPrev"
           class="w-10 h-10 rounded-full bg-white/90 backdrop-blur border border-gray-200 flex items-center justify-center text-gray-700 hover:text-primary hover:border-primary transition-colors shadow-lg pointer-events-auto"
         >
@@ -123,6 +124,7 @@ onUnmounted(() => {
           </svg>
         </button>
         <button
+          aria-label="Next specialised area"
           @click="scrollNext"
           class="w-10 h-10 rounded-full bg-white/90 backdrop-blur border border-gray-200 flex items-center justify-center text-gray-700 hover:text-primary hover:border-primary transition-colors shadow-lg pointer-events-auto"
         >

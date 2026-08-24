@@ -4,7 +4,7 @@ import { useHead } from '#imports'
 useHead({
   title: 'Contact Us | Dr. Nihar Modi',
   meta: [
-    { name: 'description', content: 'Get in touch with Dr. Nihar Modi for orthopaedic consultations, appointments, and queries.' }
+    { name: 'description', content: 'Contact Dr. Nihar Modi\'s orthopedic clinics in Bandra and Khar, Mumbai. Book an appointment for expert consultations on joint, knee, and shoulder pain.' }
   ]
 })
 </script>

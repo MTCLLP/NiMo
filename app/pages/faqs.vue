@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+useHead({
+  title: 'FAQs - Dr. Nihar Modi Orthopaedics',
+  meta: [
+    {
+      name: 'description',
+      content: 'Have questions about orthopedic surgery or joint replacement? Read our frequently asked questions about treatments offered by Dr. Nihar Modi in Mumbai.'
+    }
+  ]
+});
+
 const faqGroups = ref([
   {
     category: "Appointments & Consultation",

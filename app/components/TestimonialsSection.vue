@@ -76,7 +76,7 @@ const goTo = (index: number) => {
                 >
                   {{ activeTestimonial.subtitle }}
                 </p>
-                <p class="text-xs text-gray-400 mt-2">
+                <p class="text-xs text-gray-600 mt-2">
                   {{ activeTestimonial.date }}
                 </p>
               </div>
@@ -89,6 +89,7 @@ const goTo = (index: number) => {
           class="flex items-center justify-center gap-4 sm:gap-6 mt-8 lg:mt-12 relative z-10"
         >
           <button
+            aria-label="Previous testimonial"
             @click="prev"
             class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-x-1"
           >
@@ -107,21 +108,27 @@ const goTo = (index: number) => {
             </svg>
           </button>
 
-          <div class="flex gap-2">
+          <div class="flex items-center">
             <button
               v-for="(_, index) in testimonials"
               :key="index"
               @click="goTo(index)"
-              class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300"
-              :class="
-                index === activeIndex
-                  ? 'bg-primary w-6 sm:w-8'
-                  : 'bg-gray-200 hover:bg-gray-300'
-              "
-            ></button>
+              class="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 focus:outline-none group cursor-pointer"
+              :aria-label="`Go to testimonial ${index + 1}`"
+            >
+              <span
+                class="rounded-full transition-all duration-300 h-2.5 sm:h-3"
+                :class="
+                  index === activeIndex
+                    ? 'bg-primary w-6 sm:w-8'
+                    : 'bg-gray-200 group-hover:bg-gray-300 w-2.5 sm:w-3'
+                "
+              ></span>
+            </button>
           </div>
 
           <button
+            aria-label="Next testimonial"
             @click="next"
             class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all duration-300 hover:shadow-lg hover:translate-x-1"
           >

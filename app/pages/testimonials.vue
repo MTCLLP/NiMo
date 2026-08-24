@@ -3,7 +3,13 @@ import { ref } from 'vue'
 import { testimonials } from '~/data/testimonials'
 
 useHead({
-  title: 'Testimonials - Dr. Nihar Modi'
+  title: 'Testimonials - Dr. Nihar Modi',
+  meta: [
+    {
+      name: 'description',
+      content: 'Read patient testimonials and reviews for Dr. Nihar Modi. Discover how our orthopedic treatments in Mumbai have helped patients regain their mobility.'
+    }
+  ]
 });
 
 const selectedTestimonial = ref<any>(null);
@@ -92,7 +98,7 @@ const truncateText = (text: string, length = 150) => {
                 >
                   {{ testimonial.subtitle }}
                 </p>
-                <p class="text-xs text-gray-400 mt-2">
+                <p class="text-xs text-gray-600 mt-2">
                   {{ testimonial.date }}
                 </p>
               </div>
@@ -113,6 +119,7 @@ const truncateText = (text: string, length = 150) => {
       ></div>
       <div class="relative bg-white rounded-3xl p-6 md:p-10 max-w-2xl w-full shadow-2xl max-h-[90vh] overflow-y-auto">
         <button
+          aria-label="Close modal"
           @click="selectedTestimonial = null"
           class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 transition-colors p-2"
         >

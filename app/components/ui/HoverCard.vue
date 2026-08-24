@@ -78,7 +78,7 @@ const aspectClass = computed(() => {
       </p>
       <div class="text-center mt-3 block">
         <span
-          class="text-[#1DAAFF] font-medium text-sm hover:underline"
+          class="text-blue-600 font-medium text-sm hover:underline"
           >Know more</span
         >
       </div>

@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from "vue";
 
+useHead({
+  title: 'Educational Shorts - Dr. Nihar Modi',
+  meta: [
+    {
+      name: 'description',
+      content: 'Watch informative short videos by Dr. Nihar Modi, Mumbai\'s leading orthopedic surgeon, covering joint health, injury prevention, and surgical treatments.'
+    }
+  ]
+});
+
 const shorts = [
   { id: "SYwzDo1p5wc", title: "YouTube Short 1" },
   { id: "sMQg-CzBpoc", title: "YouTube Short 2" },
@@ -121,6 +131,7 @@ onUnmounted(() => {
       >
         <!-- Close button -->
         <button
+          aria-label="Close video"
           class="absolute top-6 right-6 text-white hover:text-gray-300 z-[110] transition-transform hover:scale-110"
           @click.stop="closeLightbox"
         >
@@ -142,6 +153,7 @@ onUnmounted(() => {
 
         <!-- Previous button -->
         <button
+          aria-label="Previous video"
           class="absolute left-4 md:left-8 text-white hover:text-gray-300 z-[110] transition-transform hover:scale-110"
           @click.stop="prevShort"
         >
@@ -195,6 +207,7 @@ onUnmounted(() => {
 
         <!-- Next button -->
         <button
+          aria-label="Next video"
           class="absolute right-4 md:right-8 text-white hover:text-gray-300 z-[110] transition-transform hover:scale-110"
           @click.stop="nextShort"
         >

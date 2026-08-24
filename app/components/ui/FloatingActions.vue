@@ -139,6 +139,7 @@ onUnmounted(() => {
 
     <!-- Scroll to Top -->
     <button
+      aria-label="Scroll back to top"
       @click="scrollToTop"
       class="group flex items-center gap-3 transition-opacity duration-300"
       :class="[linkClass, showScrollTop ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none']"

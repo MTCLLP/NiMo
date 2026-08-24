@@ -96,10 +96,10 @@ useHead({
       
       <CtaSection force-show>
         <template #title>
-          Considering <br class="hidden md:block" /><span class="text-primary italic">{{ procedure.name.toLowerCase() }}?</span>
+          Considering <br class="hidden md:block" /><span class="text-primary italic">{{ procedure.name.toLowerCase() }} in Mumbai?</span>
         </template>
         <template #desc>
-          Book a consultation today for an expert evaluation and to discuss if surgery is the right option for you.
+          Book a consultation with Dr. Nihar Modi at his Bandra or Khar clinic today for an expert evaluation and to discuss if surgery is the right option for you.
         </template>
       </CtaSection>
     </template>

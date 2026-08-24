@@ -21,7 +21,7 @@ const isSidebarOpen = ref(false);
         > -->
         Dr. Nihar Modi
         <span
-          class="text-[10px] md:text-xs font-sans text-gray-500 block mt-1 tracking-wider whitespace-normal leading-tight opacity-80 md:max-w-[400px]"
+          class="text-[10px] md:text-xs font-sans text-gray-700 block mt-1 tracking-wider whitespace-normal leading-tight opacity-80 md:max-w-[400px]"
           >M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football
           Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports
           injuries, Arthroscopy and Arthroplasty (Australia, USA)</span
@@ -105,7 +105,7 @@ const isSidebarOpen = ref(false);
         </nav>
 
         <!-- Hamburger -->
-        <button @click="isSidebarOpen = true" class="p-2 ml-4 cursor-pointer">
+        <button aria-label="Open menu" @click="isSidebarOpen = true" class="p-2 ml-4 cursor-pointer focus:outline-none">
           <img
             src="/icon-hamburger-dr-nihar-modi.svg"
             alt="Menu"
@@ -132,6 +132,7 @@ const isSidebarOpen = ref(false);
         <button
           @click="isSidebarOpen = false"
           class="p-2 text-gray-500 hover:text-gray-800 transition-colors cursor-pointer"
+          aria-label="Close menu"
         >
           <svg
             class="w-8 h-8"

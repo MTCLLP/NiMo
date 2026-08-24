@@ -1,3 +1,15 @@
+<script setup lang="ts">
+useHead({
+  title: 'Terms & Conditions - Dr. Nihar Modi',
+  meta: [
+    {
+      name: 'description',
+      content: 'Review the terms and conditions for using the website and services of Dr. Nihar Modi, an orthopedic surgeon based in Mumbai.'
+    }
+  ]
+});
+</script>
+
 <template>
   <main>
     <PageHeader

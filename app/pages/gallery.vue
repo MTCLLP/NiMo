@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
 
+useHead({
+  title: 'Gallery - Dr. Nihar Modi Orthopaedics',
+  meta: [
+    {
+      name: 'description',
+      content: 'View the gallery of Dr. Nihar Modi\'s orthopedic practice in Mumbai. See our clinic facilities in Bandra and Khar, and glimpses of our patient care.'
+    }
+  ]
+});
+
 const galleryImages = [
   { url: '/gallery/dr-nihar-modi.webp', alt: 'Dr. Nihar Modi' },
   { url: '/gallery/dr-nihar-modi-doing-surgery.webp', alt: 'Dr. Nihar Modi Doing Surgery' },
@@ -97,6 +107,7 @@ onUnmounted(() => {
       >
         <!-- Close button -->
         <button 
+          aria-label="Close image"
           class="absolute top-6 right-6 text-white hover:text-gray-300 z-[110] transition-transform hover:scale-110"
           @click.stop="closeLightbox"
         >
@@ -105,6 +116,7 @@ onUnmounted(() => {
 
         <!-- Previous button -->
         <button 
+          aria-label="Previous image"
           class="absolute left-4 md:left-8 text-white hover:text-gray-300 z-[110] transition-transform hover:scale-110"
           @click.stop="prevImage"
         >
@@ -127,6 +139,7 @@ onUnmounted(() => {
 
         <!-- Next button -->
         <button 
+          aria-label="Next image"
           class="absolute right-4 md:right-8 text-white hover:text-gray-300 z-[110] transition-transform hover:scale-110"
           @click.stop="nextImage"
         >

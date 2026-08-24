@@ -96,10 +96,10 @@ useHead({
       
       <CtaSection force-show>
         <template #title>
-          Need expert care for <br class="hidden md:block" /><span class="text-primary italic">{{ condition.name.toLowerCase() }}?</span>
+          Need expert care for <br class="hidden md:block" /><span class="text-primary italic">{{ condition.name.toLowerCase() }} in Mumbai?</span>
         </template>
         <template #desc>
-          Book an appointment today for an accurate diagnosis and a customized treatment plan to get you back to doing what you love.
+          Visit Dr. Nihar Modi's clinics in Bandra or Khar. Book an appointment today for an accurate diagnosis and a customized treatment plan to get you back to doing what you love.
         </template>
       </CtaSection>
     </template>

@@ -1,3 +1,15 @@
+<script setup lang="ts">
+useHead({
+  title: 'Privacy Policy - Dr. Nihar Modi',
+  meta: [
+    {
+      name: 'description',
+      content: 'Read the privacy policy of Dr. Nihar Modi\'s orthopedic practice in Mumbai to understand how we protect your personal and medical information.'
+    }
+  ]
+});
+</script>
+
 <template>
   <main>
     <PageHeader

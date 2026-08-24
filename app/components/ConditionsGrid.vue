@@ -67,7 +67,7 @@ const conditions = [
             <template #footer>
               <div class="mt-3 block">
                 <span
-                  class="text-[#1DAAFF] font-medium text-sm group-hover:underline"
+                  class="text-blue-600 font-medium text-sm group-hover:underline"
                   >Know more</span
                 >
               </div>
