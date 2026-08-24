@@ -83,9 +83,11 @@ onUnmounted(() => {
             class="aspect-square rounded-2xl overflow-hidden cursor-pointer group relative shadow-md"
             @click="openLightbox(idx)"
           >
-            <img 
+            <NuxtImg 
               :src="img.url" 
-              :alt="img.alt" 
+              :alt="img.alt"
+              format="webp"
+              sizes="sm:100vw md:50vw lg:33vw xl:25vw"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
             />
             <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
@@ -125,9 +127,10 @@ onUnmounted(() => {
 
         <!-- Image -->
         <div class="relative w-full max-w-6xl px-20 flex justify-center items-center h-full max-h-[85vh]">
-          <img 
+          <NuxtImg 
             :src="galleryImages[selectedIndex]?.url" 
             :alt="galleryImages[selectedIndex]?.alt" 
+            format="webp"
             class="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
             @click.stop
           />
