@@ -36,8 +36,12 @@ onMounted(() => {
         <h1
           class="text-2xl lg:text-5xl font-mirage text-primary leading-tight mb-8"
         >
-          <div class="hero-text-line">Helping You Move Better,</div>
-          <div class="hero-text-line">Recover Faster, Live Stronger</div>
+          <div class="hero-text-line">
+            Specialist Orthopaedic Surgeon in Mumbai
+          </div>
+          <div class="hero-text-line text-3xl mt-4 text-gray-600">
+            Helping You Move Better, Recover Faster, Live Stronger
+          </div>
         </h1>
 
         <p

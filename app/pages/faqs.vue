@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 useHead({
-  title: 'FAQs - Dr. Nihar Modi Orthopaedics',
+  title: 'FAQs',
   meta: [
     {
       name: 'description',

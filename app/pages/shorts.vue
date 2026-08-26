@@ -2,13 +2,14 @@
 import { ref, onMounted, onUnmounted, computed } from "vue";
 
 useHead({
-  title: 'Educational Shorts - Dr. Nihar Modi',
+  title: "Educational Shorts - Dr. Nihar Modi",
   meta: [
     {
-      name: 'description',
-      content: 'Watch informative short videos by Dr. Nihar Modi, Mumbai\'s leading orthopedic surgeon, covering joint health, injury prevention, and surgical treatments.'
-    }
-  ]
+      name: "description",
+      content:
+        "Watch informative short videos by Dr. Nihar Modi, Mumbai's leading orthopedic surgeon, covering joint health, injury prevention, and surgical treatments.",
+    },
+  ],
 });
 
 const shorts = [
@@ -23,7 +24,7 @@ const shorts = [
 const selectedIndex = ref<number | null>(null);
 
 const selectedShort = computed(() =>
-  selectedIndex.value !== null ? shorts[selectedIndex.value] : null
+  selectedIndex.value !== null ? shorts[selectedIndex.value] : null,
 );
 
 const openLightbox = (index: number) => {

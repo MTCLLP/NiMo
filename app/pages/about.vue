@@ -2,11 +2,11 @@
 import { computed } from "vue";
 
 useHead({
-  title: 'About Dr. Nihar Modi - Orthopaedic Surgeon in Mumbai',
+  title: 'About | Top Orthopaedic Surgeon in Mumbai',
   meta: [
     {
       name: 'description',
-      content: 'Learn about Dr. Nihar Modi, a highly qualified orthopedic surgeon in Mumbai specializing in joint replacement, sports medicine, and arthroscopic surgeries.'
+      content: 'Learn about Dr. Nihar Modi, a highly qualified orthopaedic surgeon in Mumbai specializing in joint replacement, sports medicine, and arthroscopic surgeries.'
     }
   ]
 });
@@ -164,6 +164,16 @@ const hobbies = [
       ]"
     />
     <IntroductionSection />
+    
+    <!-- New SEO Section -->
+    <section class="bg-primary/5 py-16">
+      <div class="container mx-auto px-6 max-w-4xl text-center">
+        <h2 class="text-3xl md:text-4xl font-mirage text-primary mb-6">Why Choose Dr. Nihar Modi for Sports Injuries in Mumbai?</h2>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          As a highly qualified <strong>Sports Orthopaedic Surgeon</strong> in Mumbai, Dr. Nihar Modi brings international expertise from his fellowships in Australia and the USA. Holding a prestigious FIFA Diploma in Football Medicine, he understands the unique demands of athletes. Whether you are dealing with an ACL tear, a meniscus injury, or a shoulder dislocation, Dr. Modi prioritizes minimally invasive techniques (arthroscopy) to ensure faster recovery, less pain, and a safe return to your active lifestyle.
+        </p>
+      </div>
+    </section>
 
     <div class="bg-white min-h-screen pb-20 md:pb-32 pt-12 md:pt-24">
       <!-- Section 1: Education -->

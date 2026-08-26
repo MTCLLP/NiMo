@@ -1,13 +1,14 @@
 <script setup lang="ts">
 // Home page
 useHead({
-  title: 'Best Orthopedic Surgeon in Mumbai - Dr. Nihar Modi',
+  title: "Best Orthopaedic Surgeon in Mumbai | Sports Medicine",
   meta: [
     {
-      name: 'description',
-      content: 'Looking for the best orthopedic surgeon in Mumbai? Dr. Nihar Modi offers expert care for joint, knee, and shoulder conditions at his Bandra & Khar clinics.'
-    }
-  ]
+      name: "description",
+      content:
+        "Looking for the best orthopaedic surgeon in Mumbai? Dr. Nihar Modi offers expert care for joint, knee, and shoulder conditions at his Bandra & Khar clinics.",
+    },
+  ],
 });
 </script>
 <template>

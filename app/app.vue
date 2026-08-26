@@ -5,7 +5,16 @@ useSchemaOrg([
   defineLocalBusiness({
     "@type": "Physician" as any,
     name: "Dr. Nihar Modi",
-    medicalSpecialty: "Orthopaedic Surgery, Sports Medicine",
+    medicalSpecialty: [
+      {
+        "@type": "MedicalSpecialty",
+        name: "Orthopaedic Surgery",
+      },
+      {
+        "@type": "MedicalSpecialty",
+        name: "Sports Medicine",
+      },
+    ],
     address: [
       {
         "@type": "PostalAddress",
