@@ -163,7 +163,7 @@ const isSidebarOpen = ref(false);
           <img width="24" height="24"
             src="/sidebar/icon-home-dr-nihar-modi.svg"
             class="w-6 h-6"
-            alt=""
+            alt="Home Icon"
           />
           Home
         </NuxtLink>
@@ -172,10 +172,10 @@ const isSidebarOpen = ref(false);
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >
-          <img width="800" height="1000"
+          <img width="24" height="24"
             src="/sidebar/icon-about-dr-nihar-modi.svg"
             class="w-6 h-6"
-            alt=""
+            alt="About Icon"
           />
           About
         </NuxtLink>
@@ -187,7 +187,7 @@ const isSidebarOpen = ref(false);
           <img width="24" height="24"
             src="/sidebar/icon-conditions-treated-dr-nihar-modi.svg"
             class="w-6 h-6"
-            alt=""
+            alt="Conditions Treated Icon"
           />
           Conditions Treated
         </NuxtLink>
@@ -199,7 +199,7 @@ const isSidebarOpen = ref(false);
           <img width="24" height="24"
             src="/sidebar/icon-specialised-area-dr-nihar-modi.svg"
             class="w-6 h-6"
-            alt=""
+            alt="Specialised Areas Icon"
           />
           Specialised Areas
         </NuxtLink>
@@ -211,7 +211,7 @@ const isSidebarOpen = ref(false);
           <img width="24" height="24"
             src="/sidebar/icon-treatment-techniques-dr-nihar-modi.svg"
             class="w-6 h-6"
-            alt=""
+            alt="Testimonials Icon"
           />
           Testimonials
         </NuxtLink>
@@ -223,7 +223,7 @@ const isSidebarOpen = ref(false);
           <img width="24" height="24"
             src="/sidebar/icon-terms-and-conditions-dr-nihar-modi.svg"
             class="w-6 h-6"
-            alt=""
+            alt="FAQs Icon"
           />
           FAQs
         </NuxtLink>
@@ -235,7 +235,7 @@ const isSidebarOpen = ref(false);
           <img width="24" height="24"
             src="/sidebar/icon-contact-dr-nihar-modi.svg"
             class="w-6 h-6"
-            alt=""
+            alt="Contact Icon"
           />
           Contact
         </NuxtLink>

@@ -7,12 +7,20 @@ export default defineNuxtConfig({
   modules: ['@nuxt/image', '@nuxtjs/seo'],
   site: {
     name: 'Dr. Nihar Modi',
+    url: 'https://drniharmodi.com',
   },
   features: {
     inlineStyles: true
   },
   app: {
     head: {
+      meta: [
+        { property: 'og:image', content: '/about-dr-nihar-modi.webp' },
+        { property: 'og:image:width', content: '800' },
+        { property: 'og:image:height', content: '1000' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: '/about-dr-nihar-modi.webp' }
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' },
         // Preload critical fonts to avoid chaining requests
