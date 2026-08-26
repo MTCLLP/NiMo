@@ -8,7 +8,7 @@
     <div class="container mx-auto px-8 flex flex-col items-center text-center">
       <!-- Logo / Doctor Info -->
       <div class="flex items-center justify-center gap-4 mb-8">
-        <img src="/logo.svg" alt="Logo" class="h-16 w-auto" />
+        <img width="74" height="74" src="/logo.svg" alt="Logo" class="h-16 w-auto" />
         <div class="text-left">
           <div class="text-3xl font-mirage text-white leading-tight">
             <!-- <span

@@ -13,7 +13,7 @@ const isSidebarOpen = ref(false);
       to="/"
       class="flex items-center gap-3 hover:opacity-80 transition-opacity flex-1 min-w-0 pr-4"
     >
-      <img src="/logo.svg" alt="Logo" class="h-12 md:h-14 w-auto shrink-0" />
+      <img width="74" height="74" src="/logo.svg" alt="Logo" class="h-12 md:h-14 w-auto shrink-0" />
       <div class="text-xl md:text-2xl font-mirage text-primary leading-tight min-w-0">
         <!-- <span
           class="text-xs md:text-sm font-sans uppercase tracking-widest text-gray-500 block mb-[-4px]"
@@ -67,7 +67,7 @@ const isSidebarOpen = ref(false);
             href="tel:+919833066702"
             class="flex items-center gap-2 hover:text-primary transition-colors"
           >
-            <img
+            <img width="16" height="16"
               src="/icon-phone-dr-nihar-modi.svg"
               alt="Phone"
               class="w-4 h-4"
@@ -106,7 +106,7 @@ const isSidebarOpen = ref(false);
 
         <!-- Hamburger -->
         <button aria-label="Open menu" @click="isSidebarOpen = true" class="p-2 ml-4 cursor-pointer focus:outline-none">
-          <img
+          <img width="24" height="24"
             src="/icon-hamburger-dr-nihar-modi.svg"
             alt="Menu"
             class="w-6 h-6"
@@ -160,7 +160,7 @@ const isSidebarOpen = ref(false);
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >
-          <img
+          <img width="24" height="24"
             src="/sidebar/icon-home-dr-nihar-modi.svg"
             class="w-6 h-6"
             alt=""
@@ -172,7 +172,7 @@ const isSidebarOpen = ref(false);
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >
-          <img
+          <img width="800" height="1000"
             src="/sidebar/icon-about-dr-nihar-modi.svg"
             class="w-6 h-6"
             alt=""
@@ -184,7 +184,7 @@ const isSidebarOpen = ref(false);
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >
-          <img
+          <img width="24" height="24"
             src="/sidebar/icon-conditions-treated-dr-nihar-modi.svg"
             class="w-6 h-6"
             alt=""
@@ -196,7 +196,7 @@ const isSidebarOpen = ref(false);
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >
-          <img
+          <img width="24" height="24"
             src="/sidebar/icon-specialised-area-dr-nihar-modi.svg"
             class="w-6 h-6"
             alt=""
@@ -208,7 +208,7 @@ const isSidebarOpen = ref(false);
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >
-          <img
+          <img width="24" height="24"
             src="/sidebar/icon-treatment-techniques-dr-nihar-modi.svg"
             class="w-6 h-6"
             alt=""
@@ -220,7 +220,7 @@ const isSidebarOpen = ref(false);
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >
-          <img
+          <img width="24" height="24"
             src="/sidebar/icon-terms-and-conditions-dr-nihar-modi.svg"
             class="w-6 h-6"
             alt=""
@@ -232,7 +232,7 @@ const isSidebarOpen = ref(false);
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >
-          <img
+          <img width="24" height="24"
             src="/sidebar/icon-contact-dr-nihar-modi.svg"
             class="w-6 h-6"
             alt=""

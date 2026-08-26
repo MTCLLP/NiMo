@@ -18,7 +18,7 @@
             <span class="w-12 h-px bg-primary/30"></span>
             <span
               class="text-sm font-bold tracking-widest text-primary uppercase"
-              >About Dr. Modi</span
+              >About Dr. Nihar Modi</span
             >
           </div> -->
 
@@ -58,7 +58,7 @@
 
         <!-- Image Column -->
         <div class="w-full order-1 lg:order-2">
-          <img
+          <img width="800" height="1000"
             src="/about-dr-nihar-modi.webp"
             alt="Dr. Nihar Modi"
             class="w-full h-auto rounded-2xl object-cover"

@@ -225,7 +225,7 @@ const accordionItems = [
           <template #item-content="{ item }">
             <template v-if="item.id === 'education'">
               <div class="pt-2">
-                <img
+                <img width="800" height="1000"
                   src="/about/graduation.png"
                   alt="Education and Qualifications"
                   class="w-full h-auto rounded-xl shadow-sm mb-8 object-cover object-center max-h-[400px]"
@@ -295,7 +295,7 @@ const accordionItems = [
 
             <template v-else-if="item.id === 'awards'">
               <div class="pt-2">
-                <img
+                <img width="800" height="1000"
                   src="/about/awards.png"
                   alt="Awards"
                   class="w-full h-auto rounded-xl shadow-sm mb-8 object-cover object-center max-h-[400px]"

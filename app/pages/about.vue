@@ -2,13 +2,14 @@
 import { computed } from "vue";
 
 useHead({
-  title: 'About | Top Orthopaedic Surgeon in Mumbai',
+  title: "About | Top Orthopaedic Surgeon in Mumbai",
   meta: [
     {
-      name: 'description',
-      content: 'Learn about Dr. Nihar Modi, a highly qualified orthopaedic surgeon in Mumbai specializing in joint replacement, sports medicine, and arthroscopic surgeries.'
-    }
-  ]
+      name: "description",
+      content:
+        "Learn about Dr. Nihar Modi, a highly qualified orthopaedic surgeon in Mumbai specializing in joint replacement, sports medicine, and arthroscopic surgeries.",
+    },
+  ],
 });
 
 const education = [
@@ -164,13 +165,22 @@ const hobbies = [
       ]"
     />
     <IntroductionSection />
-    
+
     <!-- New SEO Section -->
     <section class="bg-primary/5 py-16">
       <div class="container mx-auto px-6 max-w-4xl text-center">
-        <h2 class="text-3xl md:text-4xl font-mirage text-primary mb-6">Why Choose Dr. Nihar Modi for Sports Injuries in Mumbai?</h2>
+        <h2 class="text-3xl md:text-4xl font-mirage text-primary mb-6">
+          Why Choose Dr. Nihar Modi for Sports Injuries in Mumbai?
+        </h2>
         <p class="text-gray-600 leading-relaxed mb-6">
-          As a highly qualified <strong>Sports Orthopaedic Surgeon</strong> in Mumbai, Dr. Nihar Modi brings international expertise from his fellowships in Australia and the USA. Holding a prestigious FIFA Diploma in Football Medicine, he understands the unique demands of athletes. Whether you are dealing with an ACL tear, a meniscus injury, or a shoulder dislocation, Dr. Modi prioritizes minimally invasive techniques (arthroscopy) to ensure faster recovery, less pain, and a safe return to your active lifestyle.
+          As a highly qualified <strong>Sports Orthopaedic Surgeon</strong> in
+          Mumbai, Dr. Nihar Modi brings international expertise from his
+          fellowships in Australia and the USA. Holding a prestigious FIFA
+          Diploma in Football Medicine, he understands the unique demands of
+          athletes. Whether you are dealing with an ACL tear, a meniscus injury,
+          or a shoulder dislocation, Dr. Nihar Modi prioritizes minimally
+          invasive techniques (arthroscopy) to ensure faster recovery, less
+          pain, and a safe return to your active lifestyle.
         </p>
       </div>
     </section>
@@ -198,7 +208,7 @@ const hobbies = [
             </div>
           </div>
           <div class="order-1 lg:order-2 lg:col-span-5 lg:sticky lg:top-32">
-            <img
+            <img width="800" height="1000"
               src="/about/graduation.png"
               alt="Education"
               class="w-full h-auto object-cover"
@@ -213,7 +223,7 @@ const hobbies = [
           class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start"
         >
           <div class="order-1 lg:order-1 lg:col-span-5 lg:sticky lg:top-32">
-            <img
+            <img width="800" height="1000"
               src="/about/academic.png"
               alt="Appointments and Training"
               class="w-full h-auto object-cover"
@@ -296,7 +306,7 @@ const hobbies = [
             </div>
           </div>
           <div class="order-1 lg:order-2 lg:col-span-5 lg:sticky lg:top-32">
-            <img
+            <img width="800" height="1000"
               src="/about/publications.png"
               alt="Research and Publications"
               class="w-full h-auto object-cover"
@@ -311,7 +321,7 @@ const hobbies = [
           class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start"
         >
           <div class="order-1 lg:order-1 lg:col-span-5 lg:sticky lg:top-32">
-            <img
+            <img width="800" height="1000"
               src="/about/awards.png"
               alt="Awards and More"
               class="w-full h-auto object-cover"

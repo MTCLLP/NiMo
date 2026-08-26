@@ -77,7 +77,7 @@ onUnmounted(() => {
           class="shrink-0 w-[80vw] sm:w-[350px] h-[250px] rounded-2xl overflow-hidden snap-center relative group cursor-pointer"
           @click="openLightbox(idx)"
         >
-          <img :src="img.url" :alt="img.alt" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+          <img width="800" height="600" :src="img.url" :alt="img.alt" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
             <span class="opacity-0 group-hover:opacity-100 text-white bg-black/60 p-3 rounded-full transition-opacity duration-300 flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
@@ -119,7 +119,7 @@ onUnmounted(() => {
 
         <!-- Image -->
         <div class="relative w-full max-w-6xl px-20 flex justify-center items-center h-full max-h-[85vh]">
-          <img 
+          <img width="800" height="600" 
             :src="galleryImages[selectedIndex]?.url" 
             :alt="galleryImages[selectedIndex]?.alt" 
             class="max-w-full max-h-full object-contain rounded-lg shadow-2xl"

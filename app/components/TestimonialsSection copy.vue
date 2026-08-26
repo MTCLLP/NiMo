@@ -104,7 +104,7 @@ const setActive = (index: number, direction: "slide-next" | "slide-prev") => {
           class="w-full lg:w-1/3 grid place-items-center flex-shrink-0 z-10 order-1 lg:order-2"
         >
           <Transition :name="transitionName">
-            <img
+            <img width="64" height="64"
               :src="activeTestimonial.img"
               :key="activeTestimonial.img"
               class="col-start-1 row-start-1 w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[360px] h-[320px] sm:h-[380px] lg:h-[480px] object-cover rounded-xl shadow-xl"
@@ -121,7 +121,7 @@ const setActive = (index: number, direction: "slide-next" | "slide-prev") => {
             tag="div"
             class="hidden lg:flex justify-end gap-2 lg:gap-4 mb-16"
           >
-            <img
+            <img width="64" height="64"
               v-for="test in leftTestimonials"
               :key="test.originalIndex"
               :src="test.img"
@@ -175,7 +175,7 @@ const setActive = (index: number, direction: "slide-next" | "slide-prev") => {
             tag="div"
             class="hidden lg:flex justify-start gap-2 lg:gap-4 mb-16"
           >
-            <img
+            <img width="64" height="64"
               v-for="test in rightTestimonials"
               :key="test.originalIndex"
               :src="test.img"
@@ -209,7 +209,7 @@ const setActive = (index: number, direction: "slide-next" | "slide-prev") => {
         <div
           class="flex lg:hidden order-4 w-full overflow-x-auto gap-3 px-4 py-2 mt-4 justify-start no-scrollbar"
         >
-          <img
+          <img width="64" height="64"
             v-for="test in testimonials"
             :key="'mob-' + test.originalIndex"
             :src="test.img"

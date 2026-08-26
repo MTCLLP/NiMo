@@ -28,7 +28,7 @@ useHead({
             <!-- Phone -->
             <div class="flex items-start gap-5">
               <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                <img src="/icon-phone-dr-nihar-modi.svg" alt="Phone" class="w-5 h-5" />
+                <img width="20" height="20" src="/icon-phone-dr-nihar-modi.svg" alt="Phone" class="w-5 h-5" />
               </div>
               <div>
                 <h4 class="font-semibold text-gray-800 mb-1 text-lg">Phone</h4>
@@ -39,7 +39,7 @@ useHead({
             <!-- WhatsApp -->
             <div class="flex items-start gap-5">
               <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                <img src="/icon-whatsapp-alt-dr-nihar-modi.svg" alt="WhatsApp" class="w-5 h-5" />
+                <img width="20" height="20" src="/icon-whatsapp-alt-dr-nihar-modi.svg" alt="WhatsApp" class="w-5 h-5" />
               </div>
               <div>
                 <h4 class="font-semibold text-gray-800 mb-1 text-lg">WhatsApp</h4>

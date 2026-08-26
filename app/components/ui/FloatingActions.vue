@@ -106,7 +106,7 @@ onUnmounted(() => {
         Get in touch
       </div>
       <div class="hover:scale-105 transition-transform">
-        <img
+        <img width="40" height="40"
           src="/icon-phone-dr-nihar-modi.svg"
           alt="Phone"
           class="w-10 h-10 transition-all duration-300"
@@ -128,7 +128,7 @@ onUnmounted(() => {
         Chat with us
       </div>
       <div class="hover:scale-105 transition-transform">
-        <img
+        <img width="40" height="40"
           src="/icon-whatsapp-dr-nihar-modi.svg"
           alt="WhatsApp"
           class="w-10 h-10 transition-all duration-300"

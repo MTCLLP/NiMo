@@ -2,13 +2,14 @@
 import { ref } from "vue";
 
 useHead({
-  title: 'FAQs',
+  title: "FAQs",
   meta: [
     {
-      name: 'description',
-      content: 'Have questions about orthopedic surgery or joint replacement? Read our frequently asked questions about treatments offered by Dr. Nihar Modi in Mumbai.'
-    }
-  ]
+      name: "description",
+      content:
+        "Have questions about orthopedic surgery or joint replacement? Read our frequently asked questions about treatments offered by Dr. Nihar Modi in Mumbai.",
+    },
+  ],
 });
 
 const faqGroups = ref([
@@ -24,7 +25,7 @@ const faqGroups = ref([
       {
         title: "What should I expect during my first visit?",
         content:
-          "During your first visit, Dr. Modi will conduct a comprehensive evaluation which includes taking a detailed medical history, performing a physical examination, and reviewing any previous X-rays or MRI scans. Depending on the findings, further tests may be ordered to develop a personalized treatment plan.",
+          "During your first visit, Dr. Nihar Modi will conduct a comprehensive evaluation which includes taking a detailed medical history, performing a physical examination, and reviewing any previous X-rays or MRI scans. Depending on the findings, further tests may be ordered to develop a personalized treatment plan.",
       },
       {
         title: "Can I get a second opinion on my condition?",
@@ -70,7 +71,7 @@ const faqGroups = ref([
       {
         title: "What are the common procedures you perform?",
         content:
-          "Dr. Modi specializes in joint replacement surgery (knee, hip, and shoulder), arthroscopy, trauma and fracture care, ligament reconstructions (like ACL repair), and treatments for sports injuries.",
+          "Dr. Nihar Modi specializes in joint replacement surgery (knee, hip, and shoulder), arthroscopy, trauma and fracture care, ligament reconstructions (like ACL repair), and treatments for sports injuries.",
       },
       {
         title:

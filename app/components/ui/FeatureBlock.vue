@@ -24,7 +24,7 @@ const layoutClass = computed(() => {
 <template>
   <component :is="Component" :to="link" :class="[layoutClass, link ? 'cursor-pointer block' : '']">
     <div class="w-16 h-16 flex-shrink-0 relative">
-      <img
+      <img width="48" height="48"
         :src="icon"
         :alt="title"
         class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"

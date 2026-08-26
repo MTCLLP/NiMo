@@ -61,7 +61,7 @@ const variantClasses = computed(() => {
     class="rounded-full flex items-center justify-center transition-colors group"
     :class="[sizeClasses, variantClasses]"
   >
-    <img 
+    <img width="24" height="24" 
       :src="iconSrc" 
       :alt="altText" 
       class="transition-all" 

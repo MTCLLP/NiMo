@@ -21,7 +21,7 @@
         <!-- About Column -->
         <div class="lg:col-span-1">
           <div class="flex items-center gap-3 mb-6">
-            <img
+            <img width="48" height="48"
               src="/dr-nihar-modi-footer.png"
               alt="Doctor"
               class="w-12 h-12 rounded-full object-cover object-top border-2 border-white/20"
