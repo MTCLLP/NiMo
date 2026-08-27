@@ -162,23 +162,49 @@ useHead({
         </div>
 
         <div class="mt-12 bg-gray-50 p-8 rounded-2xl border border-gray-100">
-          <h3 class="text-2xl font-bold text-gray-800 mb-6">Explore Related Procedures</h3>
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">
+            Explore Related Procedures
+          </h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <NuxtLink to="/procedures/shoulder-arthroscopy" class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-primary font-medium group">
+            <NuxtLink
+              to="/procedures/shoulder-arthroscopy"
+              class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-primary font-medium group"
+            >
               <span class="flex-grow">Shoulder Arthroscopy</span>
-              <span class="text-gray-400 group-hover:text-primary transition-colors">→</span>
+              <span
+                class="text-gray-400 group-hover:text-primary transition-colors"
+                >→</span
+              >
             </NuxtLink>
-            <NuxtLink to="/procedures/ligament-reconstruction-mumbai" class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-primary font-medium group">
+            <NuxtLink
+              to="/procedures/ligament-reconstruction-mumbai"
+              class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-primary font-medium group"
+            >
               <span class="flex-grow">Ligament Reconstruction</span>
-              <span class="text-gray-400 group-hover:text-primary transition-colors">→</span>
+              <span
+                class="text-gray-400 group-hover:text-primary transition-colors"
+                >→</span
+              >
             </NuxtLink>
-            <NuxtLink to="/procedures/shoulder-dislocation-treatment" class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-primary font-medium group">
+            <NuxtLink
+              to="/procedures/shoulder-dislocation-treatment"
+              class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-primary font-medium group"
+            >
               <span class="flex-grow">Shoulder Dislocation</span>
-              <span class="text-gray-400 group-hover:text-primary transition-colors">→</span>
+              <span
+                class="text-gray-400 group-hover:text-primary transition-colors"
+                >→</span
+              >
             </NuxtLink>
-            <NuxtLink to="/procedures/hand-and-wrist-surgery" class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-primary font-medium group">
+            <NuxtLink
+              to="/procedures/hand-and-wrist-surgery"
+              class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-primary font-medium group"
+            >
               <span class="flex-grow">Hand & Wrist Surgery</span>
-              <span class="text-gray-400 group-hover:text-primary transition-colors">→</span>
+              <span
+                class="text-gray-400 group-hover:text-primary transition-colors"
+                >→</span
+              >
             </NuxtLink>
           </div>
         </div>
