@@ -1,12 +1,12 @@
 <script setup lang="ts">
 // Home page
 useHead({
-  title: "Best Orthopaedic Surgeon in Mumbai | Sports Medicine",
+  title: "Dr. Nihar Modi | Top Orthopaedic Surgeon in Mumbai",
   meta: [
     {
       name: "description",
       content:
-        "Looking for the best orthopaedic surgeon in Mumbai? Dr. Nihar Modi offers expert care for joint, knee, and shoulder conditions at his Bandra & Khar clinics.",
+        "Book an appointment with Dr. Nihar Modi, a leading orthopaedic surgeon and sports medicine specialist serving Bandra, Santacruz, and Mumbai.",
     },
   ],
 });

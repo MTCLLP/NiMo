@@ -14,7 +14,7 @@ const areas = [
     desc: "Expert care for rotator cuff tears, dislocations, and shoulder arthritis to help you regain full range of motion.",
     img: "/specialities/shoulder-surgery-dr-nihar-modi.png",
     hoverImg: "/specialities/shoulder-surgery-dr-nihar-modi.png",
-    slug: "shoulder-surgery",
+    slug: "shoulder-arthroscopy",
   },
   {
     title: "Elbow Surgery",

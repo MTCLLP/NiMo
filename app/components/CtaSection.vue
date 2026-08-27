@@ -45,7 +45,8 @@ defineProps({
       <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
         <slot name="desc">
           Schedule a consultation with Dr. Nihar Modi today and get back to the
-          life you love.
+          life you love. Proudly serving patients in Bandra, Khar, Santacruz
+          West and across Mumbai.
         </slot>
       </p>
 

@@ -4,7 +4,7 @@ const minimallyInvasive = [
     name: "Arthroscopy (Keyhole Surgery)",
     icon: "/treatment-techniques/icon-arthroscopy-dr-nihar-modi.svg",
     desc: "Minimally invasive surgery performed through small incisions using a high-definition camera and specialised instruments, allowing precise treatment with less pain and quicker recovery.",
-    link: "/procedures/arthroscopy-surgeon-mumbai",
+    link: "/procedures/shoulder-arthroscopy",
   },
   {
     name: "Ligament Reconstruction",
