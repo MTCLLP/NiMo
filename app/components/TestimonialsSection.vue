@@ -47,38 +47,82 @@ const goTo = (index: number) => {
         >
           <Transition :name="transitionName" mode="out-in">
             <div :key="activeIndex" class="w-full pt-8 lg:pt-0">
-              <div class="flex justify-center text-blue-400 mb-6 gap-1">
-                <svg
-                  v-for="i in activeTestimonial.rating"
-                  :key="i"
-                  class="w-5 h-5 fill-current"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  ></path>
-                </svg>
+              <!-- Video Layout -->
+              <div v-if="activeTestimonial.videoId" class="flex flex-col md:flex-row gap-8 md:gap-12 items-center text-left">
+                <div class="w-full md:w-1/2 flex justify-center">
+                  <div class="w-[260px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl relative bg-black">
+                    <iframe
+                      :src="`https://www.youtube.com/embed/${activeTestimonial.videoId}?rel=0`"
+                      class="absolute inset-0 w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      :title="activeTestimonial.title"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+                  <div class="flex text-blue-400 mb-6 gap-1">
+                    <svg
+                      v-for="i in activeTestimonial.rating"
+                      :key="i"
+                      class="w-5 h-5 fill-current"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-8 italic">
+                    "{{ activeTestimonial.text }}"
+                  </p>
+                  <div>
+                    <h3 class="text-xl font-semibold text-gray-900">
+                      {{ activeTestimonial.title }}
+                    </h3>
+                    <p v-if="activeTestimonial.subtitle" class="text-sm text-gray-500 mt-1">
+                      {{ activeTestimonial.subtitle }}
+                    </p>
+                    <p class="text-xs text-gray-600 mt-2">
+                      {{ activeTestimonial.date }}
+                    </p>
+                  </div>
+                </div>
               </div>
-
-              <p
-                class="text-base lg:text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto italic"
-              >
-                "{{ activeTestimonial.text }}"
-              </p>
-
-              <div>
-                <h3 class="text-xl font-semibold text-gray-900">
-                  {{ activeTestimonial.title }}
-                </h3>
-                <p
-                  v-if="activeTestimonial.subtitle"
-                  class="text-sm text-gray-500 mt-1"
-                >
-                  {{ activeTestimonial.subtitle }}
+              
+              <!-- Text Only Layout -->
+              <div v-else class="flex flex-col items-center">
+                <div class="flex justify-center text-blue-400 mb-6 gap-1">
+                  <svg
+                    v-for="i in activeTestimonial.rating"
+                    :key="i"
+                    class="w-5 h-5 fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    ></path>
+                  </svg>
+                </div>
+  
+                <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto italic text-center">
+                  "{{ activeTestimonial.text }}"
                 </p>
-                <p class="text-xs text-gray-600 mt-2">
-                  {{ activeTestimonial.date }}
-                </p>
+  
+                <div class="text-center">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    {{ activeTestimonial.title }}
+                  </h3>
+                  <p
+                    v-if="activeTestimonial.subtitle"
+                    class="text-sm text-gray-500 mt-1"
+                  >
+                    {{ activeTestimonial.subtitle }}
+                  </p>
+                  <p class="text-xs text-gray-600 mt-2">
+                    {{ activeTestimonial.date }}
+                  </p>
+                </div>
               </div>
             </div>
           </Transition>
@@ -147,6 +191,14 @@ const goTo = (index: number) => {
             </svg>
           </button>
         </div>
+      </div>
+
+      <!-- View More Testimonials Button -->
+      <div class="mt-12 sm:mt-16 text-center">
+        <UiButton to="/testimonials" variant="outline" class="inline-flex justify-center items-center group">
+          View More Testimonials
+          <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </UiButton>
       </div>
     </div>
   </section>

@@ -1,5 +1,13 @@
 export const testimonials = [
   {
+    title: "Patient Recovery Story",
+    subtitle: "Video Testimonial",
+    text: "Watch this video testimonial to hear about the patient's recovery journey after ACL Reconstruction and Meniscus Repair with Dr. Nihar Modi.",
+    rating: 5,
+    date: "August 2026",
+    videoId: "DsJA4UNE8yQ"
+  },
+  {
     title: "Priyanshu Vishwakarma",
     subtitle: "",
     text: "Dr. Nihar Modi is an excellent orthopedic surgeon and, more importantly, a genuinely good human being. I underwent ACL reconstruction along with meniscus surgery under his care, and I am truly grateful for the way he handled such a major and important surgery with great expertise, patience, and care. The entire treatment was done very professionally, and his way of communicating with me as a doctor was extremely good. He explained things properly, made me feel comfortable, and gave me confidence throughout the process. I am very grateful for everything he has done for me and for the care and dedication he showed throughout my ACL and meniscus surgery. I will always be thankful to Dr. Nihar Modi for his excellent treatment, support, and guidance. Thank you Sir for Everything Everything very grateful to you Always ❤️❤️",

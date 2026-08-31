@@ -89,6 +89,14 @@ const truncateText = (text: string, length = 150) => {
               </p>
 
               <div class="mt-auto">
+                <button
+                  v-if="testimonial.videoId"
+                  @click="selectedTestimonial = testimonial"
+                  class="flex items-center justify-center gap-2 w-full py-3 mb-6 bg-primary/5 hover:bg-primary/10 text-primary font-medium rounded-xl transition-colors border border-primary/10"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg>
+                  Watch Video
+                </button>
                 <h3 class="text-lg font-semibold text-gray-900">
                   {{ testimonial.title }}
                 </h3>
@@ -138,6 +146,18 @@ const truncateText = (text: string, length = 150) => {
           </svg>
         </button>
         
+        <div v-if="selectedTestimonial?.videoId" class="w-full flex justify-center mb-8">
+          <div class="w-[280px] aspect-[9/16] rounded-2xl overflow-hidden shadow-xl relative bg-black">
+            <iframe
+              :src="`https://www.youtube.com/embed/${selectedTestimonial.videoId}?rel=0`"
+              class="absolute inset-0 w-full h-full border-0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              :title="selectedTestimonial.title"
+            ></iframe>
+          </div>
+        </div>
+
         <div class="flex text-blue-400 mb-6 gap-1">
           <svg
             v-for="i in selectedTestimonial.rating"

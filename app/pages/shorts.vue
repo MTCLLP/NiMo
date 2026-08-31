@@ -19,6 +19,7 @@ const shorts = [
   { id: "2-vgPaqGDP0", title: "YouTube Short 4" },
   { id: "WZuzvXUnD1o", title: "YouTube Short 5" },
   { id: "81Pq5oQ-T1k", title: "YouTube Short 6" },
+  { id: "DsJA4UNE8yQ", title: "YouTube Short 7" },
 ];
 
 const selectedIndex = ref<number | null>(null);
