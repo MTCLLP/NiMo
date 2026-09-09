@@ -13,13 +13,54 @@ useHead({
 });
 
 const shorts = [
-  { id: "SYwzDo1p5wc", title: "YouTube Short 1" },
-  { id: "sMQg-CzBpoc", title: "YouTube Short 2" },
-  { id: "KnuW1GXgcH0", title: "YouTube Short 3" },
-  { id: "2-vgPaqGDP0", title: "YouTube Short 4" },
-  { id: "WZuzvXUnD1o", title: "YouTube Short 5" },
-  { id: "81Pq5oQ-T1k", title: "YouTube Short 6" },
-  { id: "DsJA4UNE8yQ", title: "YouTube Short 7" },
+  {
+    id: "SYwzDo1p5wc",
+    title:
+      "Why I Chose Sports Orthopaedics? | My Journey as an Orthopaedic Surgeon",
+  },
+  {
+    id: "sMQg-CzBpoc",
+    title:
+      "Your ACL Is Weakest When You Feel Strongest | #ACL Recovery Explained",
+  },
+  {
+    id: "KnuW1GXgcH0",
+    title: "Does Running Cause Knee Arthritis? The Science Says No",
+  },
+  { id: "2-vgPaqGDP0", title: "Tennis Elbow" },
+  {
+    id: "WZuzvXUnD1o",
+    title: "Does Your X-Ray Mean You Need a Knee Replacement?",
+  },
+  {
+    id: "81Pq5oQ-T1k",
+    title: "Surgery Doesn't Heal Fractures - Your Body Does",
+  },
+  {
+    id: "xNUe9jPZcgM",
+    title: "Your MRI Doesn't Tell the Whole Story",
+  },
+  {
+    id: "NKJwJDWgerk",
+    title: "Why Frozen Shoulder Hurts More at Night",
+  },
+  {
+    id: "gtAV7GhDBnI",
+    title: "Frozen Shoulder? Skip Surgery and Do These Exercises Instead",
+  },
+  {
+    id: "wovffBoXrZw",
+    title:
+      "Never Skip Your Warm-Up | It Prevents Injuries & Boosts Performance",
+  },
+  {
+    id: "IlJw9d3x7cc",
+    title: "What Is Fartlek Training? The Easiest Way to Run Faster",
+  },
+  {
+    id: "XrKZXvKWIZM",
+    title: "Things My Patients Say That Keep Me Humble | Orthopaedic OPD",
+  },
 ];
 
 const selectedIndex = ref<number | null>(null);
@@ -92,7 +133,9 @@ onUnmounted(() => {
             @click="openLightbox(idx)"
           >
             <!-- YouTube Thumbnail -->
-            <img width="100" height="100"
+            <img
+              width="100"
+              height="100"
               :src="`https://i.ytimg.com/vi/${short.id}/maxresdefault.jpg`"
               onerror="
                 this.src = `https://i.ytimg.com/vi/${short.id}/hqdefault.jpg`
@@ -102,10 +145,10 @@ onUnmounted(() => {
             />
 
             <div
-              class="absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/30 transition-colors"
+              class="absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/30 transition-colors z-10"
             >
               <div
-                class="w-12 h-12 bg-red-600/90 rounded-full flex items-center justify-center text-white shadow-lg backdrop-blur-sm"
+                class="w-12 h-12 bg-red-600/90 rounded-full flex items-center justify-center text-white shadow-lg backdrop-blur-sm transition-transform duration-300 group-hover:scale-110"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,6 +161,13 @@ onUnmounted(() => {
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </div>
+            </div>
+
+            <!-- Title Overlay -->
+            <div class="absolute bottom-0 left-0 right-0 p-4 pt-12 bg-gradient-to-t from-black/90 to-transparent z-20 transition-opacity duration-300">
+              <h3 class="text-white font-medium text-sm line-clamp-2 leading-snug drop-shadow-md" :title="short.title">
+                {{ short.title }}
+              </h3>
             </div>
           </div>
         </div>
@@ -176,10 +226,10 @@ onUnmounted(() => {
 
         <!-- Video -->
         <div
-          class="relative w-full max-w-sm px-4 flex justify-center items-center h-full max-h-[85vh]"
+          class="relative w-full max-w-sm px-4 flex flex-col justify-center items-center h-full max-h-[90vh]"
         >
           <div
-            class="w-full aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl relative bg-black"
+            class="w-full aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl relative bg-black shrink-0"
             @click.stop
           >
             <iframe
@@ -200,10 +250,15 @@ onUnmounted(() => {
             ></iframe>
           </div>
 
-          <div
-            class="absolute bottom-[-40px] text-white/70 text-base font-medium text-center w-full left-0"
-          >
-            {{ selectedIndex + 1 }} / {{ shorts.length }}
+          <div class="mt-4 text-center w-full px-2" v-if="selectedShort">
+            <h2 class="text-white font-semibold text-lg line-clamp-2 drop-shadow-md">
+              {{ selectedShort.title }}
+            </h2>
+            <div
+              class="mt-2 text-white/70 text-sm font-medium"
+            >
+              {{ selectedIndex !== null ? selectedIndex + 1 : 0 }} / {{ shorts.length }}
+            </div>
           </div>
         </div>
 
