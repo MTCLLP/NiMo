@@ -1,14 +1,18 @@
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.directive('format-citations', {
     mounted(el) {
-      formatCitations(el)
+      if (import.meta.client) formatCitations(el)
     },
     updated(el) {
-      formatCitations(el)
+      if (import.meta.client) formatCitations(el)
+    },
+    getSSRProps() {
+      return {}
     }
   })
 
   function formatCitations(el: HTMLElement) {
+    if (typeof document === 'undefined') return
     const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null)
     let node
     const nodesToReplace = []

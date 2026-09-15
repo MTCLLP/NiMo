@@ -52,7 +52,7 @@ const goTo = (index: number) => {
                 <div class="w-full md:w-1/2 flex justify-center">
                   <div class="w-[260px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl relative bg-black">
                     <iframe
-                      :src="`https://www.youtube.com/embed/${activeTestimonial.videoId}?rel=0`"
+                      :src="`https://www.youtube-nocookie.com/embed/${activeTestimonial.videoId}?rel=0`"
                       class="absolute inset-0 w-full h-full border-0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen

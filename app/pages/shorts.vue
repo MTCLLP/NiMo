@@ -234,7 +234,7 @@ onUnmounted(() => {
           >
             <iframe
               v-if="selectedShort"
-              :src="`https://www.youtube.com/embed/${selectedShort.id}?rel=0&autoplay=1`"
+              :src="`https://www.youtube-nocookie.com/embed/${selectedShort.id}?rel=0&autoplay=1`"
               class="absolute inset-0 w-full h-full border-0"
               allow="
                 accelerometer;

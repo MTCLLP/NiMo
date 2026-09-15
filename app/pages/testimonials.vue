@@ -149,7 +149,7 @@ const truncateText = (text: string, length = 150) => {
         <div v-if="selectedTestimonial?.videoId" class="w-full flex justify-center mb-8">
           <div class="w-[280px] aspect-[9/16] rounded-2xl overflow-hidden shadow-xl relative bg-black">
             <iframe
-              :src="`https://www.youtube.com/embed/${selectedTestimonial.videoId}?rel=0`"
+              :src="`https://www.youtube-nocookie.com/embed/${selectedTestimonial.videoId}?rel=0`"
               class="absolute inset-0 w-full h-full border-0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
