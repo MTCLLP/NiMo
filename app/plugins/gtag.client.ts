@@ -17,7 +17,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     // Initialize the dataLayer and gtag function
     // @ts-ignore
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ 
+    function gtag(...args: any[]){ 
       // @ts-ignore
       window.dataLayer.push(arguments); 
     }

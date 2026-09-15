@@ -6,12 +6,12 @@ const isSidebarOpen = ref(false);
 
 <template>
   <header
-    class="absolute top-0 left-0 w-full z-[100] flex items-center justify-between px-8 py-6"
+    class="absolute top-0 left-0 w-full z-20 flex items-center justify-between px-8 py-6 pointer-events-none"
   >
     <!-- Logo -->
     <NuxtLink
       to="/"
-      class="flex items-center gap-3 hover:opacity-80 transition-opacity flex-1 min-w-0 pr-4"
+      class="flex items-center gap-3 hover:opacity-80 transition-opacity min-w-0 pr-4 pointer-events-auto"
     >
       <img width="74" height="74" src="/logo.svg" alt="Logo" class="h-12 md:h-14 w-auto shrink-0" />
       <div class="text-xl md:text-2xl font-mirage text-primary leading-tight min-w-0">
@@ -30,7 +30,7 @@ const isSidebarOpen = ref(false);
     </NuxtLink>
 
     <!-- Right side navigation -->
-    <div class="flex flex-col items-end gap-3 shrink-0">
+    <div class="flex flex-col items-end gap-3 shrink-0 pointer-events-auto">
       <!-- Top Social Icons -->
       <div class="hidden md:flex gap-3 items-center">
         <UiSocialLink
@@ -118,14 +118,13 @@ const isSidebarOpen = ref(false);
     <!-- Sidebar Overlay -->
     <div
       v-if="isSidebarOpen"
-      class="fixed inset-0 bg-black/50 z-[60] transition-opacity"
+      class="fixed inset-0 bg-black/50 z-[60] transition-opacity pointer-events-auto"
       @click="isSidebarOpen = false"
     ></div>
 
-    <!-- Sidebar Menu -->
     <div
-      class="fixed top-0 right-0 h-full w-80 bg-white z-[70] transform transition-transform duration-300 ease-in-out flex flex-col shadow-2xl"
-      :class="isSidebarOpen ? 'translate-x-0' : 'translate-x-full'"
+      class="fixed top-0 right-0 h-full w-80 bg-white z-[70] transform transition-all duration-300 ease-in-out flex flex-col shadow-2xl pointer-events-auto"
+      :class="isSidebarOpen ? 'translate-x-0 opacity-100 visible' : 'translate-x-full opacity-0 invisible'"
     >
       <!-- Close Button -->
       <div class="flex justify-end p-6">

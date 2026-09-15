@@ -73,7 +73,7 @@
           >Procedures</NuxtLink
         >
         <!-- <NuxtLink
-          to="/blogs"
+          to="/blog"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Blogs</NuxtLink
         > -->
