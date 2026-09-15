@@ -56,6 +56,7 @@ const goTo = (index: number) => {
                       class="absolute inset-0 w-full h-full border-0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
+                      loading="lazy"
                       :title="activeTestimonial.title"
                     ></iframe>
                   </div>

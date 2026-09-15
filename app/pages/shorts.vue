@@ -246,6 +246,7 @@ onUnmounted(() => {
                 web-share;
               "
               allowfullscreen
+              loading="lazy"
               :title="selectedShort.title"
             ></iframe>
           </div>
