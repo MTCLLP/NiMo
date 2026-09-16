@@ -48,20 +48,35 @@ const goTo = (index: number) => {
           <Transition :name="transitionName" mode="out-in">
             <div :key="activeIndex" class="w-full pt-8 lg:pt-0">
               <!-- Video Layout -->
-              <div v-if="activeTestimonial.videoId" class="flex flex-col md:flex-row gap-8 md:gap-12 items-center text-left">
+              <div
+                v-if="activeTestimonial.videoId"
+                class="flex flex-col md:flex-row gap-8 md:gap-12 items-center text-left"
+              >
                 <div class="w-full md:w-1/2 flex justify-center">
-                  <div class="w-[260px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl relative bg-black">
+                  <div
+                    class="w-[260px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl relative bg-black"
+                  >
                     <iframe
                       :src="`https://www.youtube-nocookie.com/embed/${activeTestimonial.videoId}?rel=0`"
                       class="absolute inset-0 w-full h-full border-0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                        web-share;
+                      "
                       allowfullscreen
                       loading="lazy"
                       :title="activeTestimonial.title"
                     ></iframe>
                   </div>
                 </div>
-                <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+                <div
+                  class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left"
+                >
                   <div class="flex text-blue-400 mb-6 gap-1">
                     <svg
                       v-for="i in activeTestimonial.rating"
@@ -74,14 +89,19 @@ const goTo = (index: number) => {
                       ></path>
                     </svg>
                   </div>
-                  <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-8 italic">
+                  <p
+                    class="text-base lg:text-lg text-gray-600 leading-relaxed mb-8 italic"
+                  >
                     "{{ activeTestimonial.text }}"
                   </p>
                   <div>
                     <h3 class="text-xl font-semibold text-gray-900">
                       {{ activeTestimonial.title }}
                     </h3>
-                    <p v-if="activeTestimonial.subtitle" class="text-sm text-gray-500 mt-1">
+                    <p
+                      v-if="activeTestimonial.subtitle"
+                      class="text-sm text-gray-500 mt-1"
+                    >
                       {{ activeTestimonial.subtitle }}
                     </p>
                     <p class="text-xs text-gray-600 mt-2">
@@ -90,7 +110,7 @@ const goTo = (index: number) => {
                   </div>
                 </div>
               </div>
-              
+
               <!-- Text Only Layout -->
               <div v-else class="flex flex-col items-center">
                 <div class="flex justify-center text-blue-400 mb-6 gap-1">
@@ -105,11 +125,13 @@ const goTo = (index: number) => {
                     ></path>
                   </svg>
                 </div>
-  
-                <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto italic text-center">
+
+                <p
+                  class="text-base lg:text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto italic text-center"
+                >
                   "{{ activeTestimonial.text }}"
                 </p>
-  
+
                 <div class="text-center">
                   <h3 class="text-xl font-semibold text-gray-900">
                     {{ activeTestimonial.title }}
@@ -196,9 +218,25 @@ const goTo = (index: number) => {
 
       <!-- View More Testimonials Button -->
       <div class="mt-12 sm:mt-16 text-center">
-        <UiButton to="/testimonials" variant="outline" class="inline-flex justify-center items-center group">
+        <UiButton
+          to="/testimonials"
+          variant="outline"
+          class="inline-flex justify-center items-center group"
+        >
           View More Testimonials
-          <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          <svg
+            class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            ></path>
+          </svg>
         </UiButton>
       </div>
     </div>

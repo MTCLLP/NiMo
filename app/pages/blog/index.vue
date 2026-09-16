@@ -1,10 +1,26 @@
 <script setup lang="ts">
+import { ref, computed } from 'vue'
+
 const { data: posts } = await useAsyncData("blog-posts", () =>
   queryCollection("blog").order("date", "DESC").all(),
 );
 
 // Helper: extract the last path segment as the URL slug
 const getPostSlug = (post: any) => post.path?.split("/").pop() ?? post.slug;
+
+const searchQuery = ref('');
+
+const filteredPosts = computed(() => {
+  if (!posts.value) return [];
+  if (!searchQuery.value) return posts.value;
+  
+  const query = searchQuery.value.toLowerCase();
+  return posts.value.filter(post => 
+    post.title?.toLowerCase().includes(query) ||
+    post.description?.toLowerCase().includes(query) ||
+    post.category?.toLowerCase().includes(query)
+  );
+});
 
 useHead({
   title: "Orthopaedic Blog | Sports Medicine & Knee Health | Dr. Nihar Modi",
@@ -24,41 +40,71 @@ useHead({
         "Patient-friendly articles on knee health, sports injuries, and treatment options from a leading orthopaedic surgeon in Mumbai.",
     },
   ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://drniharmodi.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://drniharmodi.com/blog' },
+        ]
+      })
+    }
+  ]
 });
 </script>
 
 <template>
   <main>
-    <PageHeader
-      title="Blog"
-      subtitle="Understand orthopaedic health, sports injuries, joint and muscle pain, treatment options, and recovery with patient-friendly guidance from Dr. Nihar Modi, Orthopaedic Surgeon."
-      :breadcrumbs="[
-        { name: 'Home', path: '/' },
-        { name: 'Blog', path: '/blog' },
-      ]"
-    />
-
-    <section class="bg-white min-h-screen pb-20 md:pb-32 pt-12 md:pt-20">
+    <section class="bg-white min-h-screen pb-20 md:pb-32 pt-32 md:pt-40">
       <div class="container mx-auto px-6 max-w-6xl">
-        <!-- Category badge + heading -->
+
+        <!-- Breadcrumbs -->
+        <nav class="flex items-center justify-center gap-2 text-sm font-medium text-gray-500 mb-10" aria-label="Breadcrumb">
+          <NuxtLink to="/" class="hover:text-primary transition-colors">Home</NuxtLink>
+          <span class="text-gray-300 mx-1">/</span>
+          <span class="text-gray-400" aria-current="page">Blog</span>
+        </nav>
+
+        <!-- Category badge + heading + subtitle -->
         <div class="mb-12 text-center">
           <span
             class="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1.5 rounded-full tracking-wide uppercase mb-4"
           >
             Sports Medicine & Orthopaedics
           </span>
-          <h2 class="text-3xl md:text-5xl font-mirage text-primary">
+          <h1 class="text-3xl md:text-5xl font-mirage text-primary mb-4">
             Latest Articles
-          </h2>
+          </h1>
+          <p class="text-base md:text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
+            Understand orthopaedic health, sports injuries, joint and muscle pain, treatment options, and recovery with patient-friendly guidance from Dr. Nihar Modi, Orthopaedic Surgeon.
+          </p>
+        </div>
+
+        <!-- Search Box -->
+        <div class="max-w-xl mx-auto mb-12 relative">
+          <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <input
+            v-model="searchQuery"
+            type="text"
+            placeholder="Search articles by title, topic, or keyword..."
+            class="w-full pl-11 pr-4 py-3.5 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all duration-200 outline-none text-gray-700 shadow-sm"
+          />
         </div>
 
         <!-- Blog grid -->
         <div
-          v-if="posts && posts.length"
+          v-if="filteredPosts && filteredPosts.length"
           class="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           <article
-            v-for="post in posts"
+            v-for="post in filteredPosts"
             :key="post.slug"
             class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col"
           >

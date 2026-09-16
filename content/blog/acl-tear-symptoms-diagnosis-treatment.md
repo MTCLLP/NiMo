@@ -23,8 +23,6 @@ tags:
   - knee surgery Mumbai
 ---
 
-# ACL Tears: Symptoms, Diagnosis & Treatment Options
-
 An ACL (anterior cruciate ligament) tear is one of the most well-known and feared sports injuries. If you recently injured your knee and wonder whether you may have torn your ACL, or if you have just been diagnosed and want to understand what lies ahead, this guide is for you.
 
 We will cover what the ACL is, how it gets injured, what it feels like, how it is diagnosed, and your treatment options.
@@ -101,7 +99,7 @@ A skilled orthopaedic surgeon can often make a provisional diagnosis of an ACL t
 
 ### MRI Scan
 
-An MRI (Magnetic Resonance Imaging) scan is the definitive investigation of choice. It provides detailed images of the soft tissue structures inside the knee, confirming the ACL injury, assessing whether it is a partial or complete tear, and identifying any associated injuries to the menisci or other ligaments, which are present in a significant proportion of ACL injuries.  [6]
+An MRI (Magnetic Resonance Imaging) scan is the definitive investigation. It provides detailed images of the soft tissue structures inside the knee, confirming the ACL injury, assessing whether it is a partial or complete tear, and identifying any associated injuries to the menisci or other ligaments, which are present in a significant proportion of ACL injuries.  [6]
 
 ---
 
@@ -138,7 +136,7 @@ ACL reconstruction is typically performed under general or spinal anaesthesia as
 
 ### Rehabilitation After ACL Reconstruction
 
-Rehabilitation is as important as the surgery itself. A structured, phased physiotherapy programme typically spans **9–12 months** and progresses from:
+Rehabilitation is as important as the surgery itself. A structured, phased physiotherapy programme typically spans **9-12 months** and progresses from:
 
 1. **Early phase**: reducing swelling, restoring movement, and beginning gentle strengthening
 2. **Mid phase**: progressive strengthening, balance, and proprioception training
@@ -165,7 +163,7 @@ This is why a thorough MRI assessment before surgery is essential to plan the pr
 
 With appropriate treatment and rehabilitation, the majority of patients who sustain an ACL tear can return to their pre-injury level of sport and activity. However, it is important to have realistic expectations:
 
-- Complete recovery and return to sport typically take **9–12 months** following reconstruction
+- Complete recovery and return to sport typically take **9-12 months** following reconstruction
 - There is a small but meaningful risk of reinjury if return-to-sport criteria are not fully met
 - Long-term studies have shown that ACL injuries are associated with an increased risk of **knee osteoarthritis**, particularly if associated meniscus damage is also present [11]
 

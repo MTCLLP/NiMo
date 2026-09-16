@@ -22,8 +22,6 @@ tags:
   - athlete knee care
 ---
 
-# Understanding Common Sports Knee Injuries
-
 The knee is one of the most complex and heavily used joints in the human body and, unfortunately, one of the most commonly injured, especially in athletes and physically active individuals. Whether you play recreational cricket on weekends or compete in football, your knees absorb enormous forces with every step, sprint, and jump.
 
 Understanding what can go wrong with your knee and why is the first step toward getting the right care and returning to the activities you love.
@@ -50,9 +48,9 @@ ACL tears are extremely common in sports that involve sudden directional changes
 
 ### 2. Meniscus Tear
 
-The menisci are two C-shaped cartilage pads between your thigh bone and shin bone that act as cushions and shock absorbers. A meniscus tear typically happens when you twist or rotate your knee while your foot is planted firmly on the ground, a common movement in cricket batting, tennis, and football.
+The menisci are two C-shaped cartilage pads between your thigh bone and shin bone that cushion and absorb shock. A meniscus tear typically happens when you twist or rotate your knee while your foot is planted firmly on the ground, a common movement in cricket batting, tennis, and football.
 
-**What you might feel:** Pain on the inner or outer side of the knee, swelling that builds up over 1–2 days, a clicking or locking sensation, and difficulty fully straightening or bending the knee. [3]
+**What you might feel:** Pain on the inner or outer side of the knee, swelling that builds up over 1-2 days, a clicking or locking sensation, and difficulty fully straightening or bending the knee. [3]
 
 ### 3. MCL Sprain (Medial Collateral Ligament)
 
@@ -123,7 +121,7 @@ Imaging investigations are then used to confirm the diagnosis:
 
 ## A Note on Treatment
 
-Treating a sports knee injury is never "one size fits all." The right approach depends on your age, activity level, the specific structure injured, and the severity of the damage. Options range from structured physiotherapy and rehabilitation to minimally invasive arthroscopic surgery. The goal is always to restore full function and help you return to your sport safely.
+Treating a sports knee injury is never "one size fits all." The right approach depends on your age, activity level, the injured structure, and the severity of the damage. Options range from structured physiotherapy and rehabilitation to minimally invasive arthroscopic surgery. The goal is always to restore full function and help you return to your sport safely.
 
 At our practice in Mumbai, we take a thorough, evidence-based approach to sports knee injuries, combining clinical expertise with the latest imaging and surgical techniques to guide each patient toward the best possible outcome.
 

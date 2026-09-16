@@ -23,8 +23,6 @@ tags:
   - orthopaedic surgeon Mumbai
 ---
 
-# Meniscus Tears Explained for Active Patients
-
 If you have been told you have a meniscus tear or if you are experiencing unexplained knee pain, locking, or swelling after a sports injury,  you are not alone. Meniscus tears are among the most common knee injuries seen in active individuals, and the good news is that with the right diagnosis and treatment, most people can return to the activities they love.
 
 This guide explains what the meniscus is, how it gets injured, what to expect in terms of symptoms, and your treatment options.
@@ -142,7 +140,7 @@ When non-operative management fails, or when the tear is causing significant mec
 
 Healing after a meniscal repair typically requires **4–6 months** of rehabilitation, with restricted weight-bearing in the early weeks.
 
-**Partial Meniscectomy:** When the tear is in the avascular inner zone, is complex, or is of a pattern that cannot be repaired, the surgeon will remove the damaged portion of the meniscus arthroscopically, leaving as much healthy tissue as possible. Recovery from a partial meniscectomy is generally faster, with most patients returning to activity within **6–12 weeks**. [9]
+**Partial Meniscectomy:** When the tear is in the avascular inner zone, is complex, or is of a pattern that cannot be repaired, the surgeon will remove the damaged portion of the meniscus arthroscopically, leaving as much healthy tissue as possible. Recovery from a partial meniscectomy is generally faster, with most patients returning to activity within **6-12 weeks**. [9]
 
 Total (complete) meniscectomy, removing the entire meniscus, is now very rarely performed, as it significantly increases the risk of long-term joint damage.
 
@@ -160,8 +158,8 @@ At our practice, we prioritise repairing meniscal tissue wherever technically fe
 
 With appropriate treatment and a structured rehabilitation programme:
 
-- **After partial meniscectomy:** Most patients can return to full sporting activity within **6–12 weeks**
-- **After meniscal repair:** Return to sport typically occurs at **4–6 months**, following objective assessment of strength and function.
+- **After partial meniscectomy:** Most patients can return to full sporting activity within **6-12 weeks**
+- **After meniscal repair:** Return to sport typically occurs at **4-6 months**, following objective assessment of strength and function.
 
 A key principle in modern sports medicine is that return to sport is based on achieving specific, measurable criteria, not just time elapsed since surgery. This helps ensure the knee is genuinely ready, reducing the risk of re-injury.
 

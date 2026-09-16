@@ -22,9 +22,7 @@ tags:
   - sports surgeon consultation
 ---
 
-# When Should You See an Orthopaedic Sports Surgeon?
-
-One of the most common questions active individuals ask whether they are professional athletes or enthusiastic recreational players is: *"Do I really need to see a specialist, or will this sort itself out?"*
+One of the most common questions active individuals ask, whether they are professional athletes or enthusiastic recreational players, is: *"**Do I really need to see a specialist, or will this sort itself out?**"*
 
 It is a fair and sensible question. Most minor sports injuries do improve with time, rest, and basic first aid. But some injuries will not get better on their own, and delaying the right care can sometimes turn a straightforward problem into a more complex one. Knowing when to seek specialist assessment is an important part of staying active and well.
 
@@ -32,7 +30,7 @@ It is a fair and sensible question. Most minor sports injuries do improve with t
 
 ## The First Rule: Listen to Your Body
 
-Your body is generally quite good at signalling when something is significantly wrong. While soreness, stiffness, and mild aches are normal parts of an active life, certain symptoms should prompt you to act rather than wait.
+Your body is generally quite good at signalling when something is significantly wrong. While soreness, stiffness, and mild aches are normal parts of an active life, certain symptoms should prompt you to act, not wait.
 
 ---
 
@@ -40,7 +38,7 @@ Your body is generally quite good at signalling when something is significantly 
 
 ### 1. You Heard or Felt a "Pop" During Injury
 
-A sudden popping sound or sensation during a knee or ankle injury is a classic warning sign. In the knee, this often indicates an anterior cruciate ligament (ACL) injury. While not all pops mean serious injury, this symptom warrants proper evaluation rather than simply "walking it off." [1]
+A sudden pop during a knee or ankle injury is a classic warning sign. In the knee, this often indicates an anterior cruciate ligament (ACL) injury. While not all pops mean serious injury, this symptom warrants proper evaluation rather than simply "*walking it off*." [1]
 
 ### 2. Significant Swelling Within a Few Hours
 
@@ -58,7 +56,7 @@ An inability to put weight through an injured leg following trauma should always
 
 Instability, a recurring sense that the knee or ankle might buckle or give way, particularly during activity, is an important symptom. It suggests the joint's dynamic stabilising structures (ligaments, muscles, tendons) are not functioning normally. This is common with ACL tears, and persistent instability can cause progressive damage to other structures within the joint over time. [3]
 
-### 6. Pain That Does Not Improve After 2–3 Weeks
+### 6. Pain That Does Not Improve After 2-3 Weeks
 
 As a general rule, significant soft-tissue injuries should improve meaningfully within two to three weeks with appropriate rest and basic management. If your pain isn't improving or is getting worse, the injury may be more significant than it initially appeared, or it may need specific treatment to heal properly.
 
@@ -123,7 +121,7 @@ An orthopaedic sports surgeon's role is to guide you toward the best outcome for
 
 Clinical evidence shows that early, accurate diagnosis of sports injuries generally leads to better outcomes than delayed diagnosis. For example:
 
-- ACL tears diagnosed and treated appropriately reduce the risk of secondary meniscal and cartilage damage that can occur if an unstable knee is used repeatedly without protection [6]
+- ACL tears diagnosed and treated appropriately reduce the risk of secondary meniscal and cartilage damage that can occur if an unstable knee is used repeatedly without protection.  [6]
 - Repairable meniscal tears have a significantly better prognosis when repaired early, before the tissue deteriorates further. [7]
 - Stress fractures identified promptly can be managed conservatively; undetected, they may progress to complete fractures requiring surgery.
 
@@ -137,7 +135,7 @@ Early assessment does not always mean early surgery, but it does mean early clar
 - A "pop," rapid swelling, joint locking, instability, or inability to bear weight are all indications for specialist review.
 - Seeing a sports orthopaedic surgeon does not mean you will have surgery; most conditions are managed without .it
 - Early diagnosis generally leads to better outcomes, particularly for ligament and meniscal injuries.s
-- A good consultation will leave you with a clear diagnosis and a tailored plan
+- A good consultation will leave you with a clear diagnosis and a tailored plan.
 
 If you are unsure whether your injury warrants a specialist opinion, it is always better to seek assessment. An experienced orthopaedic sports surgeon can reassure you if nothing significant is wrong and guide you appropriately if it is.
 
@@ -151,5 +149,5 @@ If you are unsure whether your injury warrants a specialist opinion, it is alway
 4. Eastlack ME et al. "Laxity, instability, and functional outcome after ACL injury: copers versus noncopers." *Medicine & Science in Sports & Exercise.* 1999;31(2):210–215. <https://doi.org/10.1097/00005768-199902000-00005>
 5. Brukner P, Khan K. *Clinical Sports Medicine.* 5th ed. McGraw-Hill, 2017. ISBN: 9781760421663
 6. Bahr R, Maehlum S. *Clinical Guide to Sports Injuries.* Human Kinetics, 2004. ISBN: 9780736041171
-7. Paschos NK. "Anterior cruciate ligament reconstruction and knee osteoarthritis." *World Journal of Orthopedics.* 2017;8(3):212–217. <https://doi.org/10.5312/wjo.v8.i3.212>
+7. Paschos NK. "Anterior cruciate ligament reconstruction and knee osteoarthritis." *World Journal of Orthopedics.* 2017;8(3):212–217. [https://doi.org/10.Orthopaedics.i3.212](https://doi.org/10.5312/wjo.v8.i3.212)
 8. Pujol N, et al. "Meniscal repair versus meniscectomy for isolated meniscal lesions in active young adult patients." *Knee Surgery, Sports Traumatology, Arthroscopy.* 2015;23(1):116–121. <https://doi.org/10.1007/s00167-014-3245-0>

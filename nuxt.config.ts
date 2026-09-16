@@ -1,13 +1,51 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite'
+import { readdirSync, readFileSync } from 'fs'
+import { join } from 'path'
+
+// Build-time function to generate blog sitemap entries by reading
+// the content/blog directory. This works correctly with `npm run generate`
+// (static site) because it runs at Nuxt config load time, not at runtime.
+const getBlogSitemapUrls = () => {
+  try {
+    const blogDir = join(process.cwd(), 'content/blog')
+    const files = readdirSync(blogDir).filter(f => f.endsWith('.md'))
+
+    return files.map((filename) => {
+      const slug = filename.replace('.md', '')
+
+      // Extract date from frontmatter for accurate lastmod
+      const content = readFileSync(join(blogDir, filename), 'utf-8')
+      const dateMatch = content.match(/^date:\s*(.+)$/m)
+      const lastmod = dateMatch ? dateMatch[1].trim() : undefined
+
+      return {
+        loc: `/blog/${slug}`,
+        lastmod,
+        changefreq: 'monthly' as const,
+        priority: 0.8,
+      }
+    })
+  } catch {
+    return []
+  }
+}
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  // @nuxtjs/seo (which includes @nuxtjs/sitemap) must be listed BEFORE
+  // @nuxt/content so the sitemap module can hook into content processing.
   modules: ['@nuxt/image', '@nuxtjs/seo', '@nuxt/content', 'nuxt-studio'],
   site: {
     name: 'Dr. Nihar Modi',
     url: 'https://drniharmodi.com',
+  },
+  sitemap: {
+    // Inject all blog article URLs at build time.
+    // This approach works for static generation (npm run generate) because
+    // it runs when nuxt.config is loaded — no runtime server required.
+    urls: getBlogSitemapUrls(),
   },
   features: {
     inlineStyles: true

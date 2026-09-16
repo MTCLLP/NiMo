@@ -43,6 +43,18 @@ useHead({
         datePublished: post.value.date,
         url: `https://drniharmodi.com/blog/${post.value.slug}`
       }) : ''
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: post.value ? JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://drniharmodi.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://drniharmodi.com/blog' },
+          { '@type': 'ListItem', position: 3, name: post.value.title, item: `https://drniharmodi.com/blog/${post.value.slug}` }
+        ]
+      }) : ''
     }
   ]
 })
@@ -50,17 +62,17 @@ useHead({
 
 <template>
   <main v-if="post">
-    <PageHeader
-      :title="post.title"
-      :breadcrumbs="[
-        { name: 'Home', path: '/' },
-        { name: 'Blog', path: '/blog' },
-        { name: post.title, path: `/blog/${post.slug}` }
-      ]"
-    />
-
-    <div class="bg-white min-h-screen pb-20 md:pb-32 pt-12 md:pt-20">
+    <div class="bg-white min-h-screen pb-20 md:pb-32 pt-32 md:pt-40">
       <div class="container mx-auto px-6 max-w-3xl">
+        
+        <!-- Breadcrumbs -->
+        <nav class="flex items-center gap-2 text-sm font-medium text-gray-500 mb-8" aria-label="Breadcrumb">
+          <NuxtLink to="/" class="hover:text-primary transition-colors">Home</NuxtLink>
+          <span class="text-gray-300 mx-1">/</span>
+          <NuxtLink to="/blog" class="hover:text-primary transition-colors">Blog</NuxtLink>
+          <span class="text-gray-300 mx-1">/</span>
+          <span class="text-gray-400 truncate" aria-current="page">{{ post.title }}</span>
+        </nav>
 
         <!-- Article header -->
         <header class="mb-10">
