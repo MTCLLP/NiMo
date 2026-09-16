@@ -1,6 +1,11 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 const route = useRoute()
 const slug = route.params.slug as string
+
+// Helper: extract the last path segment as the URL slug
+const getPostSlug = (post: any) => post?.path?.split("/").pop() ?? post?.slug;
 
 // In Nuxt Content v3, each file gets an auto-generated `path` derived from
 // its location in /content. A file at content/blog/my-article.md → path: /blog/my-article
@@ -11,6 +16,43 @@ const { data: post } = await useAsyncData(`blog-${slug}`, () =>
 if (!post.value) {
   await navigateTo('/blog')
 }
+
+// Fetch all posts to derive related articles
+const { data: allPosts } = await useAsyncData('all-blog-posts', () =>
+  queryCollection('blog').order('date', 'DESC').all()
+)
+
+// Compute up to 3 related articles based on category and tags matching
+const relatedPosts = computed(() => {
+  if (!allPosts.value || !post.value) return [];
+
+  const currentSlug = getPostSlug(post.value);
+  const currentCategory = post.value.category;
+  const currentTags = post.value.tags || [];
+
+  const others = allPosts.value.filter((p: any) => getPostSlug(p) !== currentSlug);
+
+  const scored = others.map((p: any) => {
+    let score = 0;
+    if (p.category && p.category === currentCategory) {
+      score += 3;
+    }
+    if (p.tags && Array.isArray(p.tags)) {
+      const commonTags = p.tags.filter((t: string) => currentTags.includes(t));
+      score += commonTags.length;
+    }
+    return { post: p, score };
+  });
+
+  scored.sort((a: any, b: any) => {
+    if (b.score !== a.score) {
+      return b.score - a.score;
+    }
+    return new Date(b.post.date).getTime() - new Date(a.post.date).getTime();
+  });
+
+  return scored.slice(0, 3).map((item: any) => item.post);
+});
 
 useHead({
   title: post.value ? `${post.value.title} | Dr. Nihar Modi` : 'Dr. Nihar Modi',
@@ -62,7 +104,7 @@ useHead({
 
 <template>
   <main v-if="post">
-    <div class="bg-white min-h-screen pb-20 md:pb-32 pt-32 md:pt-40">
+    <div class="bg-white min-h-screen pt-32 md:pt-40">
       <div class="container mx-auto px-6 max-w-3xl">
         
         <!-- Breadcrumbs -->
@@ -141,21 +183,8 @@ useHead({
           <ContentRenderer :value="post" />
         </article>
 
-        <!-- Back to blog link -->
-        <div class="mt-14 pt-8 border-t border-gray-100">
-          <NuxtLink
-            to="/blog"
-            class="inline-flex items-center gap-2 text-secondary font-semibold hover:gap-3 transition-all duration-200 text-sm"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-            Back to all articles
-          </NuxtLink>
-        </div>
-
         <!-- Disclaimer -->
-        <div class="mt-10 bg-amber-50 border border-amber-200 rounded-xl p-5">
+        <div class="mt-12 mb-16 bg-amber-50 border border-amber-200 rounded-xl p-5">
           <p class="text-xs text-amber-700 leading-relaxed">
             <strong>Medical Disclaimer:</strong> This article is written for general informational purposes only and does not constitute medical advice.
             It is not a substitute for professional medical diagnosis, treatment, or consultation. Always seek the guidance of a qualified healthcare
@@ -164,6 +193,81 @@ useHead({
         </div>
 
       </div>
+
+      <!-- "You May Want to Read" Section -->
+      <section v-if="relatedPosts && relatedPosts.length" class="bg-accent py-16 md:py-24 border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-6xl">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+            <div>
+              <span class="inline-block bg-secondary/10 text-secondary text-xs font-bold px-3 py-1 rounded-full tracking-wider uppercase mb-3">
+                Related Topics
+              </span>
+              <h2 class="text-2xl md:text-4xl font-mirage text-primary">
+                You May Want to Read
+              </h2>
+            </div>
+            <NuxtLink
+              to="/blog"
+              class="text-secondary font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all self-start sm:self-auto"
+            >
+              View all articles
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </NuxtLink>
+          </div>
+
+          <!-- 3-column article card grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <NuxtLink
+              v-for="relPost in relatedPosts"
+              :key="relPost.slug"
+              :to="`/blog/${getPostSlug(relPost)}`"
+              class="group bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col"
+            >
+              <!-- Category chip & read time -->
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-bold text-secondary uppercase tracking-wider bg-secondary/10 px-2.5 py-0.5 rounded-full">
+                  {{ relPost.category }}
+                </span>
+                <span class="text-xs text-gray-400">
+                  {{ relPost.readTime }}
+                </span>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-base md:text-lg font-bold text-primary group-hover:text-secondary transition-colors duration-200 leading-snug mb-2 line-clamp-2">
+                {{ relPost.title }}
+              </h3>
+
+              <!-- Description -->
+              <p class="text-gray-500 text-xs md:text-sm leading-relaxed mb-4 line-clamp-2 flex-grow">
+                {{ relPost.description }}
+              </p>
+
+              <!-- Meta footer -->
+              <div class="flex items-center justify-between pt-3 border-t border-gray-100 mt-auto">
+                <span class="text-xs text-gray-400">
+                  {{
+                    new Date(relPost.date).toLocaleDateString('en-IN', {
+                      day: 'numeric',
+                      month: 'short',
+                      year: 'numeric',
+                    })
+                  }}
+                </span>
+                <span class="text-secondary font-semibold text-xs flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                  Read
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 </template>

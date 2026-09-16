@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
+
+const route = useRoute()
+const router = useRouter()
 
 const { data: posts } = await useAsyncData("blog-posts", () =>
   queryCollection("blog").order("date", "DESC").all(),
@@ -14,13 +17,90 @@ const filteredPosts = computed(() => {
   if (!posts.value) return [];
   if (!searchQuery.value) return posts.value;
   
-  const query = searchQuery.value.toLowerCase();
+  const query = searchQuery.value.toLowerCase().trim();
   return posts.value.filter(post => 
     post.title?.toLowerCase().includes(query) ||
     post.description?.toLowerCase().includes(query) ||
     post.category?.toLowerCase().includes(query)
   );
 });
+
+// Pagination: 6 posts per page (clean 2-column grid, 3 rows)
+const POSTS_PER_PAGE = 6;
+const currentPage = ref(1);
+
+// Initialize from route query on load if present
+if (route.query.page) {
+  const initialPage = Number(route.query.page);
+  if (!isNaN(initialPage) && initialPage > 0) {
+    currentPage.value = initialPage;
+  }
+}
+
+const totalPages = computed(() => {
+  return Math.ceil((filteredPosts.value?.length || 0) / POSTS_PER_PAGE) || 1;
+});
+
+// Ensure current page does not exceed total pages when searching/filtering
+watch([totalPages, searchQuery], () => {
+  if (currentPage.value > totalPages.value) {
+    currentPage.value = 1;
+  }
+});
+
+// Sync from route query if URL changes (e.g. browser back/forward buttons)
+watch(() => route.query.page, (newPage) => {
+  const p = Number(newPage);
+  if (!isNaN(p) && p > 0 && p <= totalPages.value) {
+    currentPage.value = p;
+  } else if (!newPage) {
+    currentPage.value = 1;
+  }
+});
+
+const paginatedPosts = computed(() => {
+  const start = (currentPage.value - 1) * POSTS_PER_PAGE;
+  return filteredPosts.value.slice(start, start + POSTS_PER_PAGE);
+});
+
+// Smart pagination display with ellipsis
+const displayedPages = computed(() => {
+  const total = totalPages.value;
+  const current = currentPage.value;
+
+  if (total <= 5) {
+    return Array.from({ length: total }, (_, i) => i + 1);
+  }
+
+  if (current <= 3) {
+    return [1, 2, 3, '...', total];
+  }
+
+  if (current >= total - 2) {
+    return [1, '...', total - 2, total - 1, total];
+  }
+
+  return [1, '...', current, '...', total];
+});
+
+const goToPage = (page: number) => {
+  if (page < 1 || page > totalPages.value || page === currentPage.value) return;
+  currentPage.value = page;
+
+  router.push({
+    query: {
+      ...route.query,
+      page: page === 1 ? undefined : String(page),
+    },
+  });
+
+  if (import.meta.client) {
+    const el = document.getElementById('articles-list');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+};
 
 useHead({
   title: "Orthopaedic Blog | Sports Medicine & Knee Health | Dr. Nihar Modi",
@@ -84,7 +164,7 @@ useHead({
         </div>
 
         <!-- Search Box -->
-        <div class="max-w-xl mx-auto mb-12 relative">
+        <div id="articles-list" class="max-w-xl mx-auto mb-12 relative scroll-mt-36">
           <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -100,11 +180,11 @@ useHead({
 
         <!-- Blog grid -->
         <div
-          v-if="filteredPosts && filteredPosts.length"
+          v-if="paginatedPosts && paginatedPosts.length"
           class="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           <article
-            v-for="post in filteredPosts"
+            v-for="post in paginatedPosts"
             :key="post.slug"
             class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col"
           >
@@ -188,9 +268,91 @@ useHead({
         </div>
 
         <!-- Empty state -->
-        <div v-else class="text-center py-24 text-gray-400">
-          <p class="text-lg">No articles found. Check back soon.</p>
+        <div v-else class="text-center py-20 bg-gray-50/50 rounded-2xl border border-dashed border-gray-200 text-gray-400">
+          <p class="text-lg font-medium text-gray-600 mb-2">No articles found</p>
+          <p class="text-sm text-gray-400 mb-6" v-if="searchQuery">
+            We couldn't find any articles matching "{{ searchQuery }}".
+          </p>
+          <button
+            v-if="searchQuery"
+            @click="searchQuery = ''"
+            type="button"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-white text-sm font-medium hover:bg-secondary transition-all shadow-sm"
+          >
+            Clear search
+          </button>
         </div>
+
+        <!-- Pagination -->
+        <nav
+          v-if="totalPages > 1"
+          class="mt-14 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-6"
+          aria-label="Blog pagination"
+        >
+          <!-- Results counter -->
+          <p class="text-sm text-gray-500 order-2 sm:order-1 text-center sm:text-left">
+            Showing <span class="font-semibold text-gray-800">{{ (currentPage - 1) * POSTS_PER_PAGE + 1 }}</span> to
+            <span class="font-semibold text-gray-800">{{ Math.min(currentPage * POSTS_PER_PAGE, filteredPosts.length) }}</span> of
+            <span class="font-semibold text-gray-800">{{ filteredPosts.length }}</span> articles
+          </p>
+
+          <!-- Navigation controls -->
+          <div class="flex items-center gap-2 order-1 sm:order-2">
+            <!-- Prev button -->
+            <button
+              type="button"
+              :disabled="currentPage === 1"
+              @click="goToPage(currentPage - 1)"
+              class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-gray-200 text-sm font-semibold text-gray-700 bg-white hover:bg-gray-50 hover:border-secondary hover:text-secondary disabled:opacity-40 disabled:pointer-events-none transition-all duration-200 shadow-sm"
+              aria-label="Previous page"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              <span>Prev</span>
+            </button>
+
+            <!-- Page numbers -->
+            <div class="flex items-center gap-1.5">
+              <template v-for="(p, index) in displayedPages" :key="index">
+                <span
+                  v-if="p === '...'"
+                  class="px-2 py-2 text-sm font-semibold text-gray-400 select-none"
+                >
+                  …
+                </span>
+                <button
+                  v-else
+                  type="button"
+                  @click="goToPage(Number(p))"
+                  :aria-current="currentPage === p ? 'page' : undefined"
+                  :class="[
+                    'min-w-[40px] h-10 px-3 rounded-xl text-sm font-semibold transition-all duration-200 flex items-center justify-center',
+                    currentPage === p
+                      ? 'bg-primary text-white shadow-sm'
+                      : 'bg-white border border-gray-200 text-gray-700 hover:border-secondary hover:text-secondary hover:bg-gray-50 shadow-sm'
+                  ]"
+                >
+                  {{ p }}
+                </button>
+              </template>
+            </div>
+
+            <!-- Next button -->
+            <button
+              type="button"
+              :disabled="currentPage === totalPages"
+              @click="goToPage(currentPage + 1)"
+              class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-gray-200 text-sm font-semibold text-gray-700 bg-white hover:bg-gray-50 hover:border-secondary hover:text-secondary disabled:opacity-40 disabled:pointer-events-none transition-all duration-200 shadow-sm"
+              aria-label="Next page"
+            >
+              <span>Next</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </nav>
 
         <!-- Author bio strip -->
         <div

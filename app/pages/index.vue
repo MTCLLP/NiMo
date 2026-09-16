@@ -22,6 +22,7 @@ useHead({
     <TreatmentTechniques />
     <GallerySection />
     <TestimonialsSection />
+    <LatestArticles />
     <PatientEducation />
   </div>
 </template>
