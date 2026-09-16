@@ -36,7 +36,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   // @nuxtjs/seo (which includes @nuxtjs/sitemap) must be listed BEFORE
   // @nuxt/content so the sitemap module can hook into content processing.
-  modules: ['@nuxt/image', '@nuxtjs/seo', '@nuxt/content', 'nuxt-studio'],
+  modules: [
+    '@nuxt/image',
+    '@nuxtjs/seo',
+    '@nuxt/content',
+    // nuxt-studio is only needed in development/preview — exclude from generate
+    ...(process.env.NODE_ENV !== 'production' ? ['nuxt-studio'] : []),
+  ],
   site: {
     name: 'Dr. Nihar Modi',
     url: 'https://drniharmodi.com',

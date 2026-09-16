@@ -31,7 +31,7 @@ useHead({
           (hereinafter referred to as "We," "Us," "Our," or the "Practice") in
           connection with the website accessible at
           <a
-            href="https://drniharmodi.com"
+            href="/"
             class="text-primary hover:underline transition-colors"
             >https://drniharmodi.com</a
           >

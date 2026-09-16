@@ -92,7 +92,7 @@ useHead({
             <p class="text-gray-600 leading-relaxed mb-4">
               <strong>Website</strong> refers to Dr. Nihar Modi, accessible from
               <a
-                href="https://drniharmodi.com"
+                href="/"
                 rel="external nofollow noopener"
                 target="_blank" class="text-primary hover:underline transition-colors"
                 >https://drniharmodi.com</a
