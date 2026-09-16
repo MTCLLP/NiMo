@@ -72,11 +72,11 @@
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Procedures</NuxtLink
         >
-        <!-- <NuxtLink
+        <NuxtLink
           to="/blog"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
-          >Blogs</NuxtLink
-        > -->
+          >Blog</NuxtLink
+        >
         <NuxtLink
           to="/faqs"
           class="text-[15px] text-white hover:text-white/80 transition-colors"

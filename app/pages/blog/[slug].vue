@@ -141,14 +141,24 @@ useHead({
           </p>
 
           <!-- Author row -->
-          <div class="flex items-center gap-3 py-4 border-t border-b border-gray-100">
-            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-sm shrink-0">
-              NM
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-4 border-t border-b border-gray-100">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-sm shrink-0">
+                NM
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-gray-800">{{ post.author }}</p>
+                <p class="text-xs text-gray-400">{{ post.authorTitle }}</p>
+              </div>
             </div>
-            <div>
-              <p class="text-sm font-semibold text-gray-800">{{ post.author }}</p>
-              <p class="text-xs text-gray-400">{{ post.authorTitle }}</p>
-            </div>
+
+            <!-- Header share buttons -->
+            <ArticleShare
+              :title="post.title"
+              :description="post.description"
+              :slug="getPostSlug(post)"
+              variant="compact"
+            />
           </div>
 
           <!-- Tags -->
@@ -183,8 +193,16 @@ useHead({
           <ContentRenderer :value="post" />
         </article>
 
+        <!-- Share Section -->
+        <ArticleShare
+          :title="post.title"
+          :description="post.description"
+          :slug="getPostSlug(post)"
+          variant="banner"
+        />
+
         <!-- Disclaimer -->
-        <div class="mt-12 mb-16 bg-amber-50 border border-amber-200 rounded-xl p-5">
+        <div class="mt-8 mb-16 bg-amber-50 border border-amber-200 rounded-xl p-5">
           <p class="text-xs text-amber-700 leading-relaxed">
             <strong>Medical Disclaimer:</strong> This article is written for general informational purposes only and does not constitute medical advice.
             It is not a substitute for professional medical diagnosis, treatment, or consultation. Always seek the guidance of a qualified healthcare
