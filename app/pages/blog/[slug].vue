@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { contentComponents } from '~/plugins/content-components'
 
 const route = useRoute()
 const slug = route.params.slug as string
@@ -190,7 +191,7 @@ useHead({
           prose-td:text-gray-600 prose-td:p-3 prose-td:border-b prose-td:border-gray-100
           prose-hr:border-gray-200
         ">
-          <ContentRenderer :value="post" />
+          <ContentRenderer :value="post" :components="contentComponents" />
         </article>
 
         <!-- Share Section -->

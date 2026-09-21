@@ -1,6 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Procedures - Dr. Nihar Modi',
+  title: 'Orthopaedic Procedures | Dr. Nihar Modi',
+  titleTemplate: '%s',
   meta: [
     { name: 'description', content: 'Explore the range of orthopaedic procedures performed by Dr. Nihar Modi, including knee, shoulder, and elbow surgeries.' }
   ]
