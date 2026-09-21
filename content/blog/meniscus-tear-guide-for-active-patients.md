@@ -56,7 +56,7 @@ These typically occur when the knee is twisted or rotated while the foot is plan
 - Kabaddi and wrestling
 - Skiing
 
-A sudden squat, deep pivot, or tackle can generate enough force to tear the meniscus, especially in an awkward position. Acute meniscus tears often occur alongside other knee injuries such as an ACL tear. [2]
+A sudden squat, deep pivot, or tackle can generate enough force to tear the meniscus, especially in an awkward position. Acute meniscus tears often occur alongside other knee injuries such as an [ACL tear](/blog/acl-tear-symptoms-diagnosis-treatment). [2]
 
 ### 2. Degenerative Tears: Common in Older Adults
 
@@ -134,7 +134,7 @@ Research has shown that physiotherapy is often as effective as arthroscopic surg
 
 ### Arthroscopic Surgery
 
-When non-operative management fails, or when the tear is causing significant mechanical symptoms, arthroscopic (keyhole) surgery is indicated.
+**[Arthroscopic surgery](/procedures/arthroscopy-surgeon-mumbai)** is indicated when non-operative management fails, or when the tear is causing significant mechanical symptoms.
 
 **Meniscal Repair:** For tears in the vascular outer zone, particularly in younger patients with acute longitudinal or bucket-handle tears, a repair may be possible. The surgeon uses small sutures or specialised implants to hold the torn edges together, allowing the tear to heal. Preserving the meniscus is always preferred, as it protects the knee from future wear. [8]
 
@@ -175,6 +175,8 @@ A key principle in modern sports medicine is that return to sport is based on ac
 - Preserving meniscal tissue is a key priority, particularly in younger patients
 
 If you are experiencing knee symptoms that concern you, particularly locking, persistent swelling, or pain with activity, we encourage you to seek a specialist assessment.
+
+For a broader look at the range of knee injuries that affect active patients, see our guide to [common sports knee injuries](/blog/understanding-common-sports-knee-injuries). If the knee also has cartilage damage, read about [cartilage restoration options in Mumbai](/procedures/cartilage-restoration-mumbai).
 
 ---
 

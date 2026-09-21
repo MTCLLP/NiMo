@@ -38,7 +38,7 @@ Your body is generally quite good at signalling when something is significantly 
 
 ### 1. You Heard or Felt a "Pop" During Injury
 
-A sudden pop during a knee or ankle injury is a classic warning sign. In the knee, this often indicates an anterior cruciate ligament (ACL) injury. While not all pops mean serious injury, this symptom warrants proper evaluation rather than simply "*walking it off*." [1]
+A sudden pop during a knee or ankle injury is a classic warning sign. In the knee, this often indicates an [anterior cruciate ligament (ACL) injury](/blog/acl-tear-symptoms-diagnosis-treatment). While not all pops mean serious injury, this symptom warrants proper evaluation rather than simply "*walking it off*." [1]
 
 ### 2. Significant Swelling Within a Few Hours
 
@@ -46,7 +46,7 @@ Rapid swelling, particularly if the joint looks visibly larger within two to fou
 
 ### 3. The Joint Is Locking or Getting Stuck
 
-If your knee suddenly locks, meaning it gets stuck in a bent position and you cannot straighten it, this is a significant mechanical symptom. It is a hallmark of a displaced meniscal tear where a fragment of cartilage has flipped into the joint, and it generally requires surgical attention. [2]
+If your knee suddenly locks, meaning it gets stuck in a bent position and you cannot straighten it, this is a significant mechanical symptom. It is a hallmark of a displaced [meniscal tear](/blog/meniscus-tear-guide-for-active-patients) where a fragment of cartilage has flipped into the joint, and it generally requires surgical attention. [2]
 
 ### 4. You Cannot Bear Weight on the Limb
 
@@ -138,6 +138,8 @@ Early assessment does not always mean early surgery, but it does mean early clar
 - A good consultation will leave you with a clear diagnosis and a tailored plan.
 
 If you are unsure whether your injury warrants a specialist opinion, it is always better to seek assessment. An experienced orthopaedic sports surgeon can reassure you if nothing significant is wrong and guide you appropriately if it is.
+
+[Book a consultation with Dr. Nihar Modi](/contact) — or learn more [about his background and approach](/about) to understand what to expect.
 
 ---
 

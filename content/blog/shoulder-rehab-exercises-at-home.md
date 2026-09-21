@@ -286,9 +286,9 @@ Home exercises are beneficial for many shoulder conditions, but you should see a
 - You have significant weakness or difficulty lifting the arm or rotating it against resistance
 - You have experienced a specific injury or a fall
 - You have night pain that is disturbing your sleep regularly
-- Your shoulder has dislocated or feels as if it is coming out of the socket
+- Your shoulder has [dislocated or feels as if it is coming out of the socket](/blog/shoulder-dislocation-causes-and-recovery)
 
-An accurate diagnosis is the foundation of the right treatment plan. Exercising through the wrong condition without a proper assessment can occasionally delay appropriate care.
+An accurate diagnosis is the foundation of the right treatment plan. Exercising through the wrong condition without a proper assessment can occasionally delay appropriate care. If surgery is ultimately needed, [shoulder arthroscopy](/procedures/shoulder-arthroscopy) is the minimally invasive option for most soft-tissue shoulder conditions.
 
 ---
 
@@ -299,6 +299,8 @@ An accurate diagnosis is the foundation of the right treatment plan. Exercising 
 - External rotation strengthening is the most critical element for most shoulder conditions.
 - Home exercises are effective but work best alongside a physiotherapist's guidance.
 - Always seek a proper diagnosis if your symptoms are significant or not improving.
+
+For more on the underlying conditions these exercises help treat, see our articles on [rotator cuff injuries in sports](/blog/rotator-cuff-injuries-in-sports) and [non-surgical options for shoulder pain](/blog/non-surgical-options-for-shoulder-pain).
 
 ---
 

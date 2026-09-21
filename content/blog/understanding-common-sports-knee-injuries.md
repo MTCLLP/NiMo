@@ -42,13 +42,13 @@ Because the knee must be both stable and highly mobile, allowing bending, straig
 
 The ACL is one of the four ligaments that stabilise the knee. It prevents the shin bone from sliding too far forward relative to the thigh bone and controls rotational movements.
 
-ACL tears are extremely common in sports that involve sudden directional changes such as football, basketball, kabaddi, and skiing. They often happen without contact; landing awkwardly from a jump or planting your foot and rotating your body can cause the ligament to snap.
+[ACL tears](/blog/acl-tear-symptoms-diagnosis-treatment) are extremely common in sports that involve sudden directional changes such as football, basketball, kabaddi, and skiing. They often happen without contact; landing awkwardly from a jump or planting your foot and rotating your body can cause the ligament to snap.
 
 **What you might feel:** A sudden "pop" or "crack" at the time of injury, followed by significant swelling within a few hours, instability (feeling like your knee is "giving way"), and difficulty bearing weight. [2]
 
 ### 2. Meniscus Tear
 
-The menisci are two C-shaped cartilage pads between your thigh bone and shin bone that cushion and absorb shock. A meniscus tear typically happens when you twist or rotate your knee while your foot is planted firmly on the ground, a common movement in cricket batting, tennis, and football.
+The [menisci](/blog/meniscus-tear-guide-for-active-patients) are two C-shaped cartilage pads between your thigh bone and shin bone that cushion and absorb shock. A meniscus tear typically happens when you twist or rotate your knee while your foot is planted firmly on the ground, a common movement in cricket batting, tennis, and football.
 
 **What you might feel:** Pain on the inner or outer side of the knee, swelling that builds up over 1-2 days, a clicking or locking sensation, and difficulty fully straightening or bending the knee. [3]
 
@@ -121,9 +121,9 @@ Imaging investigations are then used to confirm the diagnosis:
 
 ## A Note on Treatment
 
-Treating a sports knee injury is never "one size fits all." The right approach depends on your age, activity level, the injured structure, and the severity of the damage. Options range from structured physiotherapy and rehabilitation to minimally invasive arthroscopic surgery. The goal is always to restore full function and help you return to your sport safely.
+Treating a sports knee injury is never "one size fits all." The right approach depends on your age, activity level, the injured structure, and the severity of the damage. Options range from structured physiotherapy and rehabilitation to minimally invasive [arthroscopic surgery](/procedures/arthroscopy-surgeon-mumbai) and [ligament reconstruction](/procedures/ligament-reconstruction-mumbai). The goal is always to restore full function and help you return to your sport safely.
 
-At our practice in Mumbai, we take a thorough, evidence-based approach to sports knee injuries, combining clinical expertise with the latest imaging and surgical techniques to guide each patient toward the best possible outcome.
+At our [sports medicine practice in Mumbai](/procedures/sports-medicine-mumbai), we take a thorough, evidence-based approach to sports knee injuries, combining clinical expertise with the latest imaging and surgical techniques to guide each patient toward the best possible outcome.
 
 ---
 
@@ -135,7 +135,7 @@ At our practice in Mumbai, we take a thorough, evidence-based approach to sports
 - Prompt medical evaluation is essential for significant injuries
 - Diagnosis typically involves a clinical examination and MRI
 
-If you sustained a knee injury during sport or have persistent knee pain, consider consulting an orthopaedic sports medicine specialist for an accurate diagnosis and personalised treatment plan.
+If you sustained a knee injury during sport or have persistent knee pain, consider [consulting an orthopaedic sports medicine specialist](/contact) for an accurate diagnosis and personalised treatment plan.
 
 ---
 

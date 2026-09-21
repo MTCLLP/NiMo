@@ -120,7 +120,7 @@ However, individuals who wish to return to sports involving cutting and pivoting
 
 ### ACL Reconstruction Surgery
 
-ACL reconstruction is a well-established, keyhole (arthroscopic) surgical procedure in which the torn ligament is replaced with a graft, a piece of tendon taken from elsewhere in the body.
+[ACL reconstruction](/procedures/ligament-reconstruction-mumbai) is a well-established, keyhole ([arthroscopic](/procedures/arthroscopy-surgeon-mumbai)) surgical procedure in which the torn ligament is replaced with a graft, a piece of tendon taken from elsewhere in the body.
 
 **Common graft choices include:**
 
@@ -151,9 +151,9 @@ Returning too early, before the graft has fully incorporated and the knee has re
 
 ACL tears frequently occur alongside other injuries within the knee, which must also be addressed for the best outcome:
 
-- **Meniscus tears**: present in up to 50% of ACL injuries at the time of diagnosis [10]
-- **Cartilage damage**: chondral lesions may be identified at the time of arthroscopy
-- **MCL or other ligament injuries** in more complex trauma
+- **[Meniscus tears](/blog/meniscus-tear-guide-for-active-patients)**: present in up to 50% of ACL injuries at the time of diagnosis [10]
+- **Cartilage damage**: chondral lesions may be identified at the time of arthroscopy
+- **MCL or other ligament injuries** in more complex trauma
 
 This is why a thorough MRI assessment before surgery is essential to plan the procedure fully and avoid missing associated pathology.
 
@@ -178,6 +178,8 @@ With appropriate treatment and rehabilitation, the majority of patients who sust
 - Rehabilitation lasting 9–12 months is essential following surgery for safe return to sport
 
 If you have experienced a knee injury and are concerned about your ACL, we encourage you to seek assessment from an orthopaedic sports medicine specialist. An accurate diagnosis and a well-tailored treatment plan make a significant difference to your outcome.
+
+For a broader overview of how the knee can be injured during sport, see our guide to [common sports knee injuries](/blog/understanding-common-sports-knee-injuries). If you are unsure whether your symptoms warrant a specialist visit, read [when you should see an orthopaedic sports surgeon](/blog/when-to-see-orthopaedic-sports-surgeon).
 
 ---
 

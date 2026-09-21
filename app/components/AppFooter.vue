@@ -63,6 +63,11 @@
           >Home</NuxtLink
         >
         <NuxtLink
+          to="/about"
+          class="text-[15px] text-white hover:text-white/80 transition-colors"
+          >About</NuxtLink
+        >
+        <NuxtLink
           to="/conditions"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Conditions Treated</NuxtLink
@@ -86,6 +91,16 @@
           to="/testimonials"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Testimonials</NuxtLink
+        >
+        <NuxtLink
+          to="/gallery"
+          class="text-[15px] text-white hover:text-white/80 transition-colors"
+          >Gallery</NuxtLink
+        >
+        <NuxtLink
+          to="/contact"
+          class="text-[15px] text-white hover:text-white/80 transition-colors"
+          >Contact</NuxtLink
         >
         <NuxtLink
           to="/privacy-policy"

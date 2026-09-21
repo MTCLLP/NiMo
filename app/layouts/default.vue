@@ -10,6 +10,10 @@ const reviews = testimonials.map(t => ({
 }));
 
 useSchemaOrg([
+  defineWebSite({
+    name: 'Dr. Nihar Modi',
+    url: 'https://drniharmodi.com',
+  }),
   defineLocalBusiness({
     name: 'Dr. Nihar Modi',
     address: {

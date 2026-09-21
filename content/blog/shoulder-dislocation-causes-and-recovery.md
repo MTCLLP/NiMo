@@ -135,7 +135,7 @@ Surgery is typically discussed in the following situations:
 
 ### Surgical Options
 
-**Arthroscopic Bankart repair:** The most common procedure for soft-tissue instability. Using keyhole (arthroscopic) techniques, the torn labrum is reattached to the socket rim with suture anchors, restoring socket depth and stability. [6]
+**[Arthroscopic Bankart repair](/procedures/shoulder-dislocation-treatment):** The most common procedure for soft-tissue instability. Using keyhole (arthroscopic) techniques, the torn labrum is reattached to the socket rim with suture anchors, restoring socket depth and stability. [6]
 
 **Latarjet procedure (bone-block procedure):** Recommended when there is significant bone loss from the front of the socket. A piece of bone from the coracoid process is transferred to the front of the socket to rebuild the rim and create a bony and muscular sling effect. This procedure has excellent long-term outcomes for recurrent instability with bone loss. [7]
 
@@ -164,6 +164,8 @@ Recovery timelines vary based on the procedure performed:
 - With appropriate treatment and rehabilitation, most people return fully to sport and daily activities.
 
 If you have experienced a shoulder dislocation, particularly more than once, a proper assessment by a shoulder specialist is important to understand your individual risk and the most appropriate management.
+
+For patients who want to exhaust non-surgical options first, read our guide to [non-surgical treatments for shoulder pain](/blog/non-surgical-options-for-shoulder-pain). If the dislocation has affected the rotator cuff, you may also find our article on [rotator cuff injuries in sports](/blog/rotator-cuff-injuries-in-sports) helpful.
 
 ---
 

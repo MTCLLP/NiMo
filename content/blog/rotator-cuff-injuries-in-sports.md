@@ -133,7 +133,7 @@ Surgery is generally considered when:
 - There is a large or complete tear in a young or active patient
 - The injury is acute and associated with significant weakness
 
-The most common surgical procedure is **arthroscopic rotator cuff repair,** a keyhole (minimally invasive) operation in which the torn tendon edges are reattached to the bone using small suture anchors. [8]
+The most common surgical procedure is **[arthroscopic rotator cuff repair](/procedures/shoulder-arthroscopy),** a keyhole (minimally invasive) operation in which the torn tendon edges are reattached to the bone using small suture anchors. Where the tendon damage is more extensive, [tendon repair and reconstruction](/procedures/tendon-repair-mumbai) may be required. [8]
 
 Arthroscopic surgery offers the advantages of smaller incisions, less post-operative pain, and faster recovery compared to open surgery.
 
@@ -168,6 +168,8 @@ Not all injuries can be prevented, but the following measures significantly redu
 - Surgery (arthroscopic repair) is effective for significant or persistent tears and is followed by a structured rehabilitation programme.
 
 If you are experiencing shoulder pain, especially pain at night, weakness, or difficulty with overhead movements, it is worth getting a proper assessment. Rotator cuff problems respond best to treatment when addressed early.
+
+If you want to explore your non-surgical options before committing to any decision, read our guide on [non-surgical treatments for shoulder pain](/blog/non-surgical-options-for-shoulder-pain). And if your injury originated from a shoulder dislocation, see our article on [shoulder dislocation causes and recovery](/blog/shoulder-dislocation-causes-and-recovery).
 
 ---
 

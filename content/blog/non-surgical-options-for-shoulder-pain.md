@@ -151,7 +151,7 @@ Non-surgical treatment is the right starting point for most shoulder conditions.
 
 - There is a **large or full-thickness rotator cuff tear** in an active patient
 - Non-surgical treatment has been genuinely and thoroughly tried (typically 3–6 months of structured physiotherapy) without adequate improvement
-- There is **significant structural damage** such as a labral tear causing recurrent shoulder instability — that cannot be reliably resolved without repair.
+- There is **significant structural damage** such as a labral tear causing recurrent shoulder instability — that cannot be reliably resolved without repair. When surgery is necessary, [shoulder arthroscopy](/procedures/shoulder-arthroscopy) is the minimally invasive approach for most of these conditions.
 - The **quality-of-life impact** is significant and not improving with conservative measures.
 
 The decision to proceed to surgery should always be made collaboratively, with a clear understanding of what the operation involves, what the realistic outcomes are, and what the recovery entails.
@@ -167,6 +167,8 @@ The decision to proceed to surgery should always be made collaboratively, with a
 - Surgery is appropriate for specific conditions and when non-surgical measures have been genuinely exhausted.
 
 If you are experiencing shoulder pain, getting a proper diagnosis is the essential first step. The most effective treatment depends on understanding the underlying cause.
+
+For more on the specific conditions these treatments address, see our articles on [rotator cuff injuries in sports](/blog/rotator-cuff-injuries-in-sports) and [shoulder rehab exercises you can do at home](/blog/shoulder-rehab-exercises-at-home).
 
 ---
 
