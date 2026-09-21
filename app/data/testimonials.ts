@@ -2,6 +2,14 @@ export const testimonials = [
   {
     title: "Patient Recovery Story",
     subtitle: "Video Testimonial",
+    text: "Watch this video testimonial to hear about the patient's experience and recovery journey with Dr. Nihar Modi.",
+    rating: 5,
+    date: "September 2026",
+    videoId: "ewHGj0ICk14"
+  },
+  {
+    title: "Patient Recovery Story",
+    subtitle: "Video Testimonial",
     text: "Watch this video testimonial to hear about the patient's recovery journey after ACL Reconstruction and Meniscus Repair with Dr. Nihar Modi.",
     rating: 5,
     date: "August 2026",
