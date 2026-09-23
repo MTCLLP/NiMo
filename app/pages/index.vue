@@ -14,8 +14,9 @@ useHead({
 <template>
   <div>
     <HeroSection />
+    <IntroSection />
     <!-- <HospitalLogos /> -->
-    <StatsBanner />
+    <!-- <StatsBanner /> -->
     <SpecialisedAreas />
     <QuoteBanner />
     <ConditionsGrid />
