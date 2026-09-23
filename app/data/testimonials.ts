@@ -1,19 +1,19 @@
 export const testimonials = [
   {
-    title: "Patient Recovery Story",
+    title: "Sudipta Dhruva",
     subtitle: "Video Testimonial",
     text: "Watch this video testimonial to hear about the patient's experience and recovery journey with Dr. Nihar Modi.",
     rating: 5,
     date: "September 2026",
-    videoId: "ewHGj0ICk14"
+    videoId: "ewHGj0ICk14",
   },
   {
-    title: "Patient Recovery Story",
+    title: "Priyanshu Vishwakarma",
     subtitle: "Video Testimonial",
     text: "Watch this video testimonial to hear about the patient's recovery journey after ACL Reconstruction and Meniscus Repair with Dr. Nihar Modi.",
     rating: 5,
     date: "August 2026",
-    videoId: "DsJA4UNE8yQ"
+    videoId: "DsJA4UNE8yQ",
   },
   {
     title: "Priyanshu Vishwakarma",
