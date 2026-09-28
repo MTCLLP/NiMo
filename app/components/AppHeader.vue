@@ -13,7 +13,7 @@ const isSidebarOpen = ref(false);
       to="/"
       class="flex items-center gap-3 hover:opacity-80 transition-opacity min-w-0 pr-4 pointer-events-auto"
     >
-      <img width="74" height="74" src="/logo.svg" alt="Logo" class="h-12 md:h-14 w-auto shrink-0" />
+      <img width="74" height="74" src="/dr-nihar-modi-logo.png" alt="Logo" class="h-12 md:h-14 w-auto shrink-0" />
       <div class="text-xl md:text-2xl font-mirage text-primary leading-tight min-w-0">
         <!-- <span
           class="text-xs md:text-sm font-sans uppercase tracking-widest text-gray-500 block mb-[-4px]"

@@ -42,7 +42,7 @@ for (const file of vueFiles) {
         
         if (srcMatch) {
             const src = srcMatch[1];
-            if (src === '/logo.svg') {
+            if (src === '/dr-nihar-modi-logo.png') {
                 width = 74; height = 74;
             } else if (src.includes('phone') || src.includes('whatsapp') || src.includes('linkedin') || src.includes('youtube') || src.includes('hamburger')) {
                 // Usually icons are square. Let's look at classes.
