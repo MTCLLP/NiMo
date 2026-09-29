@@ -4,27 +4,23 @@ author: Dr. Nihar Modi
 authorTitle: MS Orthopaedics, DNB, MNAMS, MRCS (England) | AOA Fellow | Sports Medicine & Joint Replacement Surgeon, Mumbai
 category: Sports Medicine
 date: 2026-09-08
-description: "[object Object]"
+description: "From stubborn morning heel stiffness to a sudden explosive rupture: understand Achilles tendinopathy, tear signs, non-surgical vs surgical repair, and recovery."
+image: /blog/achilles-tendon-injuries.webp
+imageAlt: "Medical diagram illustrating Achilles tendon anatomy, midportion tendinopathy, and surgical tendon repair"
+readTime: 9 min read
 seo:
-  title: "Achilles Tendon Injuries: Tendinopathy, Partial Tears & Ruptures Explained"
-  description:
-    From stubborn morning heel stiffness to a sudden explosive rupture: understand Achilles tendinopathy, tear signs, non-surgical vs surgical repair, and recovery.
-    image: /blog/achilles-tendon-injuries.webp
-    imageAlt: Medical diagram illustrating Achilles tendon anatomy, midportion tendinopathy, and surgical tendon repair
-    readTime: 9 min read
-    seo:
-      title: "Achilles Tendon Injuries: What Patients Need to Know"
-      description: Experiencing heel pain or suspected tendon tear? Learn about Achilles tendinopathy, Thompson test, surgical vs non-surgical rupture repair, and rehab timelines.
-    slug: achilles-tendon-injuries-what-patients-need-to-know
-    tags:
-      - Achilles tendon injury
-      - Achilles tendinopathy
-      - Achilles tendon rupture
-      - Achilles tendon repair Mumbai
-      - sports tendon injury
-      - eccentric calf exercises
-      - tendon surgery Mumbai
-      - orthopaedic surgeon Mumbai
+  title: "Achilles Tendon Pain & Tears: Symptoms, Repair & Recovery"
+  description: "Experiencing heel pain or a suspected tendon tear? Learn the signs of Achilles tendinopathy, surgical vs non-surgical repair options, and recovery timelines."
+slug: achilles-tendon-injuries-what-patients-need-to-know
+tags:
+  - Achilles tendon injury
+  - Achilles tendinopathy
+  - Achilles tendon rupture
+  - Achilles tendon repair Mumbai
+  - sports tendon injury
+  - eccentric calf exercises
+  - tendon surgery Mumbai
+  - orthopaedic surgeon Mumbai
 ---
 
 The Achilles tendon is the thickest, largest, and strongest tendon in the human body. Connecting the powerful calf muscles (gastrocnemius and soleus) to your heel bone (calcaneus), it acts like a high-tension biological spring. During explosive sprinting, jumping, and rapid changes of direction, the Achilles tendon withstands tensile loads up to **10 to 12 times your body weight**. [1]

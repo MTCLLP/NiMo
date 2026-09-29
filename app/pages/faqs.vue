@@ -98,6 +98,20 @@ const faqGroups = ref([
     ],
   },
 ]);
+
+const faqs = faqGroups.value.flatMap(group => 
+  group.items.map(item => defineQuestion({
+    name: item.title,
+    acceptedAnswer: item.content
+  }))
+);
+
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'FAQPage'
+  }),
+  ...faqs
+]);
 </script>
 
 <template>

@@ -9,8 +9,8 @@ image: /blog/ankle-sprains-grades-treatment-prevention.webp
 imageAlt: Medical diagram illustrating lateral ankle ligament sprain grades and evidence-based rehabilitation protocols
 readTime: 8 min read
 seo:
-  title: "Ankle Sprains: Grades, Treatment & Prevention Strategies"
-  description: Everything you need to know about ankle sprains — ligament injury grades, Ottawa ankle rules, why early functional rehab beats casting, and preventing chronic instability.
+  title: "Ankle Sprain Recovery: Grades, Treatments & Healing Time"
+  description: "Twisted your ankle? Discover the exact grades of ankle sprains, how long they take to heal, and the best treatments to prevent chronic instability."
 slug: ankle-sprains-grades-treatment-prevention
 tags:
   - ankle sprain treatment

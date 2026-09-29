@@ -9,8 +9,8 @@ image: /blog/sports-injury-prevention-guide.webp
 imageAlt: Athletes performing dynamic neuromuscular warm-up and injury prevention drills on a sports field
 readTime: 10 min read
 seo:
-  title: "Complete Guide to Sports Injury Prevention: Evidence-Based Strategies"
-  description: Prevent sports injuries before they happen. Discover proven neuromuscular warm-ups (FIFA 11+), workload management, kinetic chain balance, and recovery science.
+  title: "Sports Injury Prevention Guide: How to Stay Injury-Free"
+  description: "Want to avoid being sidelined? Learn the top evidence-based strategies, warm-ups, and recovery secrets that keep pro athletes injury-free."
 slug: complete-guide-to-sports-injury-prevention
 tags:
   - sports injury prevention

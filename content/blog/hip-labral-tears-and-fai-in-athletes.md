@@ -9,8 +9,8 @@ image: /blog/hip-labral-tears-fai.webp
 imageAlt: Medical illustration showing hip joint anatomy, acetabular labral tear, and femoroacetabular impingement (FAI)
 readTime: 9 min read
 seo:
-  title: "Hip Labral Tears and FAI in Athletes: Symptoms, Diagnosis & Treatment"
-  description: Experiencing groin pain or hip catching? Learn how Femoroacetabular Impingement (FAI) causes hip labral tears in athletes, diagnostic tests, and treatment options.
+  title: "Hip Labral Tears & FAI: Symptoms, Diagnosis & Treatment Guide"
+  description: "Experiencing a catching sensation or deep groin pain? Understand the symptoms of hip labral tears and FAI, plus modern treatment options to get you back to sports."
 slug: hip-labral-tears-and-fai-in-athletes
 tags:
   - hip labral tear

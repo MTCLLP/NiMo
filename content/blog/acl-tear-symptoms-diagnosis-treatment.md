@@ -9,8 +9,8 @@ image: /blog/acl-tear.webp
 imageAlt: Illustration of an ACL tear in the knee joint
 readTime: 9 min read
 seo:
-  title: "ACL Tears: Symptoms, Diagnosis & Treatment Options"
-  description: Everything you need to know about ACL tears — from how they happen and what they feel like, to diagnosis, treatment options, and what recovery looks like.
+  title: "ACL Tear Guide: Symptoms, Tests, Surgery & Recovery Timeline"
+  description: "Did you hear a pop in your knee? Learn the immediate symptoms of an ACL tear, diagnosis steps, and what the recovery timeline looks like with and without surgery."
 slug: acl-tear-symptoms-diagnosis-treatment
 tags:
   - ACL tear

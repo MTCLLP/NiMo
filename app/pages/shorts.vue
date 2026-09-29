@@ -61,6 +61,31 @@ const shorts = [
     id: "XrKZXvKWIZM",
     title: "Things My Patients Say That Keep Me Humble | Orthopaedic OPD",
   },
+  {
+    id: "WcpugauxXwQ",
+    title:
+      "Pickleball & Padel Injuries Are Exploding | What Players Need to Know",
+  },
+  {
+    id: "9rXSkeXT51k",
+    title: "Are Steroid Injections Bad for Your Joints? The Truth Explained",
+  },
+  {
+    id: "VNYcJmUMsSM",
+    title: "Will Robots Replace Surgeons? The Future of Surgery",
+  },
+  {
+    id: "cOiryAPoFGo",
+    title: "ShoThese “Rice Grains” Were Actually Inside a Human Knee! 😳",
+  },
+  {
+    id: "uvIR03xEPUk",
+    title: "Pain Is Gone, But Are You Really Healed? | Why Physio Matters",
+  },
+  {
+    id: "kbIjtslmqG0",
+    title: "It Looks Like Hammering. But I'm Rebuilding a Shoulder",
+  },
 ];
 
 const selectedIndex = ref<number | null>(null);
@@ -164,8 +189,13 @@ onUnmounted(() => {
             </div>
 
             <!-- Title Overlay -->
-            <div class="absolute bottom-0 left-0 right-0 p-4 pt-12 bg-gradient-to-t from-black/90 to-transparent z-20 transition-opacity duration-300">
-              <h3 class="text-white font-medium text-sm line-clamp-2 leading-snug drop-shadow-md" :title="short.title">
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 pt-12 bg-gradient-to-t from-black/90 to-transparent z-20 transition-opacity duration-300"
+            >
+              <h3
+                class="text-white font-medium text-sm line-clamp-2 leading-snug drop-shadow-md"
+                :title="short.title"
+              >
                 {{ short.title }}
               </h3>
             </div>
@@ -252,13 +282,14 @@ onUnmounted(() => {
           </div>
 
           <div class="mt-4 text-center w-full px-2" v-if="selectedShort">
-            <h2 class="text-white font-semibold text-lg line-clamp-2 drop-shadow-md">
+            <h2
+              class="text-white font-semibold text-lg line-clamp-2 drop-shadow-md"
+            >
               {{ selectedShort.title }}
             </h2>
-            <div
-              class="mt-2 text-white/70 text-sm font-medium"
-            >
-              {{ selectedIndex !== null ? selectedIndex + 1 : 0 }} / {{ shorts.length }}
+            <div class="mt-2 text-white/70 text-sm font-medium">
+              {{ selectedIndex !== null ? selectedIndex + 1 : 0 }} /
+              {{ shorts.length }}
             </div>
           </div>
         </div>

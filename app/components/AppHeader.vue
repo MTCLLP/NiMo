@@ -127,14 +127,14 @@ const isSidebarOpen = ref(false);
       :class="isSidebarOpen ? 'translate-x-0 opacity-100 visible' : 'translate-x-full opacity-0 invisible'"
     >
       <!-- Close Button -->
-      <div class="flex justify-end p-6">
+      <div class="flex justify-end p-4 pb-2">
         <button
           @click="isSidebarOpen = false"
           class="p-2 text-gray-500 hover:text-gray-800 transition-colors cursor-pointer"
           aria-label="Close menu"
         >
           <svg
-            class="w-8 h-8"
+            class="w-6 h-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -152,7 +152,7 @@ const isSidebarOpen = ref(false);
 
       <!-- Menu Items -->
       <div
-        class="flex-grow flex flex-col px-8 py-4 gap-6 text-lg font-medium text-gray-800"
+        class="flex-grow flex flex-col px-8 pt-0 pb-2 gap-4 text-lg font-medium text-gray-800 overflow-y-auto"
       >
         <NuxtLink
           to="/"
@@ -225,6 +225,18 @@ const isSidebarOpen = ref(false);
             alt="FAQs Icon"
           />
           FAQs
+        </NuxtLink>
+        <NuxtLink
+          to="/blog"
+          @click="isSidebarOpen = false"
+          class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
+        >
+          <img width="24" height="24"
+            src="/sidebar/icon-blog-dr-nihar-modi.svg"
+            class="w-6 h-6"
+            alt="Blog Icon"
+          />
+          Blog
         </NuxtLink>
         <NuxtLink
           to="/contact"
