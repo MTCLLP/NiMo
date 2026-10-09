@@ -258,9 +258,9 @@ if (procedure.value) {
                       </p>
                       <p
                         v-if="proc.technique"
-                        class="text-xs text-gray-500 leading-relaxed font-light"
+                        class="text-xs md:text-sm text-gray-600 leading-relaxed"
                       >
-                        <strong class="font-medium text-gray-700"
+                        <strong class="font-semibold text-gray-800"
                           >Technique:</strong
                         >
                         {{ proc.technique }}
