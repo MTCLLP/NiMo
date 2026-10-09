@@ -3,25 +3,39 @@ import { ref, onMounted, onUnmounted } from "vue";
 
 const areas = [
   {
+    title: "Shoulder Surgery",
+    desc: "Advanced arthroscopic rotator cuff repair, instability stabilisation, and anatomical or reverse joint replacements.",
+    img: "/specialities/shoulder-surgery-dr-nihar-modi.png",
+    hoverImg: "/specialities/shoulder-surgery-dr-nihar-modi.png",
+    slug: "shoulder-surgery",
+  },
+  {
+    title: "Elbow Surgery",
+    desc: "Specialized keyhole contracture release, Tommy John UCL ligament reconstruction, and chronic tendon repairs.",
+    img: "/specialities/elbow-surgery-dr-nihar-modi.png",
+    hoverImg: "/specialities/elbow-surgery-dr-nihar-modi.png",
+    slug: "elbow-surgery",
+  },
+  {
     title: "Knee Surgery",
-    desc: "Advanced surgical treatments for knee pain, ligament injuries, and joint replacements to restore your mobility.",
+    desc: "Anatomical ACL/PCL ligament reconstruction, meniscal preservation, corrective osteotomy, and joint replacement.",
     img: "/specialities/knee-surgery-dr-nihar-modi.png",
     hoverImg: "/specialities/knee-surgery-dr-nihar-modi.png",
     slug: "knee-surgery",
   },
   {
-    title: "Shoulder Surgery",
-    desc: "Expert care for rotator cuff tears, dislocations, and shoulder arthritis to help you regain full range of motion.",
-    img: "/specialities/shoulder-surgery-dr-nihar-modi.png",
-    hoverImg: "/specialities/shoulder-surgery-dr-nihar-modi.png",
-    slug: "shoulder-arthroscopy",
+    title: "Revision & Complex Sports Surgery",
+    desc: "Specialized solutions for failed prior surgeries, recurrent joint instability, and multi-ligament sports trauma.",
+    img: "/specialities/sports-medicine-dr-nihar-modi.webp",
+    hoverImg: "/specialities/sports-medicine-dr-nihar-modi.webp",
+    slug: "revision-complex-sports-surgery",
   },
   {
-    title: "Elbow Surgery",
-    desc: "Specialised treatments for tennis elbow, fractures, and ligament injuries to ensure optimal recovery and function.",
-    img: "/specialities/elbow-surgery-dr-nihar-modi.png",
-    hoverImg: "/specialities/elbow-surgery-dr-nihar-modi.png",
-    slug: "elbow-surgery",
+    title: "Arthroscopic Surgery",
+    desc: "Minimally invasive keyhole procedures across shoulder, elbow, and knee joints for accelerated, low-pain recovery.",
+    img: "/specialities/arthroscopy-dr-nihar-modi.webp",
+    hoverImg: "/specialities/arthroscopy-dr-nihar-modi.webp",
+    slug: "arthroscopic-surgery",
   },
 ];
 
@@ -146,7 +160,7 @@ onUnmounted(() => {
 
       <div
         ref="scrollContainer"
-        class="container mx-auto px-4 lg:px-8 flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 md:grid md:grid-cols-3 md:gap-8 hide-scrollbar scroll-smooth"
+        class="container mx-auto px-4 lg:px-8 flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 hide-scrollbar scroll-smooth"
         @touchstart="stopAutoPlay"
         @touchend="startAutoPlay"
         @mouseenter="stopAutoPlay"
