@@ -86,7 +86,7 @@ onMounted(() => {
               <div
                 class="text-xs md:text-sm text-gray-500 uppercase tracking-widest font-semibold"
               >
-                Years of Training
+                Years of Experience
               </div>
             </div>
             <div>
