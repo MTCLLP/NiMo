@@ -2,12 +2,12 @@
 import { useHead } from "#imports";
 
 useHead({
-  title: "Top Joint Replacement Surgeon in Mumbai | Knee & Hip",
+  title: "Joint Replacement Surgeon in Mumbai | Knee & Hip Arthroplasty",
   meta: [
     {
       name: "description",
       content:
-        "Experience pain-free movement with Dr. Nihar Modi, a top Joint Replacement Surgeon in Mumbai. Specializing in advanced knee and hip replacement surgeries.",
+        "Consult Dr. Nihar Modi for advanced knee and hip replacement surgeries in Mumbai, focusing on rapid recovery and restoring joint mobility.",
     },
   ],
 });
@@ -114,7 +114,7 @@ useHead({
               <p class="text-sm">
                 For severe arthritis or complex fractures of the shoulder, the
                 damaged parts of the shoulder are removed and replaced with
-                artificial components, restoring pain-free mobility to the arm.
+                artificial components, restoring functional mobility to the arm.
               </p>
             </div>
           </div>
@@ -213,7 +213,7 @@ useHead({
           class="mt-16 flex flex-col items-center justify-center text-center"
         >
           <h3 class="text-2xl font-mirage text-primary mb-6">
-            Looking for a Top Joint Replacement Surgeon in Mumbai?
+            Considering Joint Replacement Surgery in Mumbai?
           </h3>
           <UiButton to="/contact" variant="primary" size="lg">
             Schedule a Joint Replacement Consultation

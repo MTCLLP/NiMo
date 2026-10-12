@@ -2,7 +2,7 @@
 import { useHead } from "#imports";
 
 useHead({
-  title: "Top Arthroscopy Surgeon in Mumbai | Keyhole Surgery",
+  title: "Arthroscopy Surgeon in Mumbai | Keyhole Joint Surgery",
   meta: [
     {
       name: "description",
@@ -186,7 +186,7 @@ useHead({
           class="mt-16 flex flex-col items-center justify-center text-center"
         >
           <h3 class="text-2xl font-mirage text-primary mb-6">
-            Looking for a Top Arthroscopy Surgeon in Mumbai?
+            Considering Arthroscopic Surgery in Mumbai?
           </h3>
           <UiButton to="/contact" variant="primary" size="lg">
             Schedule an Arthroscopy Consultation

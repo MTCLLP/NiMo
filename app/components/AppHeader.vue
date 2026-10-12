@@ -22,7 +22,7 @@ const isSidebarOpen = ref(false);
         Dr. Nihar Modi
         <span
           class="text-[10px] md:text-xs font-sans text-gray-700 block mt-1 tracking-wider whitespace-normal leading-tight opacity-80 md:max-w-[400px]"
-          >M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football
+          >Reg. No. MMC 2019/04/2851 | M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football
           Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports
           injuries, Arthroscopy and Arthroplasty (Australia, USA)</span
         >
@@ -202,6 +202,7 @@ const isSidebarOpen = ref(false);
           />
           Specialised Areas
         </NuxtLink>
+        <!-- Deactivated for NMC compliance:
         <NuxtLink
           to="/testimonials"
           @click="isSidebarOpen = false"
@@ -214,6 +215,7 @@ const isSidebarOpen = ref(false);
           />
           Testimonials
         </NuxtLink>
+        -->
         <NuxtLink
           to="/faqs"
           @click="isSidebarOpen = false"

@@ -38,7 +38,7 @@ defineProps({
         <slot name="title">
           Ready to take the next step towards
           <br class="hidden md:block" /><span class="text-primary italic"
-            >pain-free movement?</span
+            >restoring your mobility?</span
           >
         </slot>
       </h2>

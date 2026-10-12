@@ -2,12 +2,12 @@
 import { useHead } from "#imports";
 
 useHead({
-  title: "Best Sports Medicine Specialist in Mumbai",
+  title: "Sports Medicine Specialist in Mumbai | Orthopaedic Care",
   meta: [
     {
       name: "description",
       content:
-        "Consult Dr. Nihar Modi, a leading Sports Orthopaedic Surgeon in Mumbai, for expert treatment of ACL tears, meniscus injuries, and shoulder dislocations. Get back in the game safely.",
+        "Consult Dr. Nihar Modi, Sports Orthopaedic Surgeon in Mumbai, for comprehensive treatment of ACL tears, meniscus injuries, and shoulder dislocations. Return to activity safely.",
     },
   ],
 });
@@ -104,7 +104,7 @@ useHead({
             </h3>
             <p class="text-gray-700">
               Recovery doesn't end when the surgical wound heals. Dr. Nihar Modi
-              works closely with top physiotherapists to design a phased Return
+              works closely with experienced physiotherapists to design a phased Return
               to Play protocol. This structured rehabilitation program
               objectively measures your strength, agility, and psychological
               readiness before clearing you to return to the field,
@@ -158,7 +158,7 @@ useHead({
           class="mt-16 flex flex-col items-center justify-center text-center"
         >
           <h3 class="text-2xl font-mirage text-primary mb-6">
-            Looking for the Best Sports Orthopaedic Surgeon in Mumbai?
+            Looking for a Sports Orthopaedic Surgeon in Mumbai?
           </h3>
           <UiButton to="/contact" variant="primary" size="lg">
             Consult Dr. Nihar Modi for Your Sports Injury

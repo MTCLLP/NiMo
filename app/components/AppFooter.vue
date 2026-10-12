@@ -20,7 +20,7 @@
           <div
             class="text-[10px] font-sans text-white/50 tracking-wider uppercase mt-1 max-w-[400px]"
           >
-            M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football
+            Reg. No. MMC 2019/04/2851 | M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football
             Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports
             injuries, Arthroscopy and Arthroplasty (Australia, USA)
           </div>
@@ -87,11 +87,13 @@
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >FAQs</NuxtLink
         >
+        <!-- Deactivated for NMC compliance:
         <NuxtLink
           to="/testimonials"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Testimonials</NuxtLink
         >
+        -->
         <NuxtLink
           to="/gallery"
           class="text-[15px] text-white hover:text-white/80 transition-colors"

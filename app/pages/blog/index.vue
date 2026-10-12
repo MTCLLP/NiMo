@@ -117,7 +117,7 @@ useHead({
     {
       property: "og:description",
       content:
-        "Patient-friendly articles on knee health, sports injuries, and treatment options from a leading orthopaedic surgeon in Mumbai.",
+        "Patient-friendly articles on knee health, sports injuries, and treatment options from Dr. Nihar Modi, orthopaedic surgeon in Mumbai.",
     },
   ],
   script: [

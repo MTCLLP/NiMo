@@ -39,7 +39,7 @@ export const proceduresData: ProcedureContent[] = [
     slug: "shoulder-surgery",
     name: "Shoulder Surgery",
     tagline:
-      "Comprehensive keyhole and reconstructive shoulder procedures to restore pain-free motion, stability, and strength.",
+      "Comprehensive keyhole and reconstructive shoulder procedures to restore functional motion, stability, and strength.",
     intro:
       "The shoulder is the most mobile joint in the human body, supported by a complex network of tendons, ligaments, and capsule. When injuries or wear compromise these structures, such as rotator cuff tears, recurrent dislocations, labral tears, stiffness, or advanced arthritis, specialised shoulder surgery restores anatomical function. Dr Nihar Modi utilises international fellowship training (Sydney, Australia and Florida, USA) to perform advanced arthroscopic (keyhole) repairs, complex capsulolabral reconstructions, and anatomical or reverse joint replacements tailored to your activity goals.",
     symptoms: [

@@ -69,7 +69,7 @@ export const conditionsData: ConditionContent[] = [
       'Arthroscopic (keyhole) surgery to repair torn tendons or stabilize the joint',
       'Shoulder replacement surgery for severe, bone-on-bone arthritis'
     ],
-    management: 'Management focuses on regaining a full, pain-free range of motion. Following any procedure or injection, a structured physical therapy plan is essential. We will guide you through exercises that start gently and progress to strengthening, ensuring a safe and effective recovery.',
+    management: 'Management focuses on regaining functional range of motion and joint strength. Following any procedure or injection, a structured physical therapy plan is essential. We will guide you through exercises that start gently and progress to strengthening, ensuring a safe and effective recovery.',
     faqs: [
       {
         question: 'What is a frozen shoulder?',
@@ -84,7 +84,7 @@ export const conditionsData: ConditionContent[] = [
   {
     slug: 'elbow-conditions',
     name: 'Elbow Conditions',
-    intro: 'Elbow pain can severely impact your ability to grip, lift, and perform even simple tasks like opening a jar or typing. Common issues like tennis elbow and golfer\'s elbow are often caused by overuse, while fractures and ligament injuries can result from sudden trauma. We offer a range of treatments designed to eliminate pain and restore the strength and function of your elbow.',
+    intro: 'Elbow pain can severely impact your ability to grip, lift, and perform even simple tasks like opening a jar or typing. Common issues like tennis elbow and golfer\'s elbow are often caused by overuse, while fractures and ligament injuries can result from sudden trauma. We offer a range of treatments designed to relieve pain and restore the strength and function of your elbow.',
     symptoms: [
       'Pain on the outside (tennis elbow) or inside (golfer\'s elbow) of the joint',
       'Pain that worsens when gripping or lifting objects',
@@ -146,7 +146,7 @@ export const conditionsData: ConditionContent[] = [
   {
     slug: 'joint-replacement-surgery',
     name: 'Joint Replacement Surgery',
-    intro: 'When arthritis or severe joint damage causes chronic pain that limits your daily life—like keeping you awake at night or preventing you from walking comfortably—joint replacement surgery can be a life-changing solution. Using state-of-the-art materials and precise surgical techniques, we replace the damaged joint surfaces to eliminate pain and restore smooth, natural movement.',
+    intro: 'When arthritis or severe joint damage causes chronic pain that limits your daily life—like keeping you awake at night or preventing you from walking comfortably—joint replacement surgery can be a life-changing solution. Using state-of-the-art materials and precise surgical techniques, we replace the damaged joint surfaces to relieve persistent pain and restore smooth, natural movement.',
     symptoms: [
       'Severe joint pain that limits everyday activities (walking, dressing)',
       'Pain that continues even while resting, day or night',
@@ -162,7 +162,7 @@ export const conditionsData: ConditionContent[] = [
       'Custom-tailored surgical planning using 3D imaging',
       'Advanced pain management protocols for a comfortable recovery'
     ],
-    management: 'Modern joint replacements focus on "rapid recovery." In many cases, patients are walking on the same day as their surgery. We coordinate closely with a physical therapy team to ensure you regain your strength and range of motion safely. Your new joint is designed to give you decades of pain-free activity.',
+    management: 'Modern joint replacements focus on "rapid recovery." In many cases, patients are walking on the same day as their surgery. We coordinate closely with a physical therapy team to ensure you regain your strength and range of motion safely. Your new joint is designed to support long-term active mobility.',
     faqs: [
       {
         question: 'How long does a joint replacement last?',

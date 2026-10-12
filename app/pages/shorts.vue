@@ -7,7 +7,7 @@ useHead({
     {
       name: "description",
       content:
-        "Watch informative short videos by Dr. Nihar Modi, Mumbai's leading orthopedic surgeon, covering joint health, injury prevention, and surgical treatments.",
+        "Watch informative short videos by Dr. Nihar Modi, orthopaedic surgeon in Mumbai, covering joint health, injury prevention, and surgical treatments.",
     },
   ],
 });

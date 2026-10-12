@@ -2,9 +2,9 @@
 import { useHead } from '#imports'
 
 useHead({
-  title: 'Contact Top Orthopedic Doctor in Santacruz & Bandra',
+  title: 'Contact Dr. Nihar Modi | Orthopaedic Surgeon Santacruz & Bandra',
   meta: [
-    { name: 'description', content: 'Contact Dr. Nihar Modi, a top orthopedic doctor serving Santacruz and Bandra, Mumbai. Book an appointment for expert joint, knee, and shoulder pain treatment.' }
+    { name: 'description', content: 'Contact Dr. Nihar Modi, orthopaedic and sports surgeon serving Santacruz and Bandra, Mumbai. Book an appointment for joint, knee, and shoulder consultation.' }
   ]
 })
 </script>
@@ -22,7 +22,8 @@ useHead({
         
         <!-- Contact Information -->
         <div class="p-10 md:p-14 flex flex-col justify-center">
-          <h3 class="text-3xl font-mirage text-secondary mb-10">Contact Information</h3>
+          <h3 class="text-3xl font-mirage text-secondary mb-2">Contact Information</h3>
+          <p class="text-xs text-gray-500 mb-8 tracking-wider">Maharashtra Medical Council Reg. No. MMC 2019/04/2851</p>
           
           <div class="space-y-8 mb-12">
             <!-- Phone -->

@@ -179,7 +179,7 @@
                 Dr. Nihar Modi
               </div>
               <div class="text-xs text-gray-500">
-                M.S. Ortho | D.N.B. Ortho | MRCS (Eng) | AOA Fellow (Australia)
+                Reg. No. MMC 2019/04/2851 | M.S. Ortho | D.N.B. Ortho | MRCS (Eng) | AOA Fellow (Australia)
               </div>
             </div>
             <div class="flex items-center gap-3">

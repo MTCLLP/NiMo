@@ -1,4 +1,8 @@
 <script setup lang="ts">
+// Page deactivated for compliance with NMC Guidelines No. R-13014/01/2024-Ethics
+// Immediately redirect visitors to home page without deleting existing page code:
+await navigateTo('/', { redirectCode: 301, replace: true })
+
 import { ref } from 'vue'
 import { testimonials } from '~/data/testimonials'
 
@@ -21,7 +25,8 @@ const truncateText = (text: string, length = 150) => {
 </script>
 
 <template>
-  <main>
+  <!-- Deactivated for NMC compliance: content preserved but not rendered -->
+  <main v-if="false">
     <PageHeader 
       title="Testimonials" 
       :breadcrumbs="[{ name: 'Home', path: '/' }, { name: 'Testimonials', path: '/testimonials' }]"

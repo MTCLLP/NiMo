@@ -3,10 +3,11 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 const galleryImages = [
   { url: '/gallery/dr-nihar-modi.webp', alt: 'Dr. Nihar Modi' },
-  { url: '/gallery/dr-nihar-modi-doing-surgery.webp', alt: 'Dr. Nihar Modi Doing Surgery' },
-  { url: '/gallery/dr-nihar-modi-doing-surgery-1.webp', alt: 'Dr. Nihar Modi Doing Surgery 1' },
-  { url: '/gallery/dr-nihar-modi-doing-surgery-2.webp', alt: 'Dr. Nihar Modi Doing Surgery 2' },
-  { url: '/gallery/dr-nihar-modi-in-surgery.webp', alt: 'Dr. Nihar Modi in Surgery' },
+  // Hidden for NMC compliance (surgical procedure photos):
+  // { url: '/gallery/dr-nihar-modi-doing-surgery.webp', alt: 'Dr. Nihar Modi Doing Surgery' },
+  // { url: '/gallery/dr-nihar-modi-doing-surgery-1.webp', alt: 'Dr. Nihar Modi Doing Surgery 1' },
+  // { url: '/gallery/dr-nihar-modi-doing-surgery-2.webp', alt: 'Dr. Nihar Modi Doing Surgery 2' },
+  // { url: '/gallery/dr-nihar-modi-in-surgery.webp', alt: 'Dr. Nihar Modi in Surgery' },
   { url: '/gallery/dr-nihar-modi-in-conference.webp', alt: 'Dr. Nihar Modi in Conference' },
   { url: '/gallery/dr-nihar-modi-training.webp', alt: 'Dr. Nihar Modi Training' },
   { url: '/gallery/dr-nihar-modi-training-1.webp', alt: 'Dr. Nihar Modi Training 1' },

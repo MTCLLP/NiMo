@@ -48,6 +48,7 @@ export default defineNuxtConfig({
     url: 'https://drniharmodi.com',
   },
   sitemap: {
+    exclude: ['/testimonials'],
     // Inject all blog article URLs at build time.
     // This approach works for static generation (npm run generate) because
     // it runs when nuxt.config is loaded — no runtime server required.

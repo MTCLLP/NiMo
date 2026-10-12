@@ -91,22 +91,22 @@ onMounted(() => {
             </div>
             <div>
               <div class="text-3xl md:text-4xl font-mirage text-gray-900 mb-1">
-                1000+
+                2
               </div>
               <div
                 class="text-xs md:text-sm text-gray-500 uppercase tracking-widest font-semibold"
               >
-                Surgeries Completed
+                Global Fellowships
               </div>
             </div>
             <div>
               <div class="text-3xl md:text-4xl font-mirage text-gray-900 mb-1">
-                5000+
+                25+
               </div>
               <div
                 class="text-xs md:text-sm text-gray-500 uppercase tracking-widest font-semibold"
               >
-                Happy Patients
+                Research Publications
               </div>
             </div>
             <div>
@@ -128,7 +128,7 @@ onMounted(() => {
         >
           <img
             src="/dr-nihar-modi-hero.png"
-            alt="Dr. Nihar Modi - Top Orthopaedic Surgeon in Mumbai"
+            alt="Dr. Nihar Modi - Orthopaedic and Sports Surgeon in Mumbai"
             class="hero-image object-contain h-[95%] max-h-[600px] lg:max-h-200 origin-bottom object-bottom relative z-10"
           />
 

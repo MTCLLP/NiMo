@@ -2,7 +2,7 @@
 import { computed } from "vue";
 
 useHead({
-  title: "About | Top Orthopaedic Surgeon in Mumbai",
+  title: "About Dr. Nihar Modi | Orthopaedic & Sports Surgeon in Mumbai",
   meta: [
     {
       name: "description",
@@ -47,6 +47,11 @@ const education = [
     title: "M.B.B.S.",
     date: "August 2013 - March 2019",
     desc: "Maharashtra University of Health Sciences, Topiwala National Medical College and BYL Nair Charitable Hospital, Mumbai, India",
+  },
+  {
+    title: "Medical Registration",
+    date: "April 2019",
+    desc: "Maharashtra Medical Council (MMC) — Reg. No. 2019/04/2851",
   },
 ];
 
@@ -158,7 +163,7 @@ const hobbies = [
   <main>
     <PageHeader
       title="Dr. Nihar Modi"
-      subtitle="M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports injuries, Arthroscopy and Arthroplasty (Australia, USA)"
+      subtitle="Reg. No. MMC 2019/04/2851 | M. S. Ortho | D.N.B. Ortho | MRCS (England) | Diploma in Football Medicine (FIFA) | Fellowship in Shoulder, Elbow & Knee Sports injuries, Arthroscopy and Arthroplasty (Australia, USA)"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
