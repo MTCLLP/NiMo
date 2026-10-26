@@ -25,7 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="relative pt-32 pb-16 md:pt-40 md:pb-20 px-4 sm:px-8">
+  <section class="relative pt-32 pb-12 md:pt-40 md:pb-16 px-4 sm:px-8">
     <div class="container mx-auto">
       <!-- Main Box Container -->
       <div

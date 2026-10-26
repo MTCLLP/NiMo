@@ -37,8 +37,8 @@ useSchemaOrg([
 <template>
   <div>
     <HeroSection />
+    <LogoScroller />
     <IntroSection />
-    <!-- <HospitalLogos /> -->
     <!-- <StatsBanner /> -->
     <SpecialisedAreas />
     <QuoteBanner />
