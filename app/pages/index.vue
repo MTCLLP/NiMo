@@ -1,12 +1,12 @@
 <script setup lang="ts">
 // Home page
 useHead({
-  title: "Orthopaedic & Sports Surgeon in Santacruz & Bandra, Mumbai | Dr. Nihar Modi",
+  title: "Orthopaedic & Sports Surgeon in Bandra, Mumbai | Dr. Nihar Modi",
   meta: [
     {
       name: "description",
       content:
-        "Looking for an orthopaedic doctor near you? Dr. Nihar Modi is an orthopaedic and sports surgeon in Santacruz & Bandra, Mumbai, specializing in ACL, knee & shoulder treatments.",
+        "Looking for an orthopaedic doctor near you? Dr. Nihar Modi is an orthopaedic and sports surgeon in Bandra, Mumbai, specializing in ACL, knee and shoulder treatments.",
     },
   ],
 });
@@ -21,7 +21,7 @@ useSchemaOrg([
     "@type": "Physician",
     name: "Dr. Nihar Modi",
     description:
-      "Orthopaedic and sports surgeon in Santacruz & Bandra, Mumbai, specializing in ACL, knee & shoulder treatments.",
+      "Orthopaedic and sports surgeon in Bandra, Mumbai, specializing in ACL, knee & shoulder treatments.",
     image: "https://drniharmodi.com/about-dr-nihar-modi.webp",
     address: {
       "@type": "PostalAddress",
