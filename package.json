@@ -30,5 +30,9 @@
     "nuxt-studio": "^1.7.0",
     "typescript": "^7.0.2",
     "vue-tsc": "^3.3.11"
+  },
+  "overrides": {
+    "sharp": "^0.35.5",
+    "postcss-selector-parser": "^7.1.7"
   }
 }
