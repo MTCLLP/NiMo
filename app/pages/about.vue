@@ -48,6 +48,7 @@ useSchemaOrg([
       "https://www.linkedin.com/in/dr-nihar-modi-8702672a4/",
       "https://www.instagram.com/dr_sportho/",
       "https://www.youtube.com/@dr_sportho",
+      "https://www.researchgate.net/profile/Nihar-Modi-3",
     ],
   }),
 ]);
@@ -180,7 +181,6 @@ const publishedArticles = [
   "Journal of Clinical Orthopaedics and Trauma (Aug 2025) - Single-incision anatomic technique yields good outcomes in acute and chronic distal biceps avulsions alike.",
   "Indian Journal of Orthopaedics (May 2025) - A Novel Technique of Femoral Supracondylar Focal Dome Osteotomy for Correction of Frontal Plane Knee Deformities in Children and Young Adults.",
   "Journal of Orthpaedic Case Reports (May 2025) - Management of Chronic Achilles Tendon Rupture with Tibialis Anterior Allograft: A 2-Year Follow-up Study.",
-  "... and 24 other peer-reviewed publications in international and national journals.",
 ];
 
 const presentations = [
@@ -329,12 +329,44 @@ const hobbies = [
                 Published Articles (Highlights)
               </h4>
               <ul
-                class="list-disc space-y-4 text-gray-600 leading-relaxed ml-4"
+                class="list-disc space-y-4 text-gray-600 leading-relaxed ml-4 mb-6"
               >
                 <li v-for="(article, idx) in publishedArticles" :key="idx">
                   {{ article }}
                 </li>
               </ul>
+
+              <!-- ResearchGate Academic Verification -->
+              <div
+                class="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-[#00ccbb]/10 text-[#00a89a] flex items-center justify-center font-bold text-sm shrink-0 border border-[#00ccbb]/20"
+                  >
+                    RG
+                  </div>
+                  <div>
+                    <div class="text-sm font-bold text-gray-900">
+                      25+ Peer-Reviewed Publications
+                    </div>
+                    <div class="text-xs text-gray-500">
+                      Explore full academic citations, co-authorships, and full-text studies
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="https://www.researchgate.net/profile/Nihar-Modi-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 text-xs font-semibold text-primary hover:text-primary/80 bg-white border border-slate-200 px-4 py-2 rounded-lg shadow-2xs hover:shadow-xs transition-all whitespace-nowrap self-stretch sm:self-auto justify-center"
+                >
+                  <span>View on ResearchGate</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
             </div>
 
             <div>

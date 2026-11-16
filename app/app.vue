@@ -41,6 +41,7 @@ useSchemaOrg([
       "https://www.linkedin.com/in/dr-nihar-modi-8702672a4/",
       "https://www.instagram.com/dr_sportho/",
       "https://www.youtube.com/@dr_sportho",
+      "https://www.researchgate.net/profile/Nihar-Modi-3",
       "https://www.google.com/maps/place/Dr.+Nihar+Modi/@19.0556717,72.8321864,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c90040600f91:0x16abcd80ff8ae9f8!8m2!3d19.0556717!4d72.8321864!16s%2Fg%2F11whdlthql",
     ],
   }) as any,
