@@ -155,7 +155,7 @@ const isResourcesOpen = ref(false);
                   <span>FAQs</span>
                 </NuxtLink>
                 <NuxtLink
-                  to="/shorts"
+                  to="/educational-videos"
                   @click="isResourcesOpen = false"
                   class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-slate-50 hover:text-primary transition-colors"
                 >
@@ -336,7 +336,7 @@ const isResourcesOpen = ref(false);
           Blog
         </NuxtLink>
         <NuxtLink
-          to="/shorts"
+          to="/educational-videos"
           @click="isSidebarOpen = false"
           class="flex items-center gap-4 hover:text-primary transition-colors border-b border-gray-100 pb-4"
         >

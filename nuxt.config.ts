@@ -19,7 +19,7 @@ const getAllSitemapUrls = () => {
     { loc: '/contact', priority: 0.8, changefreq: 'monthly' as const },
     { loc: '/faqs', priority: 0.7, changefreq: 'monthly' as const },
     { loc: '/gallery', priority: 0.6, changefreq: 'monthly' as const },
-    { loc: '/shorts', priority: 0.7, changefreq: 'weekly' as const },
+    { loc: '/educational-videos', priority: 0.7, changefreq: 'weekly' as const },
     { loc: '/privacy-policy', priority: 0.3, changefreq: 'yearly' as const },
     { loc: '/terms-conditions', priority: 0.3, changefreq: 'yearly' as const },
   ]
@@ -110,6 +110,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/services': { redirect: { to: '/procedures', statusCode: 301 } },
+    '/shorts': { redirect: { to: '/educational-videos', statusCode: 301 } },
     '/conditions/arthroscopy': { redirect: { to: '/procedures/arthroscopy-surgeon-mumbai', statusCode: 301 } },
     '/conditions/joint-replacement-surgery': { redirect: { to: '/procedures/joint-replacement-surgery-mumbai', statusCode: 301 } },
   },

@@ -100,7 +100,7 @@
           >Gallery</NuxtLink
         >
         <NuxtLink
-          to="/shorts"
+          to="/educational-videos"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Educational Videos</NuxtLink
         >

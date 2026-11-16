@@ -40,17 +40,8 @@ In this article, Dr Nihar Modi examines and debunks **8 of the most common myths
 
 ## Myth 1: "Orthopaedic Surgeons Always Recommend Surgery Right Away"
 
-```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                          THE CONSERVATIVE PYRAMID                           │
-└─────────────────────────────────────────────────────────────────────────────┘
-
-                                [ SURGERY ]   ◄── Strict minority (<10–15%)
-                             [ INJECTIONS / PRP ]
-                          [ STRUCTURED PHYSIOTHERAPY ]
-                       [ ACTIVITY & LOAD MODIFICATION ]
-                     [ EDUCATION, LIFESTYLE & ANALGESICS ]
-```
+::conservative-pyramid
+::
 
 ### The Scientific Reality: Surgery Is Typically the Final Step, Not the First
 
@@ -83,22 +74,8 @@ A landmark systematic review and meta-analysis published in ***The Lancet*** ana
 - **Over 82% of total knee replacements (TKAs)** remain fully functional and infection-free beyond **25 years**.
 - **Over 89% of total hip replacements (THAs)** survive beyond **15 years**, and 58% survive beyond **25 years**.
 
-```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│           THE HARMFUL CYCLE OF DELAYING JOINT REPLACEMENT TOO LONG          │
-└─────────────────────────────────────────────────────────────────────────────┘
-
-  CHRONIC AVOIDANCE ──► Severe Joint Deformity (Bowing / Knock-Knee)
-         │
-         ▼
-  PROGRESSIVE MUSCLE WASTING ──► Severe Quadriceps / Gluteal Atrophy
-         │
-         ▼
-  FIXED JOINT CONTRACTURE   ──► Permanent Inability to Straighten Knee
-         │
-         ▼
-  COMPROMISED SURGERY       ──► More Complex Implants Needed & Harder Rehab
-```
+::joint-delay-cycle
+::
 
 Delaying surgery until you are completely immobilised is clinically counterproductive. Severe joint destruction leads to bone loss, fixed flexion contractures, and profound muscular atrophy, all of which significantly increase surgical complexity and slow down postoperative rehabilitation. [7]
 
@@ -114,16 +91,8 @@ Many patients still envision the orthopaedic wards of thirty years ago, where pa
 
 Today's surgical experience is fundamentally different thanks to **Enhanced Recovery After Surgery (ERAS)** and fast-track rehabilitation protocols: [1, 8]
 
-```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                MODERN MULTIMODAL PAIN MANAGEMENT PROTOCOL                   │
-└─────────────────────────────────────────────────────────────────────────────┘
-
-  PRE-EMPTIVE ANALGESIA    ► Non-opioid anti-inflammatories before incision
-  ULTRASOUND NERVE BLOCKS  ► Motor-sparing adductor canal blocks (sensory only)
-  LOCAL INFILTRATION       ► High-volume local anesthetic into joint capsule
-  SAME-DAY AMBULATION      ► Walking within 2 to 4 hours post-surgery
-```
+::multimodal-pain-protocol
+::
 
 1. **Targeted Motor-Sparing Nerve Blocks:** Specialised blocks, such as the **adductor canal block**, numb the sensory pain nerves of the knee without paralysing the quadriceps muscles. This allows patients to stand and walk safely on the day of surgery with minimal pain. [9]
 2. **Local Infiltration Analgesia (LIA):** The surgeon directly infiltrates long-acting anaesthetic cocktails into the joint capsule and surrounding periosteum during the procedure.
@@ -142,14 +111,12 @@ However, high-level scientific evidence has definitively disproven this concept:
 - Landmark double-blind, randomised controlled trials published in the ***New England Journal of Medicine*** (Moseley et al. and Kirkley et al.) demonstrated that **arthroscopic debridement and joint washout provide no greater pain relief than sham (placebo) surgery or structured physical therapy** for established osteoarthritis. [10, 11]
 - The **British Medical Journal (BMJ)** and the **American Academy of Orthopaedic Surgeons (AAOS)** issued explicit clinical guidelines strongly recommending **against** arthroscopy for degenerative knee osteoarthritis. [12]
 
-```text
-  CORRECT USE OF ARTHROSCOPY          MISGUIDED USE OF ARTHROSCOPY
-  ──────────────────────────          ────────────────────────────
-  • Acute ligament tear (ACL/PCL)     • Widespread cartilage wear
-  • Meniscus tear in healthy joint    • "Bone-on-bone" joint space loss
-  • Loose body mechanically locking   • "Washing out" or "cleaning" arthritis
-  • Focal cartilage transplantation   • Severe joint deformity / bowed legs
-```
+| Evidence-Based Use of Arthroscopy                     | Ineffective / Misguided Use of Arthroscopy            |
+| ----------------------------------------------------- | ----------------------------------------------------- |
+| **Acute ligament rupture** (ACL, PCL, multi-ligament) | **Widespread bone-on-bone cartilage loss**            |
+| **Repairable meniscus tear** in a healthy joint       | **Diffuse degenerative joint space collapse**         |
+| **Mechanical loose body** causing joint locking       | **"Washing out" or "cleaning" joint arthritis**       |
+| **Focal cartilage restorative transplantation**       | **Severe angular joint deformity** (e.g., bowed legs) |
 
 When articular cartilage has completely worn away, keyhole surgery cannot regenerate hyaline cartilage. The solution for localised wear is early cartilage restoration, while end-stage widespread disease requires joint resurfacing. [4, 10]
 
@@ -170,23 +137,14 @@ However, extensive radiologic studies in completely pain-free, healthy individua
 | **Lumbar Spine** | Disc Bulge or Protrusion          | **50% to 80%** in healthy adults             | Brinjikji et al. [15]               |
 | **Hip**          | Acetabular Labral Tear            | **40% to 70%** in active asymptomatic adults | Register et al. [16]                |
 
-```text
-       ┌──────────────────────────────────────────────────────────┐
-       │               THE CLINICAL TRIAD OF DIAGNOSIS            │
-       └────────────────────────────┬─────────────────────────────┘
-                                    │
-           ┌────────────────────────┼────────────────────────┐
-           ▼                        ▼                        ▼
-     PATIENT SYMPTOMS         PHYSICAL EXAM              MRI SCAN
-  • Mechanical pain?       • Joint line tenderness?   • Correlates with exam?
-  • Instability or lock?   • Provocative tests +ve?   • Incidental finding?
-```
+::clinical-triad-diagnosis
+::
 
 An MRI report is simply a high-resolution photograph; it does not indicate whether a tear is the true cause of your symptoms. A skilled orthopaedic surgeon correlates the imaging with a hands-on physical examination. If your symptoms do not correspond to the tear seen on MRI, operating on that scan will not relieve your pain. [13, 14]
 
 Learn what clinical signs truly warrant specialist intervention in our guide: [When to See an Orthopaedic Sports Surgeon](/blog/when-to-see-orthopaedic-sports-surgeon).
 
-::you-tube-short{id="xNUe9jPZcgM" title="Your MRI Doesn't Tell the Whole Story | Doctor Explains" caption="Dr. Nihar Modi discusses why an asymptomatic tear on MRI should not automatically lead to surgery."}
+::you-tube-short{caption="Dr. Nihar Modi discusses why an asymptomatic tear on MRI should not automatically lead to surgery." #xNUe9jPZcgM title="Your MRI Doesn't Tell the Whole Story | Doctor Explains"}
 ::
 
 ---
