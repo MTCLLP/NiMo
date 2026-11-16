@@ -19,7 +19,7 @@ useHead({
       title="Ligament Reconstruction"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
-        { name: 'Procedures', path: '#' },
+        { name: 'Procedures', path: '/procedures' },
         {
           name: 'Ligament Reconstruction',
           path: '/procedures/ligament-reconstruction-mumbai',

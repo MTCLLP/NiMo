@@ -19,7 +19,7 @@ useHead({
       title="Joint Replacement Surgery"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
-        { name: 'Procedures', path: '#' },
+        { name: 'Procedures', path: '/procedures' },
         {
           name: 'Joint Replacement',
           path: '/procedures/joint-replacement-surgery-mumbai',

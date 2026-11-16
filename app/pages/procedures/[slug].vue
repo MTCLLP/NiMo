@@ -59,7 +59,7 @@ if (procedure.value) {
         :title="procedure.name"
         :breadcrumbs="[
           { name: 'Home', path: '/' },
-          { name: 'Specialised Areas', path: '/procedures' },
+          { name: 'Procedures', path: '/procedures' },
           { name: procedure.name, path: `/procedures/${procedure.slug}` },
         ]"
       />
@@ -488,13 +488,13 @@ if (procedure.value) {
         </h1>
         <p class="text-gray-600 mb-8 max-w-md">
           We could not find the surgical procedure you requested. Please explore
-          our full list of specialised areas.
+          our full list of procedures.
         </p>
         <NuxtLink
           to="/procedures"
           class="bg-primary text-white px-8 py-4 rounded-full font-medium hover:bg-primary/90 transition-colors shadow-lg"
         >
-          View All Specialised Areas
+          View All Procedures
         </NuxtLink>
       </div>
     </template>

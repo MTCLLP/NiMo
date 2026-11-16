@@ -12,6 +12,46 @@ useHead({
   ],
 });
 
+useSchemaOrg([
+  definePerson({
+    "@id": "https://drniharmodi.com/#physician",
+    name: "Dr. Nihar Modi",
+    jobTitle: "Consultant Orthopaedic & Sports Surgeon",
+    url: "https://drniharmodi.com/about",
+    image: "https://drniharmodi.com/about-dr-nihar-modi.webp",
+    description:
+      "Dr. Nihar Modi is an orthopaedic and sports surgeon in Mumbai with international fellowships from Australia (AOA) and USA, specializing in knee, shoulder, and elbow arthroscopy and joint replacement.",
+    alumniOf: [
+      {
+        "@type": "EducationalOrganization",
+        name: "Grant Medical College and Sir JJ Group of Hospitals, Mumbai",
+      },
+      {
+        "@type": "EducationalOrganization",
+        name: "Topiwala National Medical College and BYL Nair Charitable Hospital, Mumbai",
+      },
+      {
+        "@type": "EducationalOrganization",
+        name: "Royal College of Surgeons, England",
+      },
+    ],
+    knowsAbout: [
+      "ACL Reconstruction",
+      "Knee Arthroscopy",
+      "Meniscus Repair",
+      "Rotator Cuff Repair",
+      "Shoulder Arthroscopy",
+      "Joint Replacement Surgery",
+      "Sports Medicine",
+    ],
+    sameAs: [
+      "https://www.linkedin.com/in/dr-nihar-modi-8702672a4/",
+      "https://www.instagram.com/dr_sportho/",
+      "https://www.youtube.com/@dr_sportho",
+    ],
+  }),
+]);
+
 const education = [
   {
     title: "Australian Orthopaedic Association (AOA) Fellowship",

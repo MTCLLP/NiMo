@@ -10,8 +10,8 @@ useHead({
 <template>
   <main>
     <PageHeader 
-      title="Conditions Treated" 
-      :breadcrumbs="[{ name: 'Home', path: '/' }, { name: 'Conditions Treated', path: '/conditions' }]"
+      title="Conditions" 
+      :breadcrumbs="[{ name: 'Home', path: '/' }, { name: 'Conditions', path: '/conditions' }]"
     />
     <ConditionsGrid />
   </main>

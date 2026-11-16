@@ -19,7 +19,7 @@ useHead({
       title="Shoulder Dislocation Treatment"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
-        { name: 'Procedures', path: '#' },
+        { name: 'Procedures', path: '/procedures' },
         {
           name: 'Shoulder Dislocation Treatment',
           path: '/procedures/shoulder-dislocation-treatment',

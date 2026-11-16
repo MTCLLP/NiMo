@@ -8,6 +8,20 @@ const props = defineProps<{
   breadcrumbs: { name: string; path: string }[];
 }>();
 
+const resolveCrumbUrl = (path: string, name: string) => {
+  if (!path || path === '#' || path === '') {
+    const lower = name.toLowerCase();
+    if (lower.includes('procedure')) return 'https://drniharmodi.com/procedures';
+    if (lower.includes('condition')) return 'https://drniharmodi.com/conditions';
+    if (lower.includes('blog')) return 'https://drniharmodi.com/blog';
+    return 'https://drniharmodi.com/';
+  }
+  if (path === '/') return 'https://drniharmodi.com/';
+  return path.startsWith('http')
+    ? path
+    : `https://drniharmodi.com${path.startsWith('/') ? path : '/' + path}`;
+};
+
 useHead({
   script: [
     {
@@ -19,10 +33,7 @@ useHead({
           "@type": "ListItem",
           position: idx + 1,
           name: crumb.name,
-          item:
-            crumb.path === "/"
-              ? "https://drniharmodi.com/"
-              : `https://drniharmodi.com${crumb.path}`,
+          item: resolveCrumbUrl(crumb.path, crumb.name),
         })),
       }),
     },

@@ -19,7 +19,7 @@ useHead({
       title="Arthroscopy & Keyhole Surgery"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
-        { name: 'Procedures', path: '#' },
+        { name: 'Procedures', path: '/procedures' },
         { name: 'Arthroscopy', path: '/procedures/arthroscopy-surgeon-mumbai' },
       ]"
     />

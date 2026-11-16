@@ -201,6 +201,9 @@ If joint space is preserved on X-rays, an MRI reveals soft tissue nuances:
 
 Learn when it is time to schedule a specialist consultation in our guide on [when to see an orthopaedic sports surgeon](/blog/when-to-see-orthopaedic-sports-surgeon).
 
+::you-tube-short{id="WZuzvXUnD1o" title="Does Your X-Ray Mean You Need a Knee Replacement?" caption="Dr. Nihar Modi explains why radiological cartilage narrowing must always be correlated with your daily symptoms."}
+::
+
 ---
 
 ## Recovery and Rehabilitation Timeline: What to Expect

@@ -20,7 +20,7 @@ useHead({
       description="Advanced surgical care for complex fractures and orthopaedic trauma to restore your mobility and bone health."
       :breadcrumbs="[
         { name: 'Home', path: '/' },
-        { name: 'Procedures', path: '#' },
+        { name: 'Procedures', path: '/procedures' },
         {
           name: 'Fracture Fixation',
           path: '/procedures/fracture-fixation-mumbai',

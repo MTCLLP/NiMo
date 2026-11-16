@@ -19,7 +19,7 @@ useHead({
       title="Sports Medicine & Injuries"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
-        { name: 'Procedures', path: '#' },
+        { name: 'Procedures', path: '/procedures' },
         { name: 'Sports Medicine', path: '/procedures/sports-medicine-mumbai' },
       ]"
     />

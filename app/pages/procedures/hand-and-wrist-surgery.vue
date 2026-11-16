@@ -19,7 +19,7 @@ useHead({
       title="Hand & Wrist Surgery"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
-        { name: 'Procedures', path: '#' },
+        { name: 'Procedures', path: '/procedures' },
         {
           name: 'Hand & Wrist Surgery',
           path: '/procedures/hand-and-wrist-surgery',

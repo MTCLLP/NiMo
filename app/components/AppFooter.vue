@@ -70,7 +70,7 @@
         <NuxtLink
           to="/conditions"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
-          >Conditions Treated</NuxtLink
+          >Conditions</NuxtLink
         >
         <NuxtLink
           to="/procedures"
@@ -98,6 +98,11 @@
           to="/gallery"
           class="text-[15px] text-white hover:text-white/80 transition-colors"
           >Gallery</NuxtLink
+        >
+        <NuxtLink
+          to="/shorts"
+          class="text-[15px] text-white hover:text-white/80 transition-colors"
+          >Educational Videos</NuxtLink
         >
         <NuxtLink
           to="/contact"

@@ -19,7 +19,7 @@ useHead({
       title="Cartilage Restoration & Preservation"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
-        { name: 'Procedures', path: '#' },
+        { name: 'Procedures', path: '/procedures' },
         {
           name: 'Cartilage Restoration',
           path: '/procedures/cartilage-restoration-mumbai',

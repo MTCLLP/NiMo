@@ -103,21 +103,42 @@ const goToPage = (page: number) => {
 };
 
 useHead({
-  title: "Orthopaedic Blog | Sports Medicine & Knee Health | Dr. Nihar Modi",
+  title: computed(() =>
+    currentPage.value > 1
+      ? `Orthopaedic Blog (Page ${currentPage.value}) | Dr. Nihar Modi`
+      : "Orthopaedic Blog | Sports Medicine & Knee Health | Dr. Nihar Modi"
+  ),
   meta: [
     {
       name: "description",
-      content:
-        "Expert insights on sports knee injuries, ACL tears, meniscus tears, and orthopaedic care — written by Dr. Nihar Modi, orthopaedic sports surgeon in Mumbai.",
+      content: computed(() =>
+        currentPage.value > 1
+          ? `Browse page ${currentPage.value} of expert insights on sports knee injuries, ACL tears, meniscus tears, and recovery by Dr. Nihar Modi in Mumbai.`
+          : "Expert insights on sports knee injuries, ACL tears, meniscus tears, and orthopaedic care — written by Dr. Nihar Modi, orthopaedic sports surgeon in Mumbai."
+      ),
     },
     {
       property: "og:title",
-      content: "Orthopaedic Blog | Dr. Nihar Modi, Mumbai",
+      content: computed(() =>
+        currentPage.value > 1
+          ? `Orthopaedic Blog (Page ${currentPage.value}) | Dr. Nihar Modi, Mumbai`
+          : "Orthopaedic Blog | Dr. Nihar Modi, Mumbai"
+      ),
     },
     {
       property: "og:description",
       content:
         "Patient-friendly articles on knee health, sports injuries, and treatment options from Dr. Nihar Modi, orthopaedic surgeon in Mumbai.",
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: computed(() =>
+        currentPage.value > 1
+          ? `https://drniharmodi.com/blog?page=${currentPage.value}`
+          : "https://drniharmodi.com/blog"
+      ),
     },
   ],
   script: [

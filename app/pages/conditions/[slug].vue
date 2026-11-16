@@ -20,6 +20,37 @@ useHead({
     }
   ]
 });
+
+// Schema.org structured data (MedicalCondition & FAQPage)
+if (condition.value) {
+  const faqSchema = (condition.value.faqs || []).map((faq) =>
+    defineQuestion({
+      name: faq.question,
+      acceptedAnswer: faq.answer,
+    })
+  );
+
+  useSchemaOrg([
+    defineWebPage({
+      name: `${condition.value.name} Treatment in Mumbai - Dr. Nihar Modi`,
+      description: condition.value.intro,
+    }),
+    {
+      "@type": "MedicalCondition",
+      name: condition.value.name,
+      description: condition.value.intro,
+      signOrSymptom: (condition.value.symptoms || []).map((sym) => ({
+        "@type": "MedicalSignOrSymptom",
+        name: sym,
+      })),
+      possibleTreatment: (condition.value.treatments || []).map((t) => ({
+        "@type": "MedicalTherapy",
+        name: t,
+      })),
+    },
+    ...(faqSchema.length > 0 ? [defineWebPage({ "@type": "FAQPage" }), ...faqSchema] : []),
+  ]);
+}
 </script>
 
 <template>
@@ -29,7 +60,7 @@ useHead({
         :title="condition.name" 
         :breadcrumbs="[
           { name: 'Home', path: '/' }, 
-          { name: 'Conditions Treated', path: '/conditions' },
+          { name: 'Conditions', path: '/conditions' },
           { name: condition.name, path: `/conditions/${condition.slug}` }
         ]"
       />

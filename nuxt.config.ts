@@ -3,32 +3,93 @@ import tailwindcss from '@tailwindcss/vite'
 import { readdirSync, readFileSync } from 'fs'
 import { join } from 'path'
 
-// Build-time function to generate blog sitemap entries by reading
-// the content/blog directory. This works correctly with `npm run generate`
-// (static site) because it runs at Nuxt config load time, not at runtime.
-const getBlogSitemapUrls = () => {
+// Build-time function to generate comprehensive sitemap entries.
+// This ensures that static generation (npm run generate) and crawlers
+// discover all blog articles, procedure categories, and condition pages.
+const getAllSitemapUrls = () => {
+  const urls: { loc: string; lastmod?: string; changefreq?: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'; priority?: number }[] = []
+
+  // Core static pages
+  const corePages = [
+    { loc: '/', priority: 1.0, changefreq: 'weekly' as const },
+    { loc: '/about', priority: 0.9, changefreq: 'monthly' as const },
+    { loc: '/procedures', priority: 0.9, changefreq: 'weekly' as const },
+    { loc: '/conditions', priority: 0.9, changefreq: 'weekly' as const },
+    { loc: '/blog', priority: 0.8, changefreq: 'daily' as const },
+    { loc: '/contact', priority: 0.8, changefreq: 'monthly' as const },
+    { loc: '/faqs', priority: 0.7, changefreq: 'monthly' as const },
+    { loc: '/gallery', priority: 0.6, changefreq: 'monthly' as const },
+    { loc: '/shorts', priority: 0.7, changefreq: 'weekly' as const },
+    { loc: '/privacy-policy', priority: 0.3, changefreq: 'yearly' as const },
+    { loc: '/terms-conditions', priority: 0.3, changefreq: 'yearly' as const },
+  ]
+  urls.push(...corePages)
+
+  // Dynamic category and static specialized procedure routes
+  const procedureSlugs = [
+    'shoulder-surgery',
+    'elbow-surgery',
+    'knee-surgery',
+    'revision-complex-sports-surgery',
+    'arthroscopic-surgery',
+    'tendon-repair-mumbai',
+    'ligament-reconstruction-mumbai',
+    'fracture-fixation-mumbai',
+    'arthroscopy-surgeon-mumbai',
+    'shoulder-arthroscopy',
+    'hand-and-wrist-surgery',
+    'cartilage-restoration-mumbai',
+    'sports-medicine-mumbai',
+    'shoulder-dislocation-treatment',
+    'joint-replacement-surgery-mumbai',
+  ]
+  procedureSlugs.forEach((slug) => {
+    urls.push({
+      loc: `/procedures/${slug}`,
+      changefreq: 'weekly',
+      priority: 0.85,
+    })
+  })
+
+  // Condition routes (strictly non-procedure symptom & disease categories)
+  const conditionSlugs = [
+    'sports-injuries',
+    'shoulder-conditions',
+    'elbow-conditions',
+    'knee-conditions',
+    'fracture-trauma-care',
+  ]
+  conditionSlugs.forEach((slug) => {
+    urls.push({
+      loc: `/conditions/${slug}`,
+      changefreq: 'weekly',
+      priority: 0.8,
+    })
+  })
+
+  // Blog articles
   try {
     const blogDir = join(process.cwd(), 'content/blog')
-    const files = readdirSync(blogDir).filter(f => f.endsWith('.md'))
+    const files = readdirSync(blogDir).filter((f) => f.endsWith('.md'))
 
-    return files.map((filename) => {
+    files.forEach((filename) => {
       const slug = filename.replace('.md', '')
-
-      // Extract date from frontmatter for accurate lastmod
       const content = readFileSync(join(blogDir, filename), 'utf-8')
-      const dateMatch = content.match(/^date:\s*(.+)$/m)
+      const dateMatch = content.match(/^date:\s*["']?([^"'\n\r]+)["']?/m)
       const lastmod = dateMatch ? dateMatch[1].trim() : undefined
 
-      return {
+      urls.push({
         loc: `/blog/${slug}`,
         lastmod,
-        changefreq: 'monthly' as const,
+        changefreq: 'monthly',
         priority: 0.8,
-      }
+      })
     })
   } catch {
-    return []
+    // ignore
   }
+
+  return urls
 }
 
 export default defineNuxtConfig({
@@ -47,12 +108,17 @@ export default defineNuxtConfig({
     name: 'Dr. Nihar Modi',
     url: 'https://drniharmodi.com',
   },
+  routeRules: {
+    '/services': { redirect: { to: '/procedures', statusCode: 301 } },
+    '/conditions/arthroscopy': { redirect: { to: '/procedures/arthroscopy-surgeon-mumbai', statusCode: 301 } },
+    '/conditions/joint-replacement-surgery': { redirect: { to: '/procedures/joint-replacement-surgery-mumbai', statusCode: 301 } },
+  },
   sitemap: {
     exclude: ['/testimonials'],
-    // Inject all blog article URLs at build time.
+    // Inject all verified site URLs at build time.
     // This approach works for static generation (npm run generate) because
     // it runs when nuxt.config is loaded — no runtime server required.
-    urls: getBlogSitemapUrls(),
+    urls: getAllSitemapUrls(),
   },
   features: {
     inlineStyles: true

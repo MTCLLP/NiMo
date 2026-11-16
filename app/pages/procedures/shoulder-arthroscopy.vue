@@ -19,7 +19,7 @@ useHead({
       title="Shoulder Arthroscopy"
       :breadcrumbs="[
         { name: 'Home', path: '/' },
-        { name: 'Procedures', path: '#' },
+        { name: 'Procedures', path: '/procedures' },
         {
           name: 'Shoulder Arthroscopy',
           path: '/procedures/shoulder-arthroscopy',

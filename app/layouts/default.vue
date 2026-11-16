@@ -15,22 +15,6 @@ useSchemaOrg([
     name: 'Dr. Nihar Modi',
     url: 'https://drniharmodi.com',
   }),
-  defineLocalBusiness({
-    name: 'Dr. Nihar Modi',
-    address: {
-      streetAddress: 'Santacruz West / Bandra',
-      addressLocality: 'Mumbai',
-      addressRegion: 'Maharashtra',
-      addressCountry: 'IN'
-    },
-    image: '/about-dr-nihar-modi.webp',
-    // Deactivated for NMC compliance:
-    // aggregateRating: {
-    //   ratingValue: 5,
-    //   ratingCount: testimonials.length,
-    // },
-    // review: reviews,
-  })
 ])
 </script>
 

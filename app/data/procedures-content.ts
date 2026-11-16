@@ -1320,6 +1320,18 @@ export const proceduresData: ProcedureContent[] = [
     ],
     relatedBlogs: [
       {
+        title: "ACL Reconstruction Surgery: Step-by-Step",
+        slug: "acl-reconstruction-surgery-step-by-step",
+      },
+      {
+        title: "Meniscus Repair vs Removal: Which Is Best?",
+        slug: "meniscus-repair-vs-removal",
+      },
+      {
+        title: "Post-Surgery Rehab Timeline for Knee Procedures",
+        slug: "post-surgery-rehab-timeline-knee",
+      },
+      {
         title: "Knee Replacement vs Arthroscopy",
         slug: "knee-replacement-vs-arthroscopy",
       },
