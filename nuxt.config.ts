@@ -115,6 +115,7 @@ export default defineNuxtConfig({
     '/conditions/joint-replacement-surgery': { redirect: { to: '/procedures/joint-replacement-surgery-mumbai', statusCode: 301 } },
   },
   sitemap: {
+    xsl: false,
     exclude: ['/testimonials'],
     // Inject all verified site URLs at build time.
     // This approach works for static generation (npm run generate) because
