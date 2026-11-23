@@ -55,13 +55,24 @@ const relatedPosts = computed(() => {
 });
 
 useHead({
-  title: post.value ? `${post.value.title} | Dr. Nihar Modi` : 'Dr. Nihar Modi',
+  title: post.value
+    ? `${post.value.seo?.title || post.value.title} | Dr. Nihar Modi`
+    : 'Dr. Nihar Modi',
   meta: [
-    { name: 'description', content: post.value?.description || '' },
-    { property: 'og:title', content: post.value?.title || '' },
-    { property: 'og:description', content: post.value?.description || '' },
+    {
+      name: 'description',
+      content: post.value?.seo?.description || post.value?.description || '',
+    },
+    {
+      property: 'og:title',
+      content: post.value?.seo?.title || post.value?.title || '',
+    },
+    {
+      property: 'og:description',
+      content: post.value?.seo?.description || post.value?.description || '',
+    },
     { name: 'author', content: post.value?.author || '' },
-    { name: 'keywords', content: post.value?.tags?.join(', ') || '' }
+    { name: 'keywords', content: post.value?.tags?.join(', ') || '' },
   ],
   script: [
     {

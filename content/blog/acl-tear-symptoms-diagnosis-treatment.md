@@ -1,16 +1,16 @@
 ---
-title: "ACL Tears: Symptoms, Diagnosis & Treatment Options"
+title: "ACL Tears: Symptoms, Clinical Tests & Surgery Options"
 author: Dr. Nihar Modi
 authorTitle: MS Orthopaedics, DNB, MNAMS, MRCS (England) | AOA Fellow | Sports Medicine & Joint Replacement Surgeon, Mumbai
 category: Sports Medicine
 date: 2026-08-04
-description: Everything you need to know about ACL tears, from how they happen and what they feel like to diagnosis, treatment options, and what recovery looks like.
+description: "Felt a pop in your knee followed by swelling? Understand ACL tear grades, clinical Lachman & pivot shift evaluations, and conservative rehab vs surgical reconstruction."
 image: /blog/acl-tear.webp
 imageAlt: Illustration of an ACL tear in the knee joint
 readTime: 9 min read
 seo:
-  title: "ACL Tear Guide: Symptoms, Tests, Surgery & Recovery Timeline"
-  description: "Did you hear a pop in your knee? Learn the immediate symptoms of an ACL tear, diagnosis steps, and what the recovery timeline looks like with and without surgery."
+  title: "ACL Tear Symptoms, Clinical Tests & Surgery Options: Patient Guide"
+  description: "Felt a pop in your knee followed by swelling? Understand ACL tear grades, clinical Lachman & pivot shift evaluations, and conservative rehab vs surgical reconstruction."
 slug: acl-tear-symptoms-diagnosis-treatment
 tags:
   - ACL tear

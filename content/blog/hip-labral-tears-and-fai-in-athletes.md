@@ -1,16 +1,16 @@
 ---
-title: "Hip Labral Tears and FAI in Athletes: Symptoms, Diagnosis & Treatment"
+title: "Hip Labral Tears and FAI in Athletes: Symptoms, Tests & Treatment"
 author: Dr. Nihar Modi
 authorTitle: MS Orthopaedics, DNB, MNAMS, MRCS (England) | AOA Fellow | Sports Medicine & Joint Replacement Surgeon, Mumbai
 category: Sports Medicine
 date: 2026-09-01
-description: Deep groin pain or hip clicking during sport? Understand Femoroacetabular Impingement (FAI), hip labral tears in athletes, and modern arthroscopic and non-surgical solutions.
+description: "Deep groin pain or hip clicking during sport? Understand the difference between FAI and labral tears, non-surgical management, and when arthroscopic repair is indicated."
 image: /blog/hip-labral-tears-fai.webp
 imageAlt: Medical illustration showing hip joint anatomy, acetabular labral tear, and femoroacetabular impingement (FAI)
 readTime: 9 min read
 seo:
-  title: "Hip Labral Tears & FAI: Symptoms, Diagnosis & Treatment Guide"
-  description: "Experiencing a catching sensation or deep groin pain? Understand the symptoms of hip labral tears and FAI, plus modern treatment options to get you back to sports."
+  title: "Hip Labral Tear vs FAI in Athletes: Symptoms, Tests & Treatment Options"
+  description: "Deep groin pain or hip clicking during sport? Understand the difference between FAI and labral tears, non-surgical management, and when arthroscopic repair is indicated."
 slug: hip-labral-tears-and-fai-in-athletes
 tags:
   - hip labral tear

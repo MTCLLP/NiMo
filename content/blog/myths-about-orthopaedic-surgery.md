@@ -3,13 +3,13 @@ title: 8 Common Myths About Orthopaedic Surgery Debunked by Science
 author: Dr. Nihar Modi
 authorTitle: MS Orthopaedics, DNB, MNAMS, MRCS (England) | AOA Fellow | Sports Medicine & Joint Replacement Surgeon, Mumbai
 category: Orthopaedics
-date: '2026-11-10'
+date: "2026-11-10"
 description: We debunk 8 widespread myths about orthopaedic surgery using peer-reviewed scientific evidence. Learn the truth about joint replacements, arthroscopy, pain, and recovery.
 image: /blog/myths-about-orthopaedic-surgery.webp
 imageAlt: Common myths and facts about modern orthopaedic surgery and joint replacement
 readTime: 11 min read
 seo:
-  title: 'Common Myths About Orthopaedic Surgery Debunked: Facts vs Fiction'
+  title: "Common Myths About Orthopaedic Surgery Debunked: Facts vs Fiction"
   description: Debunking 8 common myths about orthopaedic surgery with clinical evidence. Learn why joint replacements last 25+ years, why surgery isn't always the first choice, and more.
 slug: myths-about-orthopaedic-surgery
 tags:
@@ -27,10 +27,10 @@ Few fields in modern medicine have evolved as dramatically over the past two dec
 
 Yet, public perceptions of orthopaedic treatment have largely failed to keep pace with these clinical advances. Misinformation, anecdotal horror stories from decades past, and sensationalised internet forums continue to fuel persistent myths:
 
-- *"Orthopaedic surgeons always recommend surgery right away."*
-- *"A knee replacement only lasts 10 years, so you must suffer until you are elderly."*
-- *"Surgery will leave you in unbearable pain and bedridden for weeks."*
-- *"If your MRI report shows a tear, you definitely need an operation."*
+- _"Orthopaedic surgeons always recommend surgery right away."_
+- _"A knee replacement only lasts 10 years, so you must suffer until you are elderly."_
+- _"Surgery will leave you in unbearable pain and bedridden for weeks."_
+- _"If your MRI report shows a tear, you definitely need an operation."_
 
 These misconceptions are not harmless. Every day, they cause patients to delay seeking timely specialist evaluations, endure years of preventable chronic disability, and miss the biological window where joint-preserving treatments are most effective. [3]
 
@@ -67,9 +67,7 @@ This myth stems from early implant designs used during the 1970s and 1980s, when
 
 [Today, thanks to highly cross-linked polyethylenes, vitamin E stabilisation, biocompatible cobalt-chromium and oxidised zirconium surfaces, and computerised alignment, implant longevity has reached unprecedented heights.5, 6]
 
-
-
-A landmark systematic review and meta-analysis published in ***The Lancet*** analysed national joint registry data covering hundreds of thousands of procedures: [6]
+A landmark systematic review and meta-analysis published in **_The Lancet_** analysed national joint registry data covering hundreds of thousands of procedures: [6]
 
 - **Over 82% of total knee replacements (TKAs)** remain fully functional and infection-free beyond **25 years**.
 - **Over 89% of total hip replacements (THAs)** survive beyond **15 years**, and 58% survive beyond **25 years**.
@@ -108,7 +106,7 @@ It sounds intuitively appealing: enter an arthritic knee with an arthroscopic ca
 
 However, high-level scientific evidence has definitively disproven this concept: [10, 11]
 
-- Landmark double-blind, randomised controlled trials published in the ***New England Journal of Medicine*** (Moseley et al. and Kirkley et al.) demonstrated that **arthroscopic debridement and joint washout provide no greater pain relief than sham (placebo) surgery or structured physical therapy** for established osteoarthritis. [10, 11]
+- Landmark double-blind, randomised controlled trials published in the **_New England Journal of Medicine_** (Moseley et al. and Kirkley et al.) demonstrated that **arthroscopic debridement and joint washout provide no greater pain relief than sham (placebo) surgery or structured physical therapy** for established osteoarthritis. [10, 11]
 - The **British Medical Journal (BMJ)** and the **American Academy of Orthopaedic Surgeons (AAOS)** issued explicit clinical guidelines strongly recommending **against** arthroscopy for degenerative knee osteoarthritis. [12]
 
 | Evidence-Based Use of Arthroscopy                     | Ineffective / Misguided Use of Arthroscopy            |
@@ -126,7 +124,7 @@ When articular cartilage has completely worn away, keyhole surgery cannot regene
 
 ### The Scientific Reality: Scans Reveal Normal Age-Related Findings; We Treat the Patient, Not the Scan
 
-In our tech-driven world, patients often read their MRI radiology report with alarming concern: *"Degenerative tear of the medial meniscus," "Mild supraspinatus tendinosis,"* or *"L4-L5 disc protrusion."*
+In our tech-driven world, patients often read their MRI radiology report with alarming concern: _"Degenerative tear of the medial meniscus," "Mild supraspinatus tendinosis,"_ or _"L4-L5 disc protrusion."_
 
 However, extensive radiologic studies in completely pain-free, healthy individuals have revealed astonishing prevalence rates of "abnormal" findings: [13, 14]
 
@@ -187,7 +185,7 @@ The key variable is not whether surgery ended their career, but whether the pati
 
 ### The Scientific Reality: Barometric Pressure Affects Periarticular Tissues, Not the Implant
 
-Patients frequently say: *"My knee predicts the monsoon; the metal inside my joint aches when it rains."*
+Patients frequently say: _"My knee predicts the monsoon; the metal inside my joint aches when it rains."_
 
 While patients genuinely feel increased joint stiffness or aching before a rainstorm, the explanation has nothing to do with the metal or ceramic implant reacting to temperature: [23, 24]
 
@@ -209,7 +207,7 @@ A reputable orthopaedic specialist will always explain:
 1. The precise anatomical diagnosis and the evidence-based rationale for surgery.
 2. What non-operative alternatives have been tried—or why conservative treatment cannot fix your specific mechanical problem (e.g., a displaced fracture or locked bucket-handle tear).
 3. The expected benefits, scientific risks, and the realistic rehabilitation timeline.  
-If any surgeon pressures you into immediate elective surgery without answering your questions, seeking a second opinion is your right as an informed patient. [3, 4]
+   If any surgeon pressures you into immediate elective surgery without answering your questions, seeking a second opinion is your right as an informed patient. [3, 4]
 
 ### What is the difference between an orthopaedic surgeon and a sports medicine specialist?
 
@@ -239,27 +237,27 @@ If you are experiencing persistent joint pain, clicking, or reduced mobility and
 
 ## References
 
-1. Husted H, et al. "Fast-track surgery for knee and hip arthroplasty." *Acta Orthopaedica.* 2015;86(sup361):1–39. <https://doi.org/10.3109/17453674.2015.1098679>
-2. Krych AJ, et al. "Arthroscopic repair of isolated meniscal tears in athletes: Outcomes and return to sports." *Arthroscopy.* 2014;30(4):460–467. <https://doi.org/10.1016/j.arthro.2013.12.023>
-3. Hawker GA, et al. "A prospective population-based study of the economic impact of waiting for total joint replacement." *Osteoarthritis and Cartilage.* 2006;14(10):974–980. <https://doi.org/10.1016/j.joca.2006.03.012>
-4. Richmond J, et al. "American Academy of Orthopaedic Surgeons clinical practice guideline on the treatment of osteoarthritis of the knee (non-arthroplasty)." *Journal of Bone and Joint Surgery (Am).* 2010;92(4):990–993. <https://doi.org/10.2106/JBJS.I.01594>
-5. Kurtz SM, et al. "The clinical performance of highly cross-linked polyethylenes in total hip and knee arthroplasty." *Journal of Bone and Joint Surgery (Am).* 2011;93(Suppl 2):62–67. <https://doi.org/10.2106/JBJS.J.01783>
-6. Evans JT, et al. "How long does a knee replacement last? A systematic review and meta-analysis of case series and national registry reports with greater than 15 years of follow-up." *The Lancet.* 2019;393(10172):655–663. <https://doi.org/10.1016/S0140-6736(18)32531-5>
-7. Fortin PR, et al. "Timing of total joint replacement affects clinical outcomes among patients with osteoarthritis of the hip or knee." *Arthritis & Rheumatism.* 2002;46(12):3327–3330. <https://doi.org/10.1002/art.10631>
-8. Kehlet H. "Fast-track hip and knee arthroplasty: Clinical issues." *Acta Orthopaedica.* 2013;84(sup352):1–3. <https://doi.org/10.3109/17453674.2013.824707>
-9. Runge C, et al. "The analgesic effect of adductor canal block compared with femoral nerve block after anterior cruciate ligament reconstruction." *Acta Anaesthesiologica Scandinavica.* 2017;61(10):1346–1354. <https://doi.org/10.1111/aas.12966>
-10. Moseley JB, et al. "A controlled trial of arthroscopic surgery for osteoarthritis of the knee." *New England Journal of Medicine.* 2002;347(2):81–88. <https://doi.org/10.1056/NEJMoa013259>
-11. Kirkley A, et al. "A randomized trial of arthroscopic surgery for osteoarthritis of the knee." *New England Journal of Medicine.* 2008;359(11):1097–1107. <https://doi.org/10.1056/NEJMoa0708333>
-12. Siemieniuk RAC, et al. "Arthroscopic surgery for degenerative knee arthritis and meniscal tears: A clinical practice guideline." *BMJ.* 2017;357:j1982. <https://doi.org/10.1136/bmj.j1982>
-13. Englund M, et al. "Incidental meniscal findings on knee MRI in middle-aged and elderly persons." *New England Journal of Medicine.* 2008;359(11):1108–1115. <https://doi.org/10.1056/NEJMoa0800777>
-14. Sher JS, et al. "Abnormal findings on magnetic resonance images of asymptomatic shoulders." *Journal of Bone and Joint Surgery (Am).* 1995;77(1):10–15. <https://doi.org/10.2106/00004623-199501000-00002>
-15. Brinjikji W, et al. "Systematic literature review of imaging features of spinal degeneration in asymptomatic populations." *American Journal of Neuroradiology.* 2015;36(4):811–816. <https://doi.org/10.3174/ajnr.A4173>
-16. Register B, et al. "Prevalence of abnormal hip findings in asymptomatic participants: A prospective, blinded study." *American Journal of Sports Medicine.* 2012;40(12):2720–2724. <https://doi.org/10.1177/0363546512462124>
-17. Salter RB. "The physiologic basis of continuous passive motion for articular cartilage healing and regeneration." *Hand Clinics.* 1994;10(2):211–219.
-18. Wall BT, et al. "Disuse impaired human skeletal muscle protein synthesis: An overview of the mechanisms." *American Journal of Physiology-Endocrinology and Metabolism.* 2013;305(6):E716–E728. <https://doi.org/10.1152/ajpendo.00287.2013>
-19. Bleakley CM, et al. "PRICE needs updating, should we call the POLICE?" *British Journal of Sports Medicine.* 2012;46(4):220–221. <https://doi.org/10.1136/bjsports-2011-090297>
-20. Ardern CL, et al. "Fifty-five per cent return to competitive sport following anterior cruciate ligament reconstruction surgery: An updated systematic review and meta-analysis." *British Journal of Sports Medicine.* 2014;48(21):1543–1552. <https://doi.org/10.1136/bjsports-2013-093398>
-21. Harris JD, et al. "Return to sport following arthroscopic Bankart repair: A systematic review." *Sports Health.* 2013;5(3):245–252. <https://doi.org/10.1177/1941738112468205>
-22. Witjes S, et al. "Return to sports and physical activity after total knee arthroplasty: A systematic review." *Knee Surgery, Sports Traumatology, Arthroscopy.* 2016;24(9):2923–2939. <https://doi.org/10.1007/s00167-016-4197-8>
-23. McAlindon T, et al. "Changes in barometric pressure and ambient temperature influence osteoarthritis pain." *American Journal of Medicine.* 2007;120(5):429–434. <https://doi.org/10.1016/j.amjmed.2006.07.036>
-24. Timmermans EJ, et al. "The influence of weather conditions on joint pain in older people with osteoarthritis: Results from the European Project on OSteoArthritis." *Journal of Rheumatology.* 2015;42(10):1885–1892. <https://doi.org/10.3899/jrheum.141564>
+1. Husted H, et al. "Fast-track surgery for knee and hip arthroplasty." _Acta Orthopaedica._ 2015;86(sup361):1–39. <https://doi.org/10.3109/17453674.2015.1098679>
+2. Krych AJ, et al. "Arthroscopic repair of isolated meniscal tears in athletes: Outcomes and return to sports." _Arthroscopy._ 2014;30(4):460–467. <https://doi.org/10.1016/j.arthro.2013.12.023>
+3. Hawker GA, et al. "A prospective population-based study of the economic impact of waiting for total joint replacement." _Osteoarthritis and Cartilage._ 2006;14(10):974–980. <https://doi.org/10.1016/j.joca.2006.03.012>
+4. Richmond J, et al. "American Academy of Orthopaedic Surgeons clinical practice guideline on the treatment of osteoarthritis of the knee (non-arthroplasty)." _Journal of Bone and Joint Surgery (Am)._ 2010;92(4):990–993. <https://doi.org/10.2106/JBJS.I.01594>
+5. Kurtz SM, et al. "The clinical performance of highly cross-linked polyethylenes in total hip and knee arthroplasty." _Journal of Bone and Joint Surgery (Am)._ 2011;93(Suppl 2):62–67. <https://doi.org/10.2106/JBJS.J.01783>
+6. Evans JT, et al. "How long does a knee replacement last? A systematic review and meta-analysis of case series and national registry reports with greater than 15 years of follow-up." _The Lancet._ 2019;393(10172):655–663. <https://doi.org/10.1016/S0140-6736(18)32531-5>
+7. Fortin PR, et al. "Timing of total joint replacement affects clinical outcomes among patients with osteoarthritis of the hip or knee." _Arthritis & Rheumatism._ 2002;46(12):3327–3330. <https://doi.org/10.1002/art.10631>
+8. Kehlet H. "Fast-track hip and knee arthroplasty: Clinical issues." _Acta Orthopaedica._ 2013;84(sup352):1–3. <https://doi.org/10.3109/17453674.2013.824707>
+9. Runge C, et al. "The analgesic effect of adductor canal block compared with femoral nerve block after anterior cruciate ligament reconstruction." _Acta Anaesthesiologica Scandinavica._ 2017;61(10):1346–1354. <https://doi.org/10.1111/aas.12966>
+10. Moseley JB, et al. "A controlled trial of arthroscopic surgery for osteoarthritis of the knee." _New England Journal of Medicine._ 2002;347(2):81–88. <https://doi.org/10.1056/NEJMoa013259>
+11. Kirkley A, et al. "A randomized trial of arthroscopic surgery for osteoarthritis of the knee." _New England Journal of Medicine._ 2008;359(11):1097–1107. <https://doi.org/10.1056/NEJMoa0708333>
+12. Siemieniuk RAC, et al. "Arthroscopic surgery for degenerative knee arthritis and meniscal tears: A clinical practice guideline." _BMJ._ 2017;357:j1982. <https://doi.org/10.1136/bmj.j1982>
+13. Englund M, et al. "Incidental meniscal findings on knee MRI in middle-aged and elderly persons." _New England Journal of Medicine._ 2008;359(11):1108–1115. <https://doi.org/10.1056/NEJMoa0800777>
+14. Sher JS, et al. "Abnormal findings on magnetic resonance images of asymptomatic shoulders." _Journal of Bone and Joint Surgery (Am)._ 1995;77(1):10–15. <https://doi.org/10.2106/00004623-199501000-00002>
+15. Brinjikji W, et al. "Systematic literature review of imaging features of spinal degeneration in asymptomatic populations." _American Journal of Neuroradiology._ 2015;36(4):811–816. <https://doi.org/10.3174/ajnr.A4173>
+16. Register B, et al. "Prevalence of abnormal hip findings in asymptomatic participants: A prospective, blinded study." _American Journal of Sports Medicine._ 2012;40(12):2720–2724. <https://doi.org/10.1177/0363546512462124>
+17. Salter RB. "The physiologic basis of continuous passive motion for articular cartilage healing and regeneration." _Hand Clinics._ 1994;10(2):211–219.
+18. Wall BT, et al. "Disuse impaired human skeletal muscle protein synthesis: An overview of the mechanisms." _American Journal of Physiology-Endocrinology and Metabolism._ 2013;305(6):E716–E728. <https://doi.org/10.1152/ajpendo.00287.2013>
+19. Bleakley CM, et al. "PRICE needs updating, should we call the POLICE?" _British Journal of Sports Medicine._ 2012;46(4):220–221. <https://doi.org/10.1136/bjsports-2011-090297>
+20. Ardern CL, et al. "Fifty-five per cent return to competitive sport following anterior cruciate ligament reconstruction surgery: An updated systematic review and meta-analysis." _British Journal of Sports Medicine._ 2014;48(21):1543–1552. <https://doi.org/10.1136/bjsports-2013-093398>
+21. Harris JD, et al. "Return to sport following arthroscopic Bankart repair: A systematic review." _Sports Health._ 2013;5(3):245–252. <https://doi.org/10.1177/1941738112468205>
+22. Witjes S, et al. "Return to sports and physical activity after total knee arthroplasty: A systematic review." _Knee Surgery, Sports Traumatology, Arthroscopy._ 2016;24(9):2923–2939. <https://doi.org/10.1007/s00167-016-4197-8>
+23. McAlindon T, et al. "Changes in barometric pressure and ambient temperature influence osteoarthritis pain." _American Journal of Medicine._ 2007;120(5):429–434. <https://doi.org/10.1016/j.amjmed.2006.07.036>
+24. Timmermans EJ, et al. "The influence of weather conditions on joint pain in older people with osteoarthritis: Results from the European Project on OSteoArthritis." _Journal of Rheumatology._ 2015;42(10):1885–1892. <https://doi.org/10.3899/jrheum.141564>

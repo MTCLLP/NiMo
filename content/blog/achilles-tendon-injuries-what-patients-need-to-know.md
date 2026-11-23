@@ -1,16 +1,16 @@
 ---
-title: "Achilles Tendon Injuries: Tendinopathy, Partial Tears & Ruptures Explained"
+title: "Achilles Tendon Rupture vs Tendinopathy: Signs, Tests & Recovery Timeline"
 author: Dr. Nihar Modi
 authorTitle: MS Orthopaedics, DNB, MNAMS, MRCS (England) | AOA Fellow | Sports Medicine & Joint Replacement Surgeon, Mumbai
 category: Sports Medicine
 date: 2026-09-08
-description: "From stubborn morning heel stiffness to a sudden explosive rupture: understand Achilles tendinopathy, tear signs, non-surgical vs surgical repair, and recovery."
+description: "Experiencing sudden heel pain or morning stiffness? Learn how to distinguish an Achilles rupture from tendinopathy, the Thompson test, and evidence-based recovery protocols."
 image: /blog/achilles-tendon-injuries.webp
 imageAlt: "Medical diagram illustrating Achilles tendon anatomy, midportion tendinopathy, and surgical tendon repair"
 readTime: 9 min read
 seo:
-  title: "Achilles Tendon Pain & Tears: Symptoms, Repair & Recovery"
-  description: "Experiencing heel pain or a suspected tendon tear? Learn the signs of Achilles tendinopathy, surgical vs non-surgical repair options, and recovery timelines."
+  title: "Achilles Tendon Rupture vs Tendinopathy: Signs, Tests & Recovery Timeline"
+  description: "Experiencing sudden heel pain or morning stiffness? Learn how to distinguish an Achilles rupture from tendinopathy, the Thompson test, and evidence-based recovery protocols."
 slug: achilles-tendon-injuries-what-patients-need-to-know
 tags:
   - Achilles tendon injury

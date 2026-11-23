@@ -1,16 +1,16 @@
 ---
-title: "Ankle Sprains in Athletes: Grades, Proven Treatments, and Prevention Strategies"
+title: "Ankle Sprain Grades (1, 2, 3): Ottawa Rules, When to X-Ray & Recovery"
 author: Dr. Nihar Modi
 authorTitle: MS Orthopaedics, DNB, MNAMS, MRCS (England) | AOA Fellow | Sports Medicine & Joint Replacement Surgeon, Mumbai
 category: Sports Medicine
 date: 2026-09-04
-description: Inversion ankle sprains are often dismissed as simple injuries, yet up to 40% develop chronic instability. Learn ligament sprain grades, PEACE & LOVE protocols, and prevention.
+description: "Learn how ankle ligament sprains are graded, clinical criteria for when an X-ray is required (Ottawa rules), and evidence-based rehabilitation protocols."
 image: /blog/ankle-sprains-grades-treatment-prevention.webp
 imageAlt: Medical diagram illustrating lateral ankle ligament sprain grades and evidence-based rehabilitation protocols
 readTime: 8 min read
 seo:
-  title: "Ankle Sprain Recovery: Grades, Treatments & Healing Time"
-  description: "Twisted your ankle? Discover the exact grades of ankle sprains, how long they take to heal, and the best treatments to prevent chronic instability."
+  title: "Ankle Sprain Grades (1, 2, 3): Ottawa Rules, When to X-Ray & Recovery"
+  description: "Learn how ankle ligament sprains are graded, clinical criteria for when an X-ray is required (Ottawa rules), and evidence-based rehabilitation protocols."
 slug: ankle-sprains-grades-treatment-prevention
 tags:
   - ankle sprain treatment

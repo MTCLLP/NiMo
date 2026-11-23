@@ -174,7 +174,7 @@ const repeatedAffiliations = [
 
 <style scoped>
 .animate-ticker {
-  animation: ticker 38s linear infinite;
+  animation: ticker 90s linear infinite;
 }
 
 /* Pause animation on hover */
