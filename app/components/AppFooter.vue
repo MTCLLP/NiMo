@@ -132,7 +132,7 @@
           <a
             href="https://mooltatvam.com"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             class="hover:text-white hover:underline transition-colors"
             >Mool Tatvam Consulting LLP</a
           >
